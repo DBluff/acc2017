@@ -208,9 +208,13 @@ div#acc-logo {
 
 }
 .row.aud_menu .col.m6.offset-m5.lightgreen,
-.row.prim_menu .col.m7.offset-m5.lightblue{
+.row.prim_menu .col.m8.offset-m4.lightblue{
     padding: 0;
 }
+.row.prim_menu .col.m8.offset-m4.lightblue nav ul a {
+    font-size: 1.8rem;
+}
+
 
 .header {
     z-index: 999;
