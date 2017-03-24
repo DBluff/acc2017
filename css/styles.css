@@ -1,0 +1,222 @@
+/*Load ACC approved fonts*/
+* {
+    font-size:100%;
+    font-family: 'Gotham', 'Droid Serif' , 'Archivo Black';
+}
+/*Overwrite Materialize Colors with ACC Specific colors*/
+.black{background-color:#000 !important}
+.black-text{color:#000 !important}
+.white{background-color:#fff !important}
+.white-text{color:#fff !important}
+.transparent{background-color:transparent !important}
+.transparent-text{color:transparent !important}
+.grey{background-color:#666 !important}
+.grey-text{color:#666 !important}
+.blue.lighten-3{background-color:#287EB5 !important}
+.blue-text.lighten-3{color:#287EB5 !important}
+.blue.lighten-2{background-color:#236FA0 !important}
+.blue-text.lighten-2{color:#236FA0 !important}
+.blue.lighten-1{background-color:#1F618B !important}
+.blue-text.lighten-1{color:#1F618B !important}
+.blue{background-color:#1A5276 !important}
+.blue-text{color:#1A5276 !important}
+.blue.darken-1{background-color:#154361 !important}
+.blue-text.darken-1{color:#154361 !important}
+.blue.darken-2{background-color:#11354C !important}
+.blue-text.darken-2{color:#11354C !important}
+.blue.darken-3{background-color:#0C2637 !important}
+.blue-text.darken-3{color:#0C2637 !important}
+.lightblue.lighten-3{background-color:#62AADA !important}
+.lightblue-text.lighten-3{color:#62AADA !important}
+.lightblue.lighten-2{background-color:#4D9ED5 !important}
+.lightblue-text.lighten-2{color:#4D9ED5 !important}
+.lightblue.lighten-1{background-color:#3993D0 !important}
+.lightblue-text.lighten-1{color:#3993D0 !important}
+.lightblue{background-color:#2E86C1 !important}
+.lightblue-text{color:#2E86C1 !important}
+.lightblue.darken-1{background-color:#2978AC !important}
+.lightblue-text.darken-1{color:#2978AC !important}
+.lightblue.darken-2{background-color:#246998 !important}
+.lightblue-text.darken-2{color:#246998 !important}
+.lightblue.darken-3{background-color:#1F5B83 !important}
+.lightblue-text.darken-3{color:#1F5B83 !important}
+.orange.lighten-3{background-color:#ECB470 !important}
+.orange-text.lighten-3{color:#ECB470 !important}
+.orange.lighten-2{background-color:#E9A859 !important}
+.orange-text.lighten-2{color:#E9A859 !important}
+.orange.lighten-1{background-color:#E69C43 !important}
+.orange-text.lighten-1{color:#E69C43 !important}
+.orange{background-color:#E3902C !important}
+.orange-text{color:#E3902C !important}
+.orange.darken-1{background-color:#D9831D !important}
+.orange-text.darken-1{color:#D9831D !important}
+.orange.darken-2{background-color:#C2761A !important}
+.orange-text.darken-2{color:#C2761A !important}
+.orange.darken-3{background-color:#AC6817 !important}
+.orange-text.darken-3{color:#AC6817 !important}
+.lightorange.lighten-3{background-color:#FFE36D !important}
+.lightorange-text.lighten-3{color:#FFE36D !important}
+.lightorange.lighten-2{background-color:#FFDE53 !important}
+.lightorange-text.lighten-2{color:#FFDE53 !important}
+.lightorange.lighten-1{background-color:#FFD93A !important}
+.lightorange-text.lighten-1{color:#FFD93A !important}
+.lightorange{background-color:#FFD420 !important}
+.lightorange-text{color:#FFD420 !important}
+.lightorange.darken-1{background-color:#FFCF06 !important}
+.lightorange-text.darken-1{color:#FFCF06 !important}
+.lightorange.darken-2{background-color:#ECBE00 !important}
+.lightorange-text.darken-2{color:#ECBE00 !important}
+.lightorange.darken-3{background-color:#D3AA00 !important}
+.lightorange-text.darken-3{color:#D3AA00 !important}
+.purple.lighten-3{background-color:#8842A6 !important}
+.purple-text.lighten-3{color:#8842A6 !important}
+.purple.lighten-2{background-color:#793A94 !important}
+.purple-text.lighten-2{color:#793A94 !important}
+.purple.lighten-1{background-color:#6A3381 !important}
+.purple-text.lighten-1{color:#6A3381 !important}
+.purple{background-color:#5B2C6F !important}
+.purple-text{color:#5B2C6F !important}
+.purple.darken-1{background-color:#4C255D !important}
+.purple-text.darken-1{color:#4C255D !important}
+.purple.darken-2{background-color:#3D1E4A !important}
+.purple-text.darken-2{color:#3D1E4A !important}
+.purple.darken-3{background-color:#2E1638 !important}
+.purple-text.darken-3{color:#2E1638 !important}
+.lightpurple.lighten-3{background-color:#A460C0 !important}
+.lightpurple-text.lighten-3{color:#A460C0 !important}
+.lightpurple.lighten-2{background-color:#9A4EB9 !important}
+.lightpurple-text.lighten-2{color:#9A4EB9 !important}
+.lightpurple.lighten-1{background-color:#8C43AA !important}
+.lightpurple-text.lighten-1{color:#8C43AA !important}
+.lightpurple{background-color:#7D3C98 !important}
+.lightpurple-text{color:#7D3C98 !important}
+.lightpurple.darken-1{background-color:#6E3586 !important}
+.lightpurple-text.darken-1{color:#6E3586 !important}
+.lightpurple.darken-2{background-color:#5F2E73 !important}
+.lightpurple-text.darken-2{color:#5F2E73 !important}
+.lightpurple.darken-3{background-color:#502661 !important}
+.lightpurple-text.darken-3{color:#502661 !important}
+.green.lighten-3{background-color:#1ABB9C !important}
+.green-text.lighten-3{color:#1ABB9C !important}
+.green.lighten-2{background-color:#17A589 !important}
+.green-text.lighten-2{color:#17A589 !important}
+.green.lighten-1{background-color:#148E77 !important}
+.green-text.lighten-1{color:#148E77 !important}
+.green{background-color:#117864 !important}
+.green-text{color:#117864 !important}
+.green.darken-1{background-color:#0E6251 !important}
+.green-text.darken-1{color:#0E6251 !important}
+.green.darken-2{background-color:#0B4B3F !important}
+.green-text.darken-2{color:#0B4B3F !important}
+.green.darken-3{background-color:#08352C !important}
+.green-text.darken-3{color:#08352C !important}
+.lightgreen.lighten-3{background-color:#28E1BC !important}
+.lightgreen-text.lighten-3{color:#28E1BC !important}
+.lightgreen.lighten-2{background-color:#1DD2AE !important}
+.lightgreen-text.lighten-2{color:#1DD2AE !important}
+.lightgreen.lighten-1{background-color:#1ABB9C !important}
+.lightgreen-text.lighten-1{color:#1ABB9C !important}
+.lightgreen{background-color:#17A589 !important}
+.lightgreen-text{color:#17A589 !important}
+.lightgreen.darken-1{background-color:#148F76 !important}
+.lightgreen-text.darken-1{color:#148F76 !important}
+.lightgreen.darken-2{background-color:#117864 !important}
+.lightgreen-text.darken-2{color:#117864 !important}
+.lightgreen.darken-3{background-color:#0E6251 !important}
+.lightgreen-text.darken-3{color:#0E6251 !important}
+.bluegrey.lighten-3{background-color:#56707C !important}
+.bluegrey-text.lighten-3{color:#56707C !important}
+.bluegrey.lighten-2{background-color:#4C626D !important}
+.bluegrey-text.lighten-2{color:#4C626D !important}
+.bluegrey.lighten-1{background-color:#41555E !important}
+.bluegrey-text.lighten-1{color:#41555E !important}
+.bluegrey{background-color:#37474F !important}
+.bluegrey-text{color:#37474F !important}
+.bluegrey.darken-1{background-color:#2D3940 !important}
+.bluegrey-text.darken-1{color:#2D3940 !important}
+.bluegrey.darken-2{background-color:#222C31 !important}
+.bluegrey-text.darken-2{color:#222C31 !important}
+.bluegrey.darken-3{background-color:#181E22 !important}
+.bluegrey-text.darken-3{color:#181E22 !important}
+.lightbluegrey.lighten-3{background-color:#8AA2AE !important}
+.lightbluegrey-text.lighten-3{color:#8AA2AE !important}
+.lightbluegrey.lighten-2{background-color:#7B96A3 !important}
+.lightbluegrey-text.lighten-2{color:#7B96A3 !important}
+.lightbluegrey.lighten-1{background-color:#6B8A99 !important}
+.lightbluegrey-text.lighten-1{color:#6B8A99 !important}
+.lightbluegrey{background-color:#607D8B !important}
+.lightbluegrey-text{color:#607D8B !important}
+.lightbluegrey.darken-1{background-color:#566F7C !important}
+.lightbluegrey-text.darken-1{color:#566F7C !important}
+.lightbluegrey.darken-2{background-color:#4B626D !important}
+.lightbluegrey-text.darken-2{color:#4B626D !important}
+.lightbluegrey.darken-3{background-color:#41545E !important}
+.lightbluegrey-text.darken-3{color:#41545E !important}
+.red.lighten-3{background-color:#DE5C5C !important}
+.red-text.lighten-3{color:#DE5C5C !important}
+.red.lighten-2{background-color:#DA4747 !important}
+.red-text.lighten-2{color:#DA4747 !important}
+.red.lighten-1{background-color:#D63232 !important}
+.red-text.lighten-1{color:#D63232 !important}
+.red{background-color:#C62828 !important}
+.red-text{color:#C62828 !important}
+.red.darken-1{background-color:#B12424 !important}
+.red-text.darken-1{color:#B12424 !important}
+.red.darken-2{background-color:#9C1F1F !important}
+.red-text.darken-2{color:#9C1F1F !important}
+.red.darken-3{background-color:#861B1B !important}
+.red-text.darken-3{color:#861B1B !important}
+.lightred.lighten-3{background-color:#FF9F9F !important}
+.lightred-text.lighten-3{color:#FF9F9F !important}
+.lightred.lighten-2{background-color:#FF8585 !important}
+.lightred-text.lighten-2{color:#FF8585 !important}
+.lightred.lighten-1{background-color:#FF6C6C !important}
+.lightred-text.lighten-1{color:#FF6C6C !important}
+.lightred{background-color:#FF5252 !important}
+.lightred-text{color:#FF5252 !important}
+.lightred.darken-1{background-color:#FF3939 !important}
+.lightred-text.darken-1{color:#FF3939 !important}
+.lightred.darken-2{background-color:#FF1F1F !important}
+.lightred-text.darken-2{color:#FF1F1F !important}
+.lightred.darken-3{background-color:#FF0505 !important}
+.lightred-text.darken-3{color:#FF0505 !important}
+.cream.lighten-3{background-color:#FFFFFF !important}
+.cream-text.lighten-3{color:#FFFFFF !important}
+.cream.lighten-2{background-color:#FFFFFF !important}
+.cream-text.lighten-2{color:#FFFFFF !important}
+.cream.lighten-1{background-color:#FFFFFF !important}
+.cream-text.lighten-1{color:#FFFFFF !important}
+.cream{background-color:#FEF9E7 !important}
+.cream-text{color:#FEF9E7 !important}
+.cream.darken-1{background-color:#FDF3CF !important}
+.cream-text.darken-1{color:#FDF3CF !important}
+.cream.darken-2{background-color:#FCEDB6 !important}
+.cream-text.darken-2{color:#FCEDB6 !important}
+.cream.darken-3{background-color:#FBE79E !important}
+.cream-text.darken-3{color:#FBE79E !important}
+
+/*Pull logo out of grid*/
+div#acc-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/*Menu Styling*/
+.row.aud_menu {
+    text-transform: uppercase;
+
+}
+.row.aud_menu .col.m6.offset-m5.lightgreen,
+.row.prim_menu .col.m7.offset-m5.lightblue{
+    padding: 0;
+}
+
+.header {
+    z-index: 999;
+    position: relative;
+}
+
+.homeHeroBand {
+    margin-top: -128px;
+}
