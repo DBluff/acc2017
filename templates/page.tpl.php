@@ -1,227 +1,136 @@
 <?php
-/**
- * @file
- *
- * Available variables:
- *
- * General utility variables:
- * - $base_path: The base URL path of the Drupal installation. At the very
- *   least, this will always default to /.
- * - $directory: The directory the template is located in, e.g. modules/system
- *   or themes/bartik.
- * - $is_front: TRUE if the current page is the front page.
- * - $logged_in: TRUE if the user is registered and signed in.
- * - $is_admin: TRUE if the user has permission to access administration pages.
- *
- * Site identity:
- * - $front_page: The URL of the front page. Use this instead of $base_path,
- *   when linking to the front page. This includes the language domain or
- *   prefix.
- * - $logo: The path to the logo image, as defined in theme configuration.
- * - $site_name: The name of the site, empty when display has been disabled
- *   in theme settings.
- * - $site_slogan: The slogan of the site, empty when display has been disabled
- *   in theme settings.
- *
- * Navigation:
- * - $main_menu (array): An array containing the Main menu links for the
- *   site, if they have been configured.
- * - $secondary_menu (array): An array containing the Secondary menu links for
- *   the site, if they have been configured.
- * - $breadcrumb: The breadcrumb trail for the current page.
- *
- * Page content (in order of occurrence in the default page.tpl.php):
- * - $title_prefix (array): An array containing additional output populated by
- *   modules, intended to be displayed in front of the main title tag that
- *   appears in the template.
- * - $title: The page title, for use in the actual HTML content.
- * - $title_suffix (array): An array containing additional output populated by
- *   modules, intended to be displayed after the main title tag that appears in
- *   the template.
- * - $messages: HTML for status and error messages. Should be displayed
- *   prominently.
- * - $tabs (array): Tabs linking to any sub-pages beneath the current page
- *   (e.g., the view and edit tabs when displaying a node).
- * - $action_links (array): Actions local to the page, such as 'Add menu' on the
- *   menu administration interface.
- * - $feed_icons: A string of all feed icons for the current page.
- * - $node: The node object, if there is an automatically-loaded node
- *   associated with the page, and the node ID is the second argument
- *   in the page's path (e.g. node/12345 and node/12345/revisions, but not
- *   comment/reply/12345).
- *
- * Regions:
- * - $page['help']: Dynamic help text, mostly for admin pages.
- * - $page['highlighted']: Items for the highlighted content region.
- * - $page['content']: The main content of the current page.
- * - $page['header']: Items for the header region.
- * - $page['footer']: Items for the footer region.
- *
- * @see bootstrap_preprocess_page()
- * @see template_preprocess()
- * @see template_preprocess_page()
- * @see bootstrap_process_page()
- * @see template_process()
- * @see html.tpl.php
- *
- * @ingroup themeable
- */
 ?>
 <div id="page">
-    <nav class="blue" id="nav" role="navigation">
-        <div class="nav-wrapper">
-            <?php if ($logo): ?>
-                <a class="brand-logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+    <div class="header page">
+        <div id="acc-logo">
+            <?php if ($logo){ ?>
+                <a class="acc-logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
                 </a>
-            <?php endif; ?>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons mdi-navigation-menu">perm_identity</i></a>
-            <?php if (!empty($primary_nav)): ?>
-                <div class="right hide-on-med-and-down">
-                    <?php print render($primary_nav); ?>
-                </div>
-            <?php endif; ?>
-            <div class="searchContainer">
-                <form class="searchbox">
-                    <input type="search" placeholder="  Search ACC" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
-                    <input type="submit" class="searchbox-submit" value="GO">
-                    <span class="searchbox-icon"><i class="large material-icons">search</i></span>
-                </form>
-            </div>
+            <?php }; ?>
         </div>
-    </nav>
-    <nav class="lightbluegrey" id="nav" role="navigation">
-        <div class="nav-wrapper">
-            <?php if (!empty($secondary_nav)): ?>
-            <div id="second_line_nav">
-                <div class="hide-on-med-and-down">
-                    <?php print render($secondary_nav); ?>
+        <nav class="transparent z-depth-0 audID" id="nav" role="navigation">
+            <div class="nav-wrapper">
+                <div class="hide-on-small-only">
+                    <div class="row aud_menu lightgreen">
+                        <div class="audID">
+                            <?php
+                            $menua = menu_navigation_links('menu-audience-identifier');
+                            print theme('links__menu-audience-identifier', array('links' => $menua));?>
+                        </div>
+                        <div class="searchContainer">
+                            <i class="large material-icons">search</i>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <?php endif; ?>
-    </nav>
-    <?php if (!empty($breadcrumb)): print $breadcrumb; endif; ?>
-
-    <ul id="slide-out" class="side-nav">
-        <div class="blue slideoutHead">
-            <div class="lightblue arbCircle">
+        </nav>
+        <nav class="transparent z-depth-0 priMenu" id="nav" role="navigation">
+            <div class="nav-wrapper">
+                <div class="hide-on-small-only">
+                    <div class="row prim_menu lightblue">
+                        <div class="primaryMenu">
+                            <?php
+                            $menub = menu_navigation_links('menu-primary-navigation');
+                            print theme('links__menu-primary-navigation', array('links' => $menub));?>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="slidoutTitle">
-                General Information
-            </div>
-        </div><?php
-        $menu = menu_navigation_links('menu-general-information');
-        print theme('links__menu-general-information', array('links' => $menu));?>
-    </ul>
-    <div class="roundTab">
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">input</i></a>
+        </nav>
     </div>
-
-
-    <?php if (!empty($page['header'])): ?>
-    <div class="top">
-        <?php print render($page['header']); ?>
-    </div>
-    <?php endif; ?><!-- /.header  -->
-
-    <div class="row page grid">
-
-        <section class=" main container" role="main">
-            <?php if (!empty($page['highlighted'])): ?>
-                <div class="highlighted"><?php print render($page['highlight']); ?></div>
-            <?php endif; ?>
-
-            <?php print render($secondary_navigation); ?>
-
-            <a id="main-content"></a>
-            <?php print render($title_prefix); ?>
-            <?php print render($title_suffix); ?>
-            <?php print $messages; ?>
-            <?php if (!empty($tabs['#primary'])): ?>
-                <?php print render($tabs_primary); ?>
-            <?php endif; ?>
-
-            <?php if (!empty($page['help'])): ?>
-                <?php print render($page['help']); ?>
-            <?php endif; ?>
-            <?php if (!empty($action_links)): ?>
-                <div class="action-links"><i class="mdi-action-note-add small"></i><?php print render($action_links); ?></div>
-            <?php endif; ?>
-            <?php print render($tabs_secondary); ?>
-            <?php print render($page['content']); ?>
-        </section>
-
-    </div> <!-- /main  -->
-
-    <div class="divider"></div>
-    <div class="socialBar">
-        <div class="row">
-            <div class="col s12 m6 WereSocial">
-                WE'RE SOCIAL!
+    <div class="main page">
+        <?php if (!empty($page['breadcrumb'])){ ?>
+            <div class="breadcrumb">
+                <?php print render($page['breadcrumb']); ?>
             </div>
-            <div class="col s12 m6 SocialButtons">
-                <div class="col s1 socCircle">
+        <?php } ?>
+        <?php if (!empty($page['content'])){ ?>
+            <div class="content">
+                <?php print render($page['content']); ?>
+            </div>
+        <?php } ?>
+        <?php if (!empty($page['content_band'])){ ?>
+            <div class="contentBand">
+                <?php print render($page['content_band']); ?>
+            </div>
+        <?php } ?>
+    </div>
+    <div class="footer page">
+        <div class="valign-wrapper SocialIconBand">
+            <div class="row cream darken-1 social">
+                <div class="col m4 offset-m1 s12 bluegrey-text lighten-3">
+                    WE'RE SOCIAL!
                 </div>
-                <div class="col s1 socCircle">
-                </div>
-                <div class="col s1 socCircle">
-                </div>
-                <div class="col s1 socCircle">
-                </div>
-                <div class="col s1 socCircle">
-                </div>
-                <div class="col s1 socCircle">
-                </div>
-                <div class="col s1 socCircle">
+                <div class="col m5 s12 white-text">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <i class="fa fa-flickr" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="callToAction">
-        <div class="row">
-            <div class="col s12 m6 CTAbuttonLeft">
-                <a class="waves-effect waves-light orange btn-large">Request Info<i class="material-icons right">info</i></a>
-            </div>
-            <div class="col s12 m6 CTAbuttonRight">
-                <a class="waves-effect waves-light orange btn-large">Apply<i class="material-icons right">mode_edit</i></a>
+        <div class="foot blue">
+            <div class="container">
+                <div class="row white-text">
+                    <div class="col m1 s3">
+                        <i class="material-icons">error</i>
+                    </div>
+                    <div class="col m3 s9">
+                        General Information
+                        <div class="footMenu">
+                            <?php
+                            $menua = menu_navigation_links('menu-general-information');
+                            print theme('links__menu-general-information', array('links' => $menua));?>
+                        </div>
+                    </div>
+                    <div class="col m1 s3">
+                        <i class="material-icons">add_alert</i>
+                    </div>
+                    <div class="col m3 s9">
+                        Safety
+                        <div class="footMenu">
+                            <?php
+                            $menua = menu_navigation_links('menu-safety');
+                            print theme('links__menu-safety', array('links' => $menua));?>
+                        </div>
+                    </div>
+                    <div class="col m1 s3">
+                        <i class="material-icons">room</i>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <i class="material-icons">call</i>
+                    </div>
+                    <div class="col m3 s9">
+                        Austin Community College
+                        <div class="footMenu">
+                            5930 Middle Fiskville Rd <br /> Austin, Texas 78752
+                        </div>
+                        <br />
+                        <div class="footTel">
+                            512-223-4ACC (4222)
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <nav class="transparent z-depth-0 audID2" id="nav" role="navigation">
+            <div class="nav-wrapper">
+                <div class="hide-on-small-only">
+                    <div class="row aud_menu bluegrey">
+                        <div class="audID">
+                            <?php
+                            $menua = menu_navigation_links('menu-audience-identifier');
+                            print theme('links__menu-audience-identifier', array('links' => $menua));?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
-    <footer class="lightblue page-footer">
-        <?php print render($page['footer']); ?>
-        <div class="row">
-            <div class="col s12 m4 footLeft"><?php
-                print '<div class="footTitle">' . 'Safety' . '</div>';
-                $menu = menu_navigation_links('menu-safety');
-                print theme('links__menu-safety', array('links' => $menu));?>
-            </div>
-            <div class="col s12 m4 footCent"><?php
-                print '<div class="footTitle">' . 'General' . ' ' . 'Information' . '</div>';
-                $menu = menu_navigation_links('menu-general-information');
-                print theme('links__menu-general-information', array('links' => $menu));?>
-            </div>
-            <div class="col s12 m4 footRight">
-                <div class="footTitle">
-                    Contact ACC
-                </div>
-                &nbsp; <br />
-                <div class="footLoca">
-                    5930 Middle Fiskville Rd. <br />
-                    Austin, Texas 78752-4390 <br />
-                    512.223.4ACC(4222)
-                </div>
-            </div>
-        </div>
-
-        <hr>
-        <?php if (!empty($primary_nav)): ?>
-            <nav class="lightblue bottomNav" id="nav" role="navigation">
-                <div class="right hide-on-med-and-down">
-                    <?php print render($primary_nav); ?>
-                </div>
-            </nav>
-        <?php endif; ?>
-    </footer>
-
-</div> <!-- /#page -->
+</div>

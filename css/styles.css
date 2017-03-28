@@ -198,29 +198,127 @@
 /*Pull logo out of grid*/
 div#acc-logo {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 50px;
+    left: 50px;
+    z-index: 999;
+}
+
+div#acc-logo {
+    width: 13%;
+}
+
+div#acc-logo img {
+    max-width: 100%;
 }
 
 /*Menu Styling*/
 .row.aud_menu {
     text-transform: uppercase;
-
-}
-.row.aud_menu .col.m6.offset-m5.lightgreen,
-.row.prim_menu .col.m8.offset-m4.lightblue{
-    padding: 0;
-}
-.row.prim_menu .col.m8.offset-m4.lightblue nav ul a {
-    font-size: 1.8rem;
+    height: 64px;
+    margin: 0;
 }
 
+.transparent.z-depth-0.audID {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 55%;
+}
 
-.header {
-    z-index: 999;
+.transparent.z-depth-0.priMenu {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 75%;
+    z-index: 100;
+    margin: 0;
+}
+
+.searchContainer {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding:0 2% 0 2%;
+}
+
+/*Homepage Hero Block*/
+.row.Title {
+    position: absolute;
+    top: 60%;
+    display: inline-flex;
+    left: 10%;
+    width: 80%;
+    color: #ffffff;
+}
+
+.title.lightpurple {
+    padding: 2% 5% 2% 5%;
+    text-align: center;
+}
+
+.CTAbuttons {
+    margin-left: 5%;
+    height:100%;
+}
+
+.bottomButton {
     position: relative;
+    bottom: -55%;
 }
 
-.homeHeroBand {
-    margin-top: -128px;
+/*Social Icon Bar*/
+.row.cream.darken-1.social {
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.row.cream.social {
+    font-size: 3rem;
+    text-align: center;
+    margin:0;
+}
+
+.row.cream.social i.fa {
+    background-color: #56707C;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/*Footer Bar*/
+.foot.blue {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1rem;
+}
+
+.footMenu a {
+    color: #ffffff;
+}
+
+.row.aud_menu.bluegrey {
+    padding-left: 5%;
+}
+
+/*Push the Footer Down*/
+.main.page {
+    display: flex;
+    min-height: 50vh;
+    flex-direction: column;
+}
+
+/*Force the Header into place on pages other than home page*/
+.header.page {
+    height: 192px;
+    background: #1A5276;
+}
+
+/*Material Design*/
+.iconListing {
+    display: inline-block;
+    padding: 1%;
+    text-align: center;
 }
