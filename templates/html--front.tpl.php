@@ -99,6 +99,23 @@
         } else {
             jQuery('.searchbox-input').val('');
             jQuery('.searchbox-icon').css('display','block');}}
+    jQuery(document).ready(function(){
+        jQuery("#searchIconGrid").click(function(){
+            jQuery("#AoSlist").hide();
+            jQuery("#AoSgrid").show();
+        });
+        jQuery("#searchIconList").click(function(){
+            jQuery("#AoSgrid").hide();
+            jQuery("#AoSlist").show();
+        });
     });
+    jQuery(window).resize(function(){
+        jQuery('#fullHeight1').height(jQuery('#fullHeight1').width());
+        jQuery('#fullHeight2').height(jQuery('#fullHeight2').width());
+        jQuery('#fullHeight3').height(jQuery('#fullHeight3').width());
+        jQuery('#fullHeight4').height(jQuery('#fullHeight4').width());
+        jQuery('#fullHeight5').height(jQuery('#fullHeight5').width());
+        jQuery('#halfHeight1').height(jQuery('#halfHeight1').width()/2);
+    }).resize();
 </script>
 </html>

@@ -9,8 +9,10 @@ dependencies[] = jquery_update
 ;-------------------------------------------------------------------------------
 stylesheets[all][] = fonts/font-awesome-4.7.0/css/font-awesome.min.css
 stylesheets[all][] = css/materialize.min.css
+stylesheets[all][] = css/temp.css
 stylesheets[all][] = css/styles.css
 stylesheets[all][] = css/responsive.css
+stylesheets[all][] = fonts/gotham/gotham.css
 
 ; SCRIPTS
 ;-------------------------------------------------------------------------------
@@ -21,6 +23,7 @@ scripts[] = js/materialize.min.js
 ; REGIONS
 ;-------------------------------------------------------------------------------
 regions[homepage_hero_band] = Homepage Hero Image Band
+regions[transparent_hero_band] = Transparent Hero Band
 regions[breadcrumb] = Breadcrumb
 regions[side_nav] = Side Navigation
 regions[hero_band] = Hero Image Band

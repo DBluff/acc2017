@@ -1,7 +1,7 @@
 <?php
 ?>
 <div id="page">
-    <div class="header">
+    <div class="header transparent">
         <div id="acc-logo">
             <?php if ($logo){ ?>
                 <a class="acc-logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -43,10 +43,15 @@
             </div>
         </nav>
     </div>
-    <div class="main">
-        <?php if (!empty($page['homepage_hero_band'])){ ?>
-            <div class="homeHeroBand">
-                <?php print render($page['homepage_hero_band']); ?>
+    <div class="main page">
+        <?php if (!empty($page['transparent_hero_band'])){ ?>
+            <div class="transparentHeroBand">
+                <?php print render($page['transparent_hero_band']); ?>
+            </div>
+        <?php } ?>
+        <?php if (!empty($page['content'])){ ?>
+            <div class="content">
+                <?php print render($page['content']); ?>
             </div>
         <?php } ?>
         <?php if (!empty($page['content_band'])){ ?>
@@ -55,7 +60,7 @@
             </div>
         <?php } ?>
     </div>
-    <div class="footer">
+    <div class="footer page">
         <div class="valign-wrapper SocialIconBand">
             <div class="row cream darken-1 social">
                 <div class="col m4 offset-m1 s12 bluegrey-text lighten-3">

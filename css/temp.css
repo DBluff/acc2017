@@ -1,0 +1,77 @@
+.square {
+    width: 100%;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.valign.AoSinitialsHome {
+    width: 100%;
+    text-align: center;
+}
+
+div#searchIconGrid,
+div#searchIconList {
+    font-size: 2rem;
+}
+
+.row.AoShead {
+    text-align: center;
+}
+
+i.fa.fa-th {
+    padding: 5%;
+    border: solid 1px black;
+}
+
+i.fa.fa-th:hover {
+    background-color: #1A5276;
+}
+
+i.fa.fa-list-ul {
+    padding: 5%;
+    border: solid 1px black;
+}
+
+i.fa.fa-list-ul:hover {
+    background-color: #1A5276;
+}
+
+.col.m1.mason,
+.col.m2.mason,
+.col.m4.mason,
+.col.m6.mason,
+.col.m12.mason {
+    margin: 0!important;
+    padding: 0!important;
+    overflow: hidden;
+    position: relative;
+}
+
+iframe#player {
+    height: 100%;
+}
+
+.col.m6.mason .material-placeholder {
+    height: 100%;
+}
+
+.col.m6.mason img.materialboxed.masonImg.initialized,
+.col.m2.mason img.materialboxed.masonImg.initialized {
+    height: 100%;
+}
+
+.valign.twitterHome {
+    margin: 0 5%;
+}
+
+.smIconsAbs {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: white;
+    font-size: 2rem;
+}

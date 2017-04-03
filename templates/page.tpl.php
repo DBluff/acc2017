@@ -18,8 +18,12 @@
                             $menua = menu_navigation_links('menu-audience-identifier');
                             print theme('links__menu-audience-identifier', array('links' => $menua));?>
                         </div>
-                        <div class="searchContainer">
-                            <i class="large material-icons">search</i>
+                        <div class="searchContainer" id="searchAdj">
+                            <form class="searchbox">
+                                <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                                <input type="submit" class="searchbox-submit" value="GO">
+                                <span class="searchbox-icon"><i class="large material-icons">search</i></span>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -123,7 +127,7 @@
             <div class="nav-wrapper">
                 <div class="hide-on-small-only">
                     <div class="row aud_menu bluegrey">
-                        <div class="audID">
+                        <div class="audIDbottom">
                             <?php
                             $menua = menu_navigation_links('menu-audience-identifier');
                             print theme('links__menu-audience-identifier', array('links' => $menua));?>

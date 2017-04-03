@@ -1,7 +1,7 @@
 <?php
 ?>
 <div id="page">
-    <div class="header">
+    <div class="header page">
         <div id="acc-logo">
             <?php if ($logo){ ?>
                 <a class="acc-logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -42,20 +42,39 @@
                 </div>
             </div>
         </nav>
+        <div class="pageTitle white-text">
+            <?php print $title; ?>
+        </div>
     </div>
-    <div class="main">
-        <?php if (!empty($page['homepage_hero_band'])){ ?>
-            <div class="homeHeroBand">
-                <?php print render($page['homepage_hero_band']); ?>
+    <div class="row">
+        <div class="col m3 hide-on-small-only leftMenu">
+            <div class="container sideNav">
+                <?php
+                $menuc = menu_navigation_links('menu-utility-menu');
+                print theme('links__menu-utility-menu', array('links' => $menuc));?>
             </div>
-        <?php } ?>
-        <?php if (!empty($page['content_band'])){ ?>
-            <div class="contentBand">
-                <?php print render($page['content_band']); ?>
+        </div>
+        <div class="col m9 s12 rightContent">
+            <div class="main page">
+                <?php if (!empty($page['breadcrumb'])){ ?>
+                    <div class="breadcrumb">
+                        <?php print render($page['breadcrumb']); ?>
+                    </div>
+                <?php } ?>
+                <?php if (!empty($page['content'])){ ?>
+                    <div class="content">
+                        <?php print render($page['content']); ?>
+                    </div>
+                <?php } ?>
+                <?php if (!empty($page['content_band'])){ ?>
+                    <div class="contentBand">
+                        <?php print render($page['content_band']); ?>
+                    </div>
+                <?php } ?>
             </div>
-        <?php } ?>
+        </div>
     </div>
-    <div class="footer">
+    <div class="footer page">
         <div class="valign-wrapper SocialIconBand">
             <div class="row cream darken-1 social">
                 <div class="col m4 offset-m1 s12 bluegrey-text lighten-3">

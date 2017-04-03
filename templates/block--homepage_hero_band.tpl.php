@@ -2,7 +2,9 @@
 ?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
     <div class="content"<?php print $content_attributes; ?>>
-        <?php print $content ?>
+        <div class="col s12">
+            <img class="responsive-img" src="<?php print $content ?>">
+        </div>
     </div>
     <div class="row Title">
         <div class="col m9 s12 title lightpurple">
