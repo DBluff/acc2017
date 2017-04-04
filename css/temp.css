@@ -75,3 +75,53 @@ iframe#player {
     color: white;
     font-size: 2rem;
 }
+
+.col.m4.s12.nextStepButtons .btn-flat {
+    border: solid 2px #5B2C6F;
+}
+
+.row.nextStep {
+    height: 200px;
+    margin: 0;
+}
+
+.col.m4.s12.valign.nextStepButtons {
+    margin-left: 0;
+}
+
+.col.m12.valign-wrapper.purple.BCcardHead,
+.col.m12.valign-wrapper.green.BCcardHead,
+.col.m12.valign-wrapper.bluegrey.BCcardHead{
+    min-height: 100px;
+}
+
+.col.m4.BCcard h6.valign.center-align {
+    width: 100%;
+}
+
+.col.s12.AoSicon {
+    padding-bottom: 2%;
+}
+
+.row.testimonial {
+    position: relative;
+}
+
+.valign-wrapper.col.m7.AoStestText {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 100%;
+    padding-left: 41.6666666667%;
+    border:solid;
+    z-index: -1;
+    height: 80%;
+}
+
+.col.m1.leftQuote {
+    font-size: 3rem;
+}
+
+.row.testContent {
+    margin-top: 5%;
+}

@@ -7,22 +7,12 @@
         </div>
     </div>
     <div class="row Title">
-        <div class="col m9 s12 title lightpurple">
+        <div class="col m7 s12 offset-m1 title lightpurple">
             <?php print render($title_prefix); ?>
             <?php if ($block->subject): ?>
-                <h2<?php print $title_attributes; ?>><?php print $block->subject ?></h2>
+                <h1<?php print $title_attributes; ?>><?php print $block->subject ?></h1>
             <?php endif;?>
             <?php print render($title_suffix); ?>
-        </div>
-        <div class="col m3 s12">
-            <div class="CTAbuttons">
-                <div class="topButton">
-                    <a class="waves-effect waves-light btn orange">APPLY NOW</a>
-                </div>
-                <div class="bottomButton">
-                    <a class="waves-effect waves-light btn orange">REQUEST INFO</a>
-                </div>
-            </div>
         </div>
     </div>
 </div>

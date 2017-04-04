@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1253e96-7a14-49ea-b37c-5fa03c3375ba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acc2017.info" afterPath="$PROJECT_DIR$/acc2017.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/hero.jpg" afterPath="$PROJECT_DIR$/img/hero.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.php" afterPath="$PROJECT_DIR$/template.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/temp.css" afterPath="$PROJECT_DIR$/css/temp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete.php" afterPath="$PROJECT_DIR$/delete.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php" afterPath="$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php" afterPath="$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/html.tpl.php" afterPath="$PROJECT_DIR$/templates/html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--front.tpl.php" afterPath="$PROJECT_DIR$/templates/page--front.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page.tpl.php" afterPath="$PROJECT_DIR$/templates/page.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--promotional_page_transparent_.tpl.php" afterPath="$PROJECT_DIR$/templates/page--promotional_page_transparent_.tpl.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,25 +35,23 @@
       <file leaf-file-name="delete.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/delete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="205" column="26" lean-forward="true" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
+            <state relative-caret-position="380">
+              <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding>
-                <marker date="1491243493430" expanded="true" signature="7265:7426" ph="..." />
-                <marker date="1491243493430" expanded="true" signature="7483:7920" ph="..." />
-                <marker date="1491243493430" expanded="true" signature="7536:7696" ph="..." />
-                <marker date="1491243493430" expanded="true" signature="7749:7909" ph="..." />
-                <marker date="1491243493430" expanded="true" signature="7974:8012" ph="..." />
+                <marker date="1491346616096" expanded="true" signature="514:567" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="html--front.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/html--front.tpl.php">
+      <file leaf-file-name="block--transparent_hero_band.tpl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="105" column="11" lean-forward="true" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="152">
+              <caret line="11" column="61" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="61" />
+              <folding>
+                <marker date="1491330152689" expanded="true" signature="1161:1265" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,18 +59,8 @@
       <file leaf-file-name="temp.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/temp.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="815">
-              <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twitdel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twitdel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="784">
+              <caret line="126" column="1" lean-forward="false" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -97,6 +88,10 @@
       <find>statuses</find>
       <find>s</find>
       <find>&quot; [&quot;text&quot;]=&gt; string(</find>
+      <find>hero</find>
+      <find>AoSi</find>
+      <find>60px</find>
+      <find>next</find>
     </findStrings>
     <replaceStrings>
       <replace>m2</replace>
@@ -112,16 +107,16 @@
         <option value="$PROJECT_DIR$/template.php" />
         <option value="$PROJECT_DIR$/templates/page--utility_page.tpl.php" />
         <option value="$PROJECT_DIR$/templates/page.tpl.php" />
-        <option value="$PROJECT_DIR$/templates/page--promotional_page_transparent_.tpl.php" />
-        <option value="$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php" />
-        <option value="$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php" />
         <option value="$PROJECT_DIR$/twitdel.php" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/acc2017.info" />
         <option value="$PROJECT_DIR$/unusedCode.php" />
-        <option value="$PROJECT_DIR$/templates/html.tpl.php" />
         <option value="$PROJECT_DIR$/templates/html--front.tpl.php" />
+        <option value="$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php" />
+        <option value="$PROJECT_DIR$/templates/html.tpl.php" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php" />
         <option value="$PROJECT_DIR$/css/temp.css" />
+        <option value="$PROJECT_DIR$/templates/page--promotional_page_transparent_.tpl.php" />
         <option value="$PROJECT_DIR$/delete.php" />
       </list>
     </option>
@@ -179,6 +174,52 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acc2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acc2017" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acc2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acc2017" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acc2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acc2017" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acc-icons" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -311,12 +352,12 @@
       <option name="presentableId" value="Default" />
       <updated>1490804100392</updated>
       <workItem from="1490804101626" duration="61050000" />
-      <workItem from="1491227556090" duration="16555000" />
+      <workItem from="1491227556090" duration="39358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77605000" />
+    <option name="totallyTimeSpent" value="100408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="1040" extended-state="6" />
@@ -375,11 +416,7 @@
         <state relative-caret-position="3515">
           <caret line="185" column="34" lean-forward="true" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
           <folding>
-            <marker date="1491243493430" expanded="true" signature="7265:7426" ph="..." />
-            <marker date="1491243493430" expanded="true" signature="7483:7920" ph="..." />
-            <marker date="1491243493430" expanded="true" signature="7536:7696" ph="..." />
-            <marker date="1491243493430" expanded="true" signature="7749:7909" ph="..." />
-            <marker date="1491243493430" expanded="true" signature="7974:8012" ph="..." />
+            <marker date="1491346616096" expanded="true" signature="514:567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -415,14 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="70" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fonts/gotham/gotham.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4769">
@@ -430,47 +459,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="39" />
-          <folding>
-            <marker date="1490888476717" expanded="true" signature="470:523" ph="SELECT name taxonomy_term_data" />
-            <marker date="1490888476717" expanded="true" signature="975:1079" ph="..." />
-            <marker date="1490888476717" expanded="true" signature="1582:1856" ph="..." />
-            <marker date="1490888476717" expanded="true" signature="1893:1929" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="476" column="1" lean-forward="true" selection-start-line="476" selection-start-column="1" selection-end-line="476" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/acc2017.info">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page--promotional_page_transparent_.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page--front.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="110" />
           <folding />
         </state>
       </provider>
@@ -485,48 +477,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/twitdel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/html.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="70" column="51" lean-forward="true" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+        <state relative-caret-position="874">
+          <caret line="87" column="37" lean-forward="true" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page--front.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="59" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="471" column="13" lean-forward="false" selection-start-line="471" selection-start-column="13" selection-end-line="471" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/html--front.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="105" column="11" lean-forward="true" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
+        <state relative-caret-position="1216">
+          <caret line="105" column="11" lean-forward="false" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/temp.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+        <state relative-caret-position="784">
+          <caret line="126" column="1" lean-forward="false" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitdel.php">
+    <entry file="file://$PROJECT_DIR$/templates/page--promotional_page_transparent_.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="969">
+          <caret line="78" column="14" lean-forward="false" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="61" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="61" />
+          <folding>
+            <marker date="1491330152689" expanded="true" signature="1161:1265" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="205" column="26" lean-forward="true" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
+        <state relative-caret-position="380">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <marker date="1491243493430" expanded="true" signature="7265:7426" ph="..." />
-            <marker date="1491243493430" expanded="true" signature="7483:7920" ph="..." />
-            <marker date="1491243493430" expanded="true" signature="7536:7696" ph="..." />
-            <marker date="1491243493430" expanded="true" signature="7749:7909" ph="..." />
-            <marker date="1491243493430" expanded="true" signature="7974:8012" ph="..." />
+            <marker date="1491346616096" expanded="true" signature="514:567" ph="..." />
           </folding>
         </state>
       </provider>

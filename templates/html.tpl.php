@@ -98,7 +98,6 @@
             jQuery('.searchbox-icon').css('display','none');
         } else {
             jQuery('.searchbox-input').val('');
-            jQuery('.searchbox-icon').css('display','block');}}
-    });
+            jQuery('.searchbox-icon').css('display','block');}};
 </script>
 </html>

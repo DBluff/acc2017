@@ -49,11 +49,29 @@
                 <?php print render($page['homepage_hero_band']); ?>
             </div>
         <?php } ?>
+        <div class="row valign-wrapper nextStep">
+            <div class="col m4 s12 offset-m2 nextStepPrompt purple-text">
+                <h4 class="valign right-align">TAKE THE NEXT STEP</h4>
+            </div>
+            <div class="col m4 s12 valign nextStepButtons">
+                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">APPLY NOW</a>
+                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">REQUEST INFO</a>
+            </div>
+        </div>
         <?php if (!empty($page['content_band'])){ ?>
             <div class="contentBand">
                 <?php print render($page['content_band']); ?>
             </div>
         <?php } ?>
+    </div>
+    <div class="row valign-wrapper nextStep">
+        <div class="col m4 s12 offset-m2 nextStepPrompt purple-text">
+            <h4 class="valign right-align">TAKE THE NEXT STEP</h4>
+        </div>
+        <div class="col m4 s12 valign nextStepButtons">
+            <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">APPLY NOW</a>
+            <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">REQUEST INFO</a>
+        </div>
     </div>
     <div class="footer">
         <div class="valign-wrapper SocialIconBand">
@@ -75,44 +93,47 @@
         <div class="foot blue">
             <div class="container">
                 <div class="row white-text">
-                    <div class="col m1 s3">
-                        <i class="material-icons">error</i>
-                    </div>
-                    <div class="col m3 s9">
-                        General Information
+                    <div class="col m4 s12">
+                        <h5>General Information</h5>
                         <div class="footMenu">
                             <?php
                             $menua = menu_navigation_links('menu-general-information');
                             print theme('links__menu-general-information', array('links' => $menua));?>
                         </div>
                     </div>
-                    <div class="col m1 s3">
-                        <i class="material-icons">add_alert</i>
-                    </div>
-                    <div class="col m3 s9">
-                        Safety
+                    <div class="col m4 s12">
+                        <h5>Safety</h5>
                         <div class="footMenu">
                             <?php
                             $menua = menu_navigation_links('menu-safety');
                             print theme('links__menu-safety', array('links' => $menua));?>
                         </div>
                     </div>
-                    <div class="col m1 s3">
-                        <i class="material-icons">room</i>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <i class="material-icons">call</i>
-                    </div>
-                    <div class="col m3 s9">
-                        Austin Community College
-                        <div class="footMenu">
-                            5930 Middle Fiskville Rd <br /> Austin, Texas 78752
+                    <div class="col m4 s12">
+                        <h5>Austin Community College</h5>
+                        <div class="row">
+                            <div class="col s3">
+                                <i class="material-icons">room</i>
+                            </div>
+                            <div class="col s9 footMenu">
+                                5930 Middle Fiskville Rd <br /> Austin, Texas 78752
+                            </div>
                         </div>
                         <br />
-                        <div class="footTel">
-                            512-223-4ACC (4222)
+                        <div class="row">
+                            <div class="col s3">
+                                <i class="material-icons">call</i>
+                            </div>
+                            <div class="col s9 footTel">
+                                512-223-4ACC (4222)
+                            </div>
+                        </div>
+                        <div id="acc-logo-foot">
+                            <?php if ($logo){ ?>
+                                <a class="acc-logo-foot" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+                                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+                                </a>
+                            <?php }; ?>
                         </div>
                     </div>
                 </div>

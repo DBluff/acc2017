@@ -49,6 +49,15 @@
                 <?php print render($page['transparent_hero_band']); ?>
             </div>
         <?php } ?>
+        <div class="row valign-wrapper nextStep">
+            <div class="col m4 s12 offset-m2 nextStepPrompt purple-text">
+                <h4 class="valign right-align">TAKE THE NEXT STEP</h4>
+            </div>
+            <div class="col m4 s12 valign nextStepButtons">
+                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">APPLY NOW</a>
+                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">REQUEST INFO</a>
+            </div>
+        </div>
         <?php if (!empty($page['content'])){ ?>
             <div class="content">
                 <?php print render($page['content']); ?>
@@ -59,6 +68,15 @@
                 <?php print render($page['content_band']); ?>
             </div>
         <?php } ?>
+        <div class="row valign-wrapper nextStep">
+            <div class="col m4 s12 offset-m2 nextStepPrompt purple-text">
+                <h4 class="valign right-align">TAKE THE NEXT STEP</h4>
+            </div>
+            <div class="col m4 s12 valign nextStepButtons">
+                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">APPLY NOW</a>
+                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">REQUEST INFO</a>
+            </div>
+        </div>
     </div>
     <div class="footer page">
         <div class="valign-wrapper SocialIconBand">
