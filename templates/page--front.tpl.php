@@ -75,7 +75,7 @@
     </div>
     <div class="footer">
         <div class="valign-wrapper SocialIconBand">
-            <div class="row cream darken-1 social">
+            <div class="row cream social">
                 <div class="col m4 offset-m1 s12 bluegrey-text lighten-3">
                     WE'RE SOCIAL!
                 </div>

@@ -1,0 +1,111 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "annual-earnings": [
+          {
+            "earnings": 27493.04,
+            "percentile": 10
+          },
+          {
+            "earnings": 35289.56,
+            "percentile": 25
+          },
+          {
+            "earnings": 44229.05,
+            "percentile": 50
+          },
+          {
+            "earnings": 54193.41,
+            "percentile": 75
+          },
+          {
+            "earnings": 66286.4,
+            "percentile": 90
+          }
+        ],
+        "description": "Lay out, assemble, install, or maintain pipe systems, pipe supports, or related hydraulic or pneumatic equipment for steam, hot water, heating, cooling, lubricating, sprinkling, or industrial production or processing systems.",
+        "employment": [
+          {
+            "number": 2934,
+            "year": 2014
+          },
+          {
+            "number": 3038,
+            "year": 2015
+          },
+          {
+            "number": 3169,
+            "year": 2016
+          },
+          {
+            "number": 3263,
+            "year": 2017
+          },
+          {
+            "number": 3342,
+            "year": 2018
+          },
+          {
+            "number": 3410,
+            "year": 2019
+          },
+          {
+            "number": 3471,
+            "year": 2020
+          },
+          {
+            "number": 3513,
+            "year": 2021
+          },
+          {
+            "number": 3582,
+            "year": 2022
+          },
+          {
+            "number": 3645,
+            "year": 2023
+          },
+          {
+            "number": 3703,
+            "year": 2024
+          },
+          {
+            "number": 3756,
+            "year": 2025
+          },
+          {
+            "number": 3805,
+            "year": 2026
+          }
+        ],
+        "hourly-earnings": [
+          {
+            "earnings": 13.22,
+            "percentile": 10
+          },
+          {
+            "earnings": 16.97,
+            "percentile": 25
+          },
+          {
+            "earnings": 21.26,
+            "percentile": 50
+          },
+          {
+            "earnings": 26.05,
+            "percentile": 75
+          },
+          {
+            "earnings": 31.87,
+            "percentile": 90
+          }
+        ],
+        "onet-id": "47-2152.01",
+        "title": "Pipe Fitters and Steamfitters"
+      },
+      "id": "47-2152.01",
+      "type": "career"
+    }
+  ]
+}

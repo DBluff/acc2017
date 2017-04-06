@@ -22,18 +22,8 @@ div#searchIconList {
     text-align: center;
 }
 
-i.fa.fa-th {
-    padding: 5%;
-    border: solid 1px black;
-}
-
 i.fa.fa-th:hover {
     background-color: #1A5276;
-}
-
-i.fa.fa-list-ul {
-    padding: 5%;
-    border: solid 1px black;
 }
 
 i.fa.fa-list-ul:hover {
@@ -124,4 +114,89 @@ iframe#player {
 
 .row.testContent {
     margin-top: 5%;
+}
+
+.row.outerBorder {
+    padding: 2% 1%;
+    border: solid 3px #efefef;
+    margin-bottom: 0;
+}
+
+.col.m4.borderRight {
+    border-right: solid 1px #efefef;
+}
+
+.row.thin {
+    margin-bottom: 0;
+}
+
+.row.smallContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.collapsible-body {
+    height: 550px;
+}
+
+.collapsible-header.valign-wrapper.noBlock {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.bgQuestion {
+    padding: 20px 20px 100px 20px;
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    z-index: 10;
+}
+.bgQuestion::after {
+    color: #236FA0;
+    content: attr(data-bg-question);
+    display: block;
+    font-size: 30rem;
+    font-weight: 900;
+    line-height: 1;
+    position: absolute;
+    top: -10%;
+    left: 0px;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.noSideMargin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col.m6.s12.blue.white-text.nursingRight {
+    padding-left: 0;
+    border-left: .75rem solid white;
+}
+
+.col.m6.s12.blue.white-text.nursingLeft{
+    padding-right: 0;
+    border-right: .75rem solid white;
+}
+
+.header.solidClear {
+    height: 128px;
+}
+
+.row.acaImg.valign-wrapper {
+    background-image: url('/sites/all/themes/acc2017/img/academics-hero.jpg');
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.topContent.grey.white-text {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    text-align: center;
 }

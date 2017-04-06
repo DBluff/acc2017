@@ -18,6 +18,7 @@ stylesheets[all][] = fonts/gotham/gotham.css
 ;-------------------------------------------------------------------------------
 scripts[] = js/custom.js
 scripts[] = js/materialize.min.js
+scripts[] = temp/careerCoach/dynamicChart.js
 
 
 ; REGIONS

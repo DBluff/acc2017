@@ -50,9 +50,12 @@
     <title><?php print $head_title; ?></title>
     <?php print $head; ?>
     <?php print $styles; ?>
+    <script src='https://www.gstatic.com/charts/loader.js'></script>
+    <script> google.charts.load('current', {packages: ['corechart', 'line']});</script>
     <!-- HTML5 element support for IE6-8 -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script>
     <![endif]-->
 </head>
 
@@ -90,7 +93,11 @@
         jQuery(document).mouseup(function(){
             if(isOpen == true){
                 jQuery('.searchbox-icon').css('display','block');
-                submitIcon.click();}});});
+                submitIcon.click();}});
+        google.charts.setOnLoadCallback(drawChart);
+        jQuery('.collapsible').collapsible();
+        jQuery('.collapsible').collapsible('open', 0);
+    });
     function buttonUp(){
         var inputVal = jQuery('.searchbox-input').val();
         inputVal = jQuery.trim(inputVal).length;
@@ -98,25 +105,7 @@
             jQuery('.searchbox-icon').css('display','none');
         } else {
             jQuery('.searchbox-input').val('');
-            jQuery('.searchbox-icon').css('display','block');}}
-    jQuery(document).ready(function(){
-        jQuery("#searchIconGrid").click(function(){
-            jQuery("#AoSlist").hide();
-            jQuery("#AoSgrid").show();
-        });
-        jQuery("#searchIconList").click(function(){
-            jQuery("#AoSgrid").hide();
-            jQuery("#AoSlist").show();
-        });
-    });
-    jQuery(window).resize(function(){
-        jQuery('#fullHeight1').height(jQuery('#fullHeight1').width());
-        jQuery('#fullHeight2').height(jQuery('#fullHeight2').width());
-        jQuery('#fullHeight3').height(jQuery('#fullHeight3').width());
-        jQuery('#fullHeight4').height(jQuery('#fullHeight4').width());
-        jQuery('#fullHeight5').height(jQuery('#fullHeight5').width());
-        jQuery('#halfHeight1').height(jQuery('#halfHeight1').width()/2);
-        jQuery('#halfHeight2').height(jQuery('#halfHeight2').width()/2);
-    }).resize();
+            jQuery('.searchbox-icon').css('display','block');}
+    };
 </script>
 </html>

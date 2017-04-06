@@ -1,23 +1,26 @@
 <?php
+$node = menu_get_object();
+$heroImg = $node->field_hero_image[LANGUAGE_NONE][0]['uri'];
+$heroImg = file_create_url($heroImg);
 ?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
     <div class="content"<?php print $content_attributes; ?>>
         <div class="col s12">
-            <img class="responsive-img" src="<?php print $content ?>">
+            <img class="responsive-img" src="<?php print $heroImg ?>">
         </div>
     </div>
     <div class="row heroInfo">
         <?php
         $node = menu_get_object();
-        $AoStid = $node->field_aost[LANGUAGE_NONE][0]["tid"];
-        $AoSsub = $node->field_subtitle[LANGUAGE_NONE][0]["value"];
+        $AoStid = $node->field_aos[LANGUAGE_NONE][0]["tid"];
+        $AoSsub = $node->field_sub_title[LANGUAGE_NONE][0]["value"];
         $qResult = db_query('SELECT name FROM taxonomy_term_data WHERE tid=:AoStid', array(':AoStid' => $AoStid));
         $AoSrecord = $qResult->fetchCol();
         $AoSpieces = explode(' ', $AoSrecord[0]);
         ?>
         <div class="col s12 AoSicon">
-            <div class="valign-wrapper iconCircle" style="background-color:<?php print str_replace('Primary', '', $AoSpieces[1]);?>;">
-                <div class="valign AoSinitials" style="text-shadow: 4px 4px 0px <?php print str_replace('Shadow', '', $AoSpieces[2]);?>;"><?php print $AoSpieces[0]; ?></div>
+            <div class="valign-wrapper iconCircle">
+                <div class="valign AoSinitials"><img src="http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/<?php print $AoSpieces[0]; ?>.png"></div>
                     </div>
         </div>
         <div class="col s12 blockBreadcrumb">

@@ -1,0 +1,111 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "annual-earnings": [
+          {
+            "earnings": 35249.79,
+            "percentile": 10
+          },
+          {
+            "earnings": 47098.84,
+            "percentile": 25
+          },
+          {
+            "earnings": 58057.29,
+            "percentile": 50
+          },
+          {
+            "earnings": 71304.14,
+            "percentile": 75
+          },
+          {
+            "earnings": 86333.99,
+            "percentile": 90
+          }
+        ],
+        "description": "Directly supervise and coordinate activities of construction or extraction workers.",
+        "employment": [
+          {
+            "number": 4556,
+            "year": 2014
+          },
+          {
+            "number": 4988,
+            "year": 2015
+          },
+          {
+            "number": 5362,
+            "year": 2016
+          },
+          {
+            "number": 5469,
+            "year": 2017
+          },
+          {
+            "number": 5559,
+            "year": 2018
+          },
+          {
+            "number": 5643,
+            "year": 2019
+          },
+          {
+            "number": 5707,
+            "year": 2020
+          },
+          {
+            "number": 5746,
+            "year": 2021
+          },
+          {
+            "number": 5858,
+            "year": 2022
+          },
+          {
+            "number": 5957,
+            "year": 2023
+          },
+          {
+            "number": 6046,
+            "year": 2024
+          },
+          {
+            "number": 6124,
+            "year": 2025
+          },
+          {
+            "number": 6194,
+            "year": 2026
+          }
+        ],
+        "hourly-earnings": [
+          {
+            "earnings": 16.95,
+            "percentile": 10
+          },
+          {
+            "earnings": 22.64,
+            "percentile": 25
+          },
+          {
+            "earnings": 27.91,
+            "percentile": 50
+          },
+          {
+            "earnings": 34.28,
+            "percentile": 75
+          },
+          {
+            "earnings": 41.51,
+            "percentile": 90
+          }
+        ],
+        "onet-id": "47-1011.00",
+        "title": "First-Line Supervisors of Construction Trades and Extraction Workers"
+      },
+      "id": "47-1011.00",
+      "type": "career"
+    }
+  ]
+}

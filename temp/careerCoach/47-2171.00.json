@@ -1,0 +1,111 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "annual-earnings": [
+          {
+            "earnings": 25331.21,
+            "percentile": 10
+          },
+          {
+            "earnings": 28700.03,
+            "percentile": 25
+          },
+          {
+            "earnings": 33394.92,
+            "percentile": 50
+          },
+          {
+            "earnings": 37237.77,
+            "percentile": 75
+          },
+          {
+            "earnings": 39611.59,
+            "percentile": 90
+          }
+        ],
+        "description": "Position and secure steel bars or mesh in concrete forms in order to reinforce concrete. Use a variety of fasteners, rod-bending machines, blowtorches, and hand tools. Includes rod busters.",
+        "employment": [
+          {
+            "number": 345,
+            "year": 2014
+          },
+          {
+            "number": 409,
+            "year": 2015
+          },
+          {
+            "number": 437,
+            "year": 2016
+          },
+          {
+            "number": 451,
+            "year": 2017
+          },
+          {
+            "number": 464,
+            "year": 2018
+          },
+          {
+            "number": 475,
+            "year": 2019
+          },
+          {
+            "number": 486,
+            "year": 2020
+          },
+          {
+            "number": 494,
+            "year": 2021
+          },
+          {
+            "number": 507,
+            "year": 2022
+          },
+          {
+            "number": 519,
+            "year": 2023
+          },
+          {
+            "number": 529,
+            "year": 2024
+          },
+          {
+            "number": 540,
+            "year": 2025
+          },
+          {
+            "number": 549,
+            "year": 2026
+          }
+        ],
+        "hourly-earnings": [
+          {
+            "earnings": 12.18,
+            "percentile": 10
+          },
+          {
+            "earnings": 13.8,
+            "percentile": 25
+          },
+          {
+            "earnings": 16.06,
+            "percentile": 50
+          },
+          {
+            "earnings": 17.9,
+            "percentile": 75
+          },
+          {
+            "earnings": 19.04,
+            "percentile": 90
+          }
+        ],
+        "onet-id": "47-2171.00",
+        "title": "Reinforcing Iron and Rebar Workers"
+      },
+      "id": "47-2171.00",
+      "type": "career"
+    }
+  ]
+}
