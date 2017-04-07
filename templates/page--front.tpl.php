@@ -50,12 +50,12 @@
             </div>
         <?php } ?>
         <div class="row valign-wrapper nextStep">
-            <div class="col m4 s12 offset-m2 nextStepPrompt purple-text">
-                <h4 class="valign right-align">TAKE THE NEXT STEP</h4>
+            <div class="col m4 s12 offset-m2 nextStepPrompt orange-text">
+                <h4 class="valign right-align">LET US HELP YOU</h4>
             </div>
             <div class="col m4 s12 valign nextStepButtons">
-                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">APPLY NOW</a>
-                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">REQUEST INFO</a>
+                <a class="waves-effect waves-light btn-large orange white-text left-align">APPLY NOW</a>
+                <a class="waves-effect waves-light btn-large orange white-text left-align">REQUEST INFO</a>
             </div>
         </div>
         <?php if (!empty($page['content_band'])){ ?>

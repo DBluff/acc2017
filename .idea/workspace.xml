@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1253e96-7a14-49ea-b37c-5fa03c3375ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ACCMSA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/development.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/johnnurse.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/nurses.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/readiness.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/transfer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/workforce.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/html--node--80.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/html--node--81.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/page--node--49.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/page--promotional_program.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/page--promotional_program_page_nursing.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wholePage.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/page--promotional_page_transparent_.tpl.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acc2017.info" afterPath="$PROJECT_DIR$/acc2017.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/temp.css" afterPath="$PROJECT_DIR$/css/temp.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete.php" afterPath="$PROJECT_DIR$/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php" afterPath="$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/html--front.tpl.php" afterPath="$PROJECT_DIR$/templates/html--front.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--front.tpl.php" afterPath="$PROJECT_DIR$/templates/page--front.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page.tpl.php" afterPath="$PROJECT_DIR$/templates/page.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--node--49.tpl.php" afterPath="$PROJECT_DIR$/templates/page--node--49.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--promotional_program.tpl.php" afterPath="$PROJECT_DIR$/templates/page--promotional_program.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitdel.php" afterPath="$PROJECT_DIR$/twitdel.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,58 +30,48 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="delete.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+            <state relative-caret-position="418">
+              <caret line="21" column="76" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1491518621969" expanded="true" signature="1027:1062" ph="SELECT name taxonomy_term_data" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1491600688015" expanded="true" signature="1105:1152" ph="SELECT name taxonomy_term_data" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page--node--49.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/page--node--49.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="165" column="24" lean-forward="true" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
-              <folding>
-                <marker date="1491517562979" expanded="true" signature="7968:8481" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="8547:8867" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="8583:8867" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="8628:8867" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="8673:8867" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="8773:8867" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="9103:9284" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="9190:9284" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="9494:10598" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="9594:9952" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="9643:9745" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="9803:9921" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="10024:10350" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="10073:10175" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="10232:10319" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="10399:10598" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="10542:10598" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="10984:11271" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="11022:11271" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="11071:11271" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="11127:11271" ph="..." />
-                <marker date="1491517562979" expanded="true" signature="11177:11271" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="temp.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="temp.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/temp.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="193" column="20" lean-forward="false" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="20" />
+            <state relative-caret-position="765">
+              <caret line="222" column="30" lean-forward="true" selection-start-line="222" selection-start-column="30" selection-end-line="222" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="html--front.tpl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/html--front.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="167" column="176" lean-forward="false" selection-start-line="167" selection-start-column="176" selection-end-line="167" selection-end-column="176" />
+              <folding>
+                <marker date="1491600020377" expanded="true" signature="2854:2991" ph="SELECT entit... field_data_field_alert_active_" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page--front.tpl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/page--front.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="53" column="62" lean-forward="false" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -114,11 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>statuses</find>
-      <find>s</find>
-      <find>&quot; [&quot;text&quot;]=&gt; string(</find>
-      <find>AoSi</find>
-      <find>60px</find>
       <find>next</find>
       <find>ACCMSA</find>
       <find>strong</find>
@@ -144,6 +113,11 @@
       <find>hero</find>
       <find>testi</find>
       <find>border</find>
+      <find>autocomplete</find>
+      <find>65%</find>
+      <find>exc</find>
+      <find>style</find>
+      <find>but</find>
     </findStrings>
     <replaceStrings>
       <replace>m2</replace>
@@ -174,20 +148,20 @@
         <option value="$PROJECT_DIR$/temp/careerCoach/data_47-2152.01.json" />
         <option value="$PROJECT_DIR$/temp/careerCoach/data_47-2171.00.json" />
         <option value="$PROJECT_DIR$/temp/careerCoach/dynamicChart.js" />
-        <option value="$PROJECT_DIR$/templates/html--front.tpl.php" />
         <option value="$PROJECT_DIR$/templates/html--node--80.tpl.php" />
         <option value="$PROJECT_DIR$/templates/html--node--56.tpl.php" />
-        <option value="$PROJECT_DIR$/twitdel.php" />
         <option value="$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php" />
         <option value="$PROJECT_DIR$/wholePage.php" />
         <option value="$PROJECT_DIR$/templates/page--promotional_program_page_.tpl.php" />
-        <option value="$PROJECT_DIR$/templates/page--front.tpl.php" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/templates/page--promotional_program.tpl.php" />
         <option value="$PROJECT_DIR$/templates/page--promotional_program_page_nursing.tpl.php" />
-        <option value="$PROJECT_DIR$/css/temp.css" />
         <option value="$PROJECT_DIR$/templates/page--node--49.tpl.php" />
+        <option value="$PROJECT_DIR$/twitdel.php" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/templates/html--front.tpl.php" />
         <option value="$PROJECT_DIR$/delete.php" />
+        <option value="$PROJECT_DIR$/templates/page--front.tpl.php" />
+        <option value="$PROJECT_DIR$/css/temp.css" />
       </list>
     </option>
   </component>
@@ -256,71 +230,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careerCoach" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acc2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acc2017" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acc2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acc2017" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acc2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acc2017" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acc2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acc2017" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acc-icons" />
+              <option name="myItemId" value="inc" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -461,12 +371,12 @@
       <updated>1490804100392</updated>
       <workItem from="1490804101626" duration="61050000" />
       <workItem from="1491227556090" duration="40116000" />
-      <workItem from="1491402173852" duration="51223000" />
+      <workItem from="1491402173852" duration="69393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152389000" />
+    <option name="totallyTimeSpent" value="170559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="1040" extended-state="6" />
@@ -517,8 +427,8 @@
         <state relative-caret-position="190">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="23" />
           <folding>
-            <marker date="1491499440781" expanded="true" signature="664:717" ph="SELECT name taxonomy_term_data" />
-            <marker date="1491499440781" expanded="true" signature="1225:1329" ph="..." />
+            <marker date="1491499440000" expanded="true" signature="664:717" ph="SELECT name taxonomy_term_data" />
+            <marker date="1491499440000" expanded="true" signature="1225:1329" ph="..." />
           </folding>
         </state>
       </provider>
@@ -546,7 +456,8 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1491518621969" expanded="true" signature="1027:1062" ph="SELECT name taxonomy_term_data" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1491600688015" expanded="true" signature="1105:1152" ph="SELECT name taxonomy_term_data" />
           </folding>
         </state>
       </provider>
@@ -574,7 +485,8 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1491518621969" expanded="true" signature="1027:1062" ph="SELECT name taxonomy_term_data" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1491600688015" expanded="true" signature="1105:1152" ph="SELECT name taxonomy_term_data" />
           </folding>
         </state>
       </provider>
@@ -707,16 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/materialize.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -729,14 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/html--front.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="118" column="72" lean-forward="true" selection-start-line="118" selection-start-column="72" selection-end-line="118" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -759,37 +653,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitdel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="56" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="6" />
-          <folding>
-            <marker date="1491499440781" expanded="true" signature="664:717" ph="SELECT name taxonomy_term_data" />
-            <marker date="1491499440781" expanded="true" signature="1225:1329" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/page--promotional_program_page_.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="461" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="541" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="869" column="1" lean-forward="false" selection-start-line="869" selection-start-column="1" selection-end-line="869" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -829,14 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page--front.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="48" column="67" lean-forward="true" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -845,11 +704,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/temp.css">
+    <entry file="file://$PROJECT_DIR$/templates/page--promotional_program_page_nursing.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="193" column="20" lean-forward="false" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="1129">
+          <caret line="178" column="83" lean-forward="false" selection-start-line="178" selection-start-column="78" selection-end-line="178" selection-end-column="83" />
+          <folding>
+            <marker date="1491513288000" expanded="true" signature="3015:3068" ph="SELECT name taxonomy_term_data" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -858,61 +719,133 @@
         <state relative-caret-position="760">
           <caret line="165" column="24" lean-forward="true" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
           <folding>
-            <marker date="1491517562979" expanded="true" signature="7968:8481" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="8547:8867" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="8583:8867" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="8628:8867" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="8673:8867" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="8773:8867" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="9103:9284" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="9190:9284" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="9494:10598" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="9594:9952" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="9643:9745" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="9803:9921" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="10024:10350" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="10073:10175" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="10232:10319" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="10399:10598" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="10542:10598" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="10984:11271" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="11022:11271" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="11071:11271" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="11127:11271" ph="..." />
-            <marker date="1491517562979" expanded="true" signature="11177:11271" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="7968:8481" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="8547:8867" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="8583:8867" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="8628:8867" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="8673:8867" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="8773:8867" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="9103:9284" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="9190:9284" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="9494:10598" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="9594:9952" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="9643:9745" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="9803:9921" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="10024:10350" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="10073:10175" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="10232:10319" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="10399:10598" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="10542:10598" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="10984:11271" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="11022:11271" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="11071:11271" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="11127:11271" ph="..." />
+            <marker date="1491578985000" expanded="true" signature="11177:11271" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page--promotional_program_page_nursing.tpl.php">
+    <entry file="file://$PROJECT_DIR$/js/materialize.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1129">
-          <caret line="178" column="83" lean-forward="false" selection-start-line="178" selection-start-column="78" selection-end-line="178" selection-end-column="83" />
+        <state relative-caret-position="472">
+          <caret line="8" column="317" lean-forward="false" selection-start-line="7" selection-start-column="30348" selection-end-line="8" selection-end-column="317" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitdel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="73" selection-end-column="6" />
           <folding>
-            <marker date="1491513288120" expanded="true" signature="3015:3068" ph="SELECT name taxonomy_term_data" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#a#0;n#div#0;n#a#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1491578043395" expanded="true" signature="1040:1075" ph="SELECT name taxonomy_term_data" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/menu.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../themes/bartik/templates/node.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="91" column="32" lean-forward="true" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/block--transparent_hero_band.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="22" column="90" lean-forward="false" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
+          <folding>
+            <marker date="1491499440000" expanded="true" signature="664:717" ph="SELECT name taxonomy_term_data" />
+            <marker date="1491499440000" expanded="true" signature="1225:1329" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="820" column="12" lean-forward="false" selection-start-line="820" selection-start-column="12" selection-end-line="820" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/page--promotional_program.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
-          <caret line="276" column="94" lean-forward="false" selection-start-line="276" selection-start-column="37" selection-end-line="276" selection-end-column="94" />
+          <caret line="276" column="42" lean-forward="false" selection-start-line="276" selection-start-column="17" selection-end-line="276" selection-end-column="42" />
           <folding>
-            <marker date="1491506929871" expanded="true" signature="2988:3041" ph="SELECT name taxonomy_term_data" />
+            <marker date="1491518199000" expanded="true" signature="2988:3041" ph="SELECT name taxonomy_term_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/html--front.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="167" column="176" lean-forward="false" selection-start-line="167" selection-start-column="176" selection-end-line="167" selection-end-column="176" />
+          <folding>
+            <marker date="1491600020377" expanded="true" signature="2854:2991" ph="SELECT entit... field_data_field_alert_active_" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        <state relative-caret-position="418">
+          <caret line="21" column="76" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1491518621969" expanded="true" signature="1027:1062" ph="SELECT name taxonomy_term_data" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1491600688015" expanded="true" signature="1105:1152" ph="SELECT name taxonomy_term_data" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page--front.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="53" column="62" lean-forward="false" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/temp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="222" column="30" lean-forward="true" selection-start-line="222" selection-start-column="30" selection-end-line="222" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

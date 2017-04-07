@@ -2,7 +2,13 @@
 * {
     font-size: 100%;
     font-family: 'Gotham', 'Droid Serif', 'Archivo Black';
-    font-weight:400;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2em;
 }
 
 /*Overwrite Materialize Colors with ACC Specific colors*/
@@ -799,7 +805,7 @@ div#acc-logo img {
     z-index: 100;
     top: 0;
     right: 0;
-    width: 65%;
+    width: 45%;
 }
 
 .audID {
@@ -812,7 +818,7 @@ div#acc-logo img {
     position: absolute;
     top: 64px;
     right: 0;
-    width: 75%;
+    width: 55%;
     z-index: 100;
     margin: 0;
 }
@@ -1108,13 +1114,18 @@ input.searchbox-input {
 
 /*begin jamie's mods 20170404*/
 
-.row.prim_menu{padding-left:2%;}
-nav ul a{font-size:1.2rem;font-weight:300;}
+.row.prim_menu {
+    padding-left: 2%;
+}
+
+.row.prim_menu .primaryMenu ul li a {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
 
 /*sort out typography*/
-/*p{color:#212121;}*/
 
-
+/*==============home page============*/
 /*hero graphic text*/
 .row.Title h1 {
     font-weight: 700;
@@ -1129,17 +1140,29 @@ nav ul a{font-size:1.2rem;font-weight:300;}
 
 /*add padding to row-band*/
 .row-band {
-    padding-top:2%;
-    padding-bottom:2%;
-    margin-bottom:0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 0;
 }
 
 /*style band titles*/
-.band-title {
+.band-title, h4 {
     font-weight: 300;
     padding: 1% 0 1% 1%;
+    text-transform: capitalize;
 }
-
+/*aos band*/
+.input.pSearch input[type=search] {
+    border-bottom: 1px solid #148F76;
+    padding-left: 5% !important;
+}
+.input.pSearch input[type=search]:focus {
+    background-color: transparent;
+    border-bottom: 1px solid #148F76 !important;
+}
+.input.pSearch input[type=search] {
+    color: #1A5276 !important;
+}
 /*tab styling*/
 .tabs .tab a:hover, .tabs .tab a.active {
     background-color: #1A5276 !important;
@@ -1155,6 +1178,10 @@ ul.tabs div.indicator {
     height: 2px;
 }
 
+div#spotlight.col.s12.tab-content, div#events.col.s12.tab-content {
+    padding-top: 5%;
+}
+
 /*fast stats styles*/
 .BCcardHead h5 {
     margin: 0 auto;
@@ -1162,9 +1189,12 @@ ul.tabs div.indicator {
     font-weight: 300;
 }
 
+/*==============/home page============*/
 
+/*==============Academics page============*/
+.row-band.green.AcademicsWWO, .row-band.AcademicsAoS, .row-band.AcademicsHS, .row-band.AcademicsSTEO, .row-band.AcademicsCE{margin-left:0!important;margin-right:0!important;}
 
-/*neutral colors & aos colors*/
+/*========neutral colors & aos colors==========*/
 .grey.lighten-5 {
     background-color: #fafafa !important;
 }

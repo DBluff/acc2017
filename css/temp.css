@@ -66,10 +66,6 @@ iframe#player {
     font-size: 2rem;
 }
 
-.col.m4.s12.nextStepButtons .btn-flat {
-    border: solid 2px #5B2C6F;
-}
-
 .row.nextStep {
     height: 200px;
     margin: 0;
@@ -199,4 +195,30 @@ iframe#player {
     top: 0;
     width: 30%;
     text-align: center;
+}
+
+h4.aos-card a {
+    color: black;
+}
+
+.toast {
+    padding:0;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.row.alertToast {
+    min-height: 100px;
+    width: 500px;
+    color: #000000;
+    padding: 3% 5% 5% 5%;
+}
+
+.alertTitle h5{
+    font-weight: 600;
+}
+
+.nextStepButtons a:hover {
+    background-color: #ffffff !important;
+    color: #E3902C !important;
 }

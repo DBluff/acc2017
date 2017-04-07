@@ -65,6 +65,39 @@
 <?php print $page; ?>
 <?php print $page_bottom; ?>
 <?php print $scripts; ?>
+<?php
+$alertRows = db_query('SELECT entity_id, field_alert_active__value FROM field_data_field_alert_active_ WHERE field_alert_active__value=1 ORDER BY entity_id DESC');
+$alerts = $alertRows->fetchCol();
+if ($alerts) {
+    foreach ($alerts as $alert) {
+        $alertDisplay = entity_load_single('node', $alert);
+        if ($alertDisplay->field_alert_type[LANGUAGE_NONE][0]['tid'] === '11') {
+            $alertColor = 'bluegrey lighten-3';
+            $alertBar = '#607D8B';
+        }
+        if ($alertDisplay->field_alert_type[LANGUAGE_NONE][0]['tid'] === '12') {
+            $alertColor = 'green lighten-3';
+            $alertBar = '#17A589';
+        }
+        if ($alertDisplay->field_alert_type[LANGUAGE_NONE][0]['tid'] === '13') {
+            $alertColor = 'blue lighten-3';
+            $alertBar = '#2E86C1';
+        }
+        if ($alertDisplay->field_alert_type[LANGUAGE_NONE][0]['tid'] === '14') {
+            $alertColor = 'orange lighten-3';
+            $alertBar = '#FFD420';
+        }
+        if ($alertDisplay->field_alert_type[LANGUAGE_NONE][0]['tid'] === '15') {
+            $alertColor = 'red lighten-3';
+            $alertBar = '#FF5252';
+        }
+        if ($alertDisplay->field_alert_type[LANGUAGE_NONE][0]['tid'] === '16') {
+            $alertColor = 'purple lighten-3';
+            $alertBar = '#7D3C98';
+        }
+    }
+}
+?>
 </body>
 <script>
     jQuery(document).ready(function(){
@@ -108,6 +141,32 @@
             jQuery("#AoSgrid").hide();
             jQuery("#AoSlist").show();
         });
+        jQuery('input.autocomplete').autocomplete({
+            data: {
+                "Welding Technology": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/default/files/inez-round.png',
+                "Nursing": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/default/files/john-circle.png',
+                "Health Sciences": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/anne-circle.png',
+                "Arts, Digital Media, and Communications": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/claudia-circle.png',
+                "Public and Social Sciences": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/jai-circle.png',
+                "Business": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/ricardo-circle.png',
+                "Education": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/kelly-circle.png',
+                "Culinary, Hospitality, and Tourism": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/abimael.png',
+                "Computer Sciences and Information Technology": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/anya.png',
+                "Science, Engineering, and Math": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/sonja-circle.png',
+                "Liberal Arts": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/cassie-round.png'
+            },
+            limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+            onAutocomplete: function(val) {
+                if (val=="Nursing") {
+                    window.location.href = "http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/areasofstudy/hs/nursing";
+                } else {
+                    window.location.href = "http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/areasofstudy/dmcat/weldingtechnology";
+                }
+            },
+            minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+        });
+        var $toastContent = jQuery('<div class="row alertToast <?php print $alertColor; ?>" style="border-left:solid 30px <?php print $alertBar; ?>"><div class="alertTitle"><h5><?php print $alertDisplay->title; ?></h5></div><div class="alertBody"><?php print $alertDisplay->field_alert_message[LANGUAGE_NONE][0]['value']; ?></div></div></div>');
+        Materialize.toast($toastContent, 999999);
     });
     jQuery(window).resize(function(){
         jQuery('#fullHeight1').height(jQuery('#fullHeight1').width());

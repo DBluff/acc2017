@@ -121,11 +121,11 @@ $node = menu_get_object();
             </div>
         <?php } ?>
         <div class="divider"></div>
-        <div class="row row-band">
+        <div class="row row-band z-depth-1-half">
             <div class="container">
                 <div class="section">
                     <div class="col m8 s12 blue white-text">
-                        <h5 class="band-title">LEARN TO SHAPE THE WORLD AROUND US</h5>
+                        <h4 class="band-title">learn to shape the world around us</h4>
                     </div>
                 </div>
                 <br>
@@ -141,28 +141,28 @@ $node = menu_get_object();
         </div>
         <div class="divider"></div>
         <div class="row noSideMargin">
-            <div class="col m5 s12 blue white-text"><h5>SKILLS YOU GAIN</h5></div>
-            <div class="col m6 s12 offset-m1 blue white-text"><h5>POSSIBLE JOB TITLES</h5></div>
+            <div class="col m5 s12 blue white-text"><h4>skills you gain</h4></div>
+            <div class="col m6 s12 offset-m1 blue white-text"><h4>possible job titles</h4></div>
         </div>
         <div class="row smallContainer">
             <div class="row">
                 <div class="col m5 s12">
                     <br/>
-                    <h5>
+                    <p>
                         Students build expertise in blueprint interpretation, layout and fabrication, plate and pipe
                         welding,
                         ultrasonic testing, and welding inspection (including preparation for the Certified Welding
                         Inspector
                         Exam).
-                    </h5>
+                    </p>
                     <br/>
-                    <h5>
+                    <p>
                         Graduates are employed in a wide range of organizations in fields such as construction,
                         engineering,
                         infrastructure, semiconductor, metallurgy, oil and gas, and industrial inspection, not to
                         mention local
                         specialty manufacturing, welding, and machine shops.
-                    </h5>
+                    </p>
                     <br/>
                     <a href="#">Program Map ></a>
                 </div>
@@ -293,7 +293,7 @@ $node = menu_get_object();
         </div>
         <div class="row awardsPath">
             <div class="col m6">
-                <div class="col m12 blue white-text"><h5>AVAILABLE AWARDS</h5></div>
+                <div class="col m12 blue white-text"><h4>available awards</h4></div>
                 <div class="col m4 valign-wrapper">
                     <div class="col m4 valign">
                         <img src="/sites/all/themes/acc2017/fonts/acc-icons/acc-aas.svg">
@@ -309,7 +309,7 @@ $node = menu_get_object();
                     <a class="valign" href="#">Visit Awards Page ></a>
                 </div>
                 <div class="col m12">
-                    <h6>ASSOCIATE DEGREES</h6>
+                    <h5>ASSOCIATE DEGREES</h5>
                     <ul>
                         <li><a href="#">Welding Tech- Art Metals: Blacksmithing Specialization (Associate of Applied
                                 Science)</a></li>
@@ -320,7 +320,7 @@ $node = menu_get_object();
                 <br/>
                 <br/>
                 <div class="col m12">
-                    <h6>WORKFORCE CERTIFICATES</h6>
+                    <h5>WORKFORCE CERTIFICATES</h5>
                     <ul>
                         <li><a href="#">Art Metals: Blacksmithing Welding Technology (Certificate Level 1)</a></li>
                         <li><a href="#">Inspection Welding Technology (Certificate Level 1)</a></li>
@@ -331,14 +331,15 @@ $node = menu_get_object();
                 </div>
             </div>
             <div class="col m5 offset-m1 valign-wrapper blue white-text">
-                <h5 class="valign bgQuestion" data-bg-question="?">
-                    <b>Which award path is right for you?</b><br/>
-                    ACC offers a variety of degree and certificate options to get you ready for the next step in your
+                <div class="valign bgQuestion" data-bg-question="?">
+                    <h5>Which award path is right for you?</h5><br/>
+                  <p>  ACC offers a variety of degree and certificate options to get you ready for the next step in your
                     academic and career journey. Choosing the right award path is an important first step to reach your
                     short and long-term goals. Visit our awards page to learn about the types of credentials we offer
-                    and the differences between each.
-                </h5>
+                    and the differences between each.</p>
+                </div>
             </div>
+        </div>
         </div>
         <?php
         $entityLoad = entity_load('field_collection_item', array($node->field_department_contact[LANGUAGE_NONE][0]['value']));
