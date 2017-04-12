@@ -1,11 +1,18 @@
 .square {
     width: 100%;
+    background-size: contain;
 }
 
 .square:after {
     content: "";
     display: block;
     padding-bottom: 100%;
+}
+
+.rectangle:after {
+    padding-bottom: 44%;
+    display: block;
+    content: '';
 }
 
 .valign.AoSinitialsHome {
@@ -35,8 +42,8 @@ i.fa.fa-list-ul:hover {
 .col.m4.mason,
 .col.m6.mason,
 .col.m12.mason {
-    margin: 0!important;
-    padding: 0!important;
+    margin: 0 !important;
+    padding: 0 !important;
     overflow: hidden;
     position: relative;
 }
@@ -77,7 +84,7 @@ iframe#player {
 
 .col.m12.valign-wrapper.purple.BCcardHead,
 .col.m12.valign-wrapper.green.BCcardHead,
-.col.m12.valign-wrapper.bluegrey.BCcardHead{
+.col.m12.valign-wrapper.bluegrey.BCcardHead {
     min-height: 100px;
 }
 
@@ -99,7 +106,7 @@ iframe#player {
     top: 10%;
     width: 100%;
     padding-left: 41.6666666667%;
-    border:solid;
+    border: solid;
     z-index: -1;
     height: 80%;
 }
@@ -148,6 +155,7 @@ iframe#player {
     overflow: hidden;
     z-index: 10;
 }
+
 .bgQuestion::after {
     color: #236FA0;
     content: attr(data-bg-question);
@@ -172,7 +180,7 @@ iframe#player {
     border-left: .75rem solid white;
 }
 
-.col.m6.s12.blue.white-text.nursingLeft{
+.col.m6.s12.blue.white-text.nursingLeft {
     padding-right: 0;
     border-right: .75rem solid white;
 }
@@ -202,7 +210,7 @@ h4.aos-card a {
 }
 
 .toast {
-    padding:0;
+    padding: 0;
     box-shadow: none;
     background-color: transparent;
 }
@@ -214,11 +222,200 @@ h4.aos-card a {
     padding: 3% 5% 5% 5%;
 }
 
-.alertTitle h5{
+.alertTitle h5 {
     font-weight: 600;
 }
 
 .nextStepButtons a:hover {
     background-color: #ffffff !important;
     color: #E3902C !important;
+}
+
+/*Menu Styling*/
+.searchContainer {
+    z-index: 1;
+}
+
+#navPrim {
+    position: absolute;
+    top: 56px;
+    z-index: 1;
+    right: 0;
+    width: 60%;
+}
+
+#navAud {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 56px;
+    width: 50%;
+}
+
+#searchAdj {
+    position: absolute;
+    top: 0;
+    right: 56px;
+    z-index: 2;
+}
+
+.searchbox {
+    position: relative;
+    min-width: 56px;
+    width: 0%;
+    height: 56px;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+.searchbox-input {
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    background: #dcddd8;
+    width: 100%;
+    height: 56px;
+    margin: 0;
+    padding: 0px 55px 0px 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.searchbox-input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.searchbox-input:-moz-placeholder {
+    color: #ffffff;
+}
+
+.searchbox-input::-moz-placeholder {
+    color: #ffffff;
+}
+
+.searchbox-input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.searchbox-icon,
+.searchbox-submit {
+    width: 56px;
+    height: 56px;
+    display: block;
+    position: absolute;
+    top: 0;
+    font-family: Gotham;
+    font-size: 22px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    color: #dcddd8;
+    background: #1F618B;
+}
+
+.searchbox-open {
+    width: 100%;
+    background-color: #1F618B;
+}
+
+audIDnav {
+    background-color: #1A5276;
+}
+
+.audID ul.LINKS {
+    float: right;
+    padding-right: 168px;
+}
+
+#audIDnav {
+    height: 56px;
+}
+
+.audID ul.LINKS a {
+    font-size: .93rem;
+}
+
+.primaryMenu ul.links {
+    float: right;
+    padding-right: 168px;
+}
+
+.row.prim_menu a {
+    font-weight: 400;
+    font-size: 1.07rem;
+}
+
+.homeSpotlight .carousel .carousel-item {
+    width: 40%;
+    height: 600px;
+}
+
+.homeSpotlight .carousel {
+    height: 700px;
+}
+
+.SpotlightTitle {
+    text-align: center;
+}
+
+.row.aud_menu.bluegrey {
+    height: 56px;
+    margin-bottom: 0;
+}
+
+.audIDbottom ul.links li {
+    height: 56px;
+}
+
+.audIDbottom ul.links li a {
+    height: 56px;
+}
+
+#navFoot {
+    height: 56px;
+    position: relative;
+}
+
+.nav-wrapper.foot {
+    height: 56px;
+}
+
+.row.social i.fa {
+    background-color: #ffffff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.row.events {
+    margin-bottom: 0;
+}
+
+.col.m4.s12.eventRightBorder {
+    border-right: solid 1px #efefef;
+    padding: 4% 4% 2% 4%;
+}
+
+.col.m4.s12.eventNoBorder{
+    padding: 4% 4% 2% 4%;
+}
+
+#searchFoot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
 }

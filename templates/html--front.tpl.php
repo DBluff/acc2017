@@ -44,7 +44,8 @@
  * @ingroup themeable
  */
 ?><!DOCTYPE html>
-<html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>" class="no-js" <?php print $rdf_namespaces; ?>>
+<html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"
+      class="no-js" <?php print $rdf_namespaces; ?>>
 <head profile="<?php print $grddl_profile; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title><?php print $head_title; ?></title>
@@ -56,7 +57,7 @@
     <![endif]-->
 </head>
 
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
+<body class="<?php print $classes; ?>" <?php print $attributes; ?>>
 
 <div id="skip-link">
     <a href="#middle-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
@@ -100,44 +101,68 @@ if ($alerts) {
 ?>
 </body>
 <script>
-    jQuery(document).ready(function(){
+    jQuery(document).ready(function () {
+        jQuery('.carousel').carousel();
         var submitIcon = jQuery('.searchbox-icon');
         var inputBox = jQuery('.searchbox-input');
         var searchBox = jQuery('.searchbox');
         var isOpen = false;
-        submitIcon.click(function(){
-            if(isOpen == false){
+        var negative = '-';
+        var pixels = 'px';
+        submitIcon.click(function () {
+            var moveLeft = jQuery( window ).width() - jQuery('#audIDnav').width();
+            if (isOpen == false) {
                 searchBox.addClass('searchbox-open');
                 inputBox.focus();
                 isOpen = true;
-                document.getElementById('searchAdj').style.zIndex=999;}
+                document.getElementById('searchAdj').style.zIndex = 999;
+                document.getElementById('searchAdj').style.width = moveLeft + pixels;
+                document.getElementById('searchFoot').style.zIndex = 999;
+                document.getElementById('searchFoot').style.width = moveLeft + pixels;
+                document.getElementById('audIDnav').style.position = 'absolute';
+                document.getElementById('audIDnav').style.left = negative + moveLeft + pixels;
+            }
             else {
                 searchBox.removeClass('searchbox-open');
-                document.getElementById('searchAdj').style.zIndex=1;
+                document.getElementById('searchAdj').style.zIndex = 1;
+                document.getElementById('searchAdj').style.width = '56px';
+                document.getElementById('searchFoot').style.zIndex = 1;
+                document.getElementById('searchFoot').style.width = '56px';
+                document.getElementById('audIDnav').style.position = 'inherit';
                 inputBox.focusout();
-                isOpen = false;}});
-        submitIcon.mouseup(function(){
-            return false;});
-        searchBox.mouseup(function(){
-            return false;});
-        jQuery(document).mouseup(function(){
-            if(isOpen == true){
-                jQuery('.searchbox-icon').css('display','block');
-                submitIcon.click();}});});
-    function buttonUp(){
+                isOpen = false;
+            }
+        });
+        submitIcon.mouseup(function () {
+            return false;
+        });
+        searchBox.mouseup(function () {
+            return false;
+        });
+        jQuery(document).mouseup(function () {
+            if (isOpen == true) {
+                jQuery('.searchbox-icon').css('display', 'block');
+                submitIcon.click();
+            }
+        });
+    })
+    ;
+    function buttonUp() {
         var inputVal = jQuery('.searchbox-input').val();
         inputVal = jQuery.trim(inputVal).length;
-        if( inputVal !== 0){
-            jQuery('.searchbox-icon').css('display','none');
+        if (inputVal !== 0) {
+            jQuery('.searchbox-icon').css('display', 'none');
         } else {
             jQuery('.searchbox-input').val('');
-            jQuery('.searchbox-icon').css('display','block');}}
-    jQuery(document).ready(function(){
-        jQuery("#searchIconGrid").click(function(){
+            jQuery('.searchbox-icon').css('display', 'block');
+        }
+    }
+    jQuery(document).ready(function () {
+        jQuery("#searchIconGrid").click(function () {
             jQuery("#AoSlist").hide();
             jQuery("#AoSgrid").show();
         });
-        jQuery("#searchIconList").click(function(){
+        jQuery("#searchIconList").click(function () {
             jQuery("#AoSgrid").hide();
             jQuery("#AoSlist").show();
         });
@@ -156,8 +181,8 @@ if ($alerts) {
                 "Liberal Arts": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/cassie-round.png'
             },
             limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
-            onAutocomplete: function(val) {
-                if (val=="Nursing") {
+            onAutocomplete: function (val) {
+                if (val == "Nursing") {
                     window.location.href = "http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/areasofstudy/hs/nursing";
                 } else {
                     window.location.href = "http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/areasofstudy/dmcat/weldingtechnology";
@@ -168,14 +193,14 @@ if ($alerts) {
         var $toastContent = jQuery('<div class="row alertToast <?php print $alertColor; ?>" style="border-left:solid 30px <?php print $alertBar; ?>"><div class="alertTitle"><h5><?php print $alertDisplay->title; ?></h5></div><div class="alertBody"><?php print $alertDisplay->field_alert_message[LANGUAGE_NONE][0]['value']; ?></div></div></div>');
         Materialize.toast($toastContent, 999999);
     });
-    jQuery(window).resize(function(){
+    jQuery(window).resize(function () {
         jQuery('#fullHeight1').height(jQuery('#fullHeight1').width());
         jQuery('#fullHeight2').height(jQuery('#fullHeight2').width());
         jQuery('#fullHeight3').height(jQuery('#fullHeight3').width());
         jQuery('#fullHeight4').height(jQuery('#fullHeight4').width());
         jQuery('#fullHeight5').height(jQuery('#fullHeight5').width());
-        jQuery('#halfHeight1').height(jQuery('#halfHeight1').width()/2);
-        jQuery('#halfHeight2').height(jQuery('#halfHeight2').width()/2);
+        jQuery('#halfHeight1').height(jQuery('#halfHeight1').width() / 2);
+        jQuery('#halfHeight2').height(jQuery('#halfHeight2').width() / 2);
     }).resize();
 </script>
 </html>
