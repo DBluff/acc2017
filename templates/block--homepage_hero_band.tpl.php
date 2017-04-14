@@ -10,9 +10,20 @@
         <div class="col m7 s12 offset-m1 title lightpurple">
             <?php print render($title_prefix); ?>
             <?php if ($block->subject): ?>
-                <h1<?php print $title_attributes; ?>><?php print $block->subject ?></h1>
-            <?php endif;?>
+                <?php $titlePieces = explode(' ', $block->subject);
+                foreach ($titlePieces as $piece) { ?>
+                    <div class="col m12">
+                        <h1<?php print $title_attributes; ?>><?php print $piece ?></h1>
+                    </div>
+                <?php } ?>
+            <?php endif; ?>
             <?php print render($title_suffix); ?>
+            <div class="row nextStep">
+                <div class="col m12 center-align nextStepButtons">
+                    <a class="waves-effect waves-light btn-large orange white-text">APPLY NOW</a>
+                    <a class="waves-effect waves-light btn-large orange white-text">REQUEST INFO</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

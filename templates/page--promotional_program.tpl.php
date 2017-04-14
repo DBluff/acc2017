@@ -1,8 +1,6 @@
-<?php
-$node = menu_get_object();
-?>
+<?php $node = menu_get_object(); ?>
 <div id="page">
-    <div class="header transparent">
+    <div class="header">
         <div id="acc-logo">
             <?php if ($logo) { ?>
                 <a class="acc-logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -53,7 +51,7 @@ $node = menu_get_object();
             ?>
             <div class="<?php print $classes; ?>">
                 <div class="content">
-                    <div class="col s12">
+                    <div class="col s12 fullWidthImg">
                         <img class="responsive-img" src="<?php print $heroImg ?>">
                     </div>
                 </div>
@@ -105,17 +103,13 @@ $node = menu_get_object();
                 </div>
             </div>
         <?php } ?>
-        <div class="row valign-wrapper nextStep">
-            <div class="col m4 s12 offset-m2 nextStepPrompt orange-text">
-                <h4 class="valign right-align">LET US HELP YOU</h4>
+        <div class="row nextStep">
+            <div class="col m12 center-align nextStepPrompt orange-text">
+                <h4>LET US HELP YOU</h4>
             </div>
-            <div class="col m4 s12 valign nextStepButtons">
-                <div class="row">
-                    <a class="waves-effect waves-light btn-large orange white-text left-align">APPLY NOW</a>
-                </div>
-                <div class="row">
-                    <a class="waves-effect waves-light btn-large orange white-text left-align">REQUEST INFO</a>
-                </div>
+            <div class="col m12 center-align nextStepButtons">
+                <a class="waves-effect waves-light btn-large orange white-text">APPLY NOW</a>
+                <a class="waves-effect waves-light btn-large orange white-text">REQUEST INFO</a>
             </div>
         </div>
         <?php if (!empty($page['content'])) { ?>
@@ -488,13 +482,13 @@ $node = menu_get_object();
         </div>
     </div>
     <div class="divider"></div>
-    <div class="row valign-wrapper nextStep">
-        <div class="col m4 s12 offset-m2 nextStepPrompt purple-text">
-            <h4 class="valign right-align">TAKE THE NEXT STEP</h4>
+    <div class="row nextStep">
+        <div class="col m12 center-align nextStepPrompt orange-text">
+            <h4>LET US HELP YOU</h4>
         </div>
-        <div class="col m4 s12 valign nextStepButtons">
-            <a class="waves-effect waves-light btn-large orange white-text left-align">APPLY NOW</a>
-            <a class="waves-effect waves-light btn-large orange white-text left-align">REQUEST INFO</a>
+        <div class="col m12 center-align nextStepButtons">
+            <a class="waves-effect waves-light btn-large orange white-text">APPLY NOW</a>
+            <a class="waves-effect waves-light btn-large orange white-text">REQUEST INFO</a>
         </div>
     </div>
     <div class="footer">
@@ -502,7 +496,6 @@ $node = menu_get_object();
             <div class="container">
                 <div class="row white-text">
                     <div class="col m3 s12">
-                        <h5>General Information</h5>
                         <div class="footMenu">
                             <?php
                             $menua = menu_navigation_links('menu-general-information');
@@ -510,7 +503,6 @@ $node = menu_get_object();
                         </div>
                     </div>
                     <div class="col m3 s12">
-                        <h5>Safety</h5>
                         <div class="footMenu">
                             <?php
                             $menua = menu_navigation_links('menu-safety');
@@ -518,13 +510,12 @@ $node = menu_get_object();
                         </div>
                     </div>
                     <div class="col m3 s12">
-                        <h5>Heading??</h5>
                         <div class="footMenu">
                             <?php
                             $menub = menu_navigation_links('menu-primary-navigation');
                             print theme('links__menu-primary-navigation', array('links' => $menub)); ?>
                         </div>
-                        <h5>Austin Community College</h5>
+                        <div class="divider"></div>
                         <div class="footMenu">
                             5930 Middle Fiskville Rd <br/> Austin, Texas 78752
                         </div>
@@ -554,10 +545,10 @@ $node = menu_get_object();
                 </div>
             </div>
         </div>
-        <nav class="transparent z-depth-0 audID2" id="navFoot" role="navigation">
+        <nav class="transparent z-depth-0 audID2 bluegrey" id="navFoot" role="navigation">
             <div class="nav-wrapper foot">
                 <div class="hide-on-small-only">
-                    <div class="row aud_menu bluegrey">
+                    <div class="row aud_menu foot">
                         <div class="audIDbottom">
                             <?php
                             $menua = menu_navigation_links('menu-audience-identifier');
@@ -567,11 +558,11 @@ $node = menu_get_object();
                 </div>
             </div>
             <div class="searchContainer" id="searchFoot">
-                <form class="searchbox">
-                    <input type="search" placeholder="Search......" name="search" class="searchbox-input"
+                <form class="searchbox-foot">
+                    <input type="search" placeholder="Search......" name="search" class="searchbox-input-foot"
                            onkeyup="buttonUp();" required>
                     <input type="submit" class="searchbox-submit" value="GO">
-                    <span class="searchbox-icon"><i class="large material-icons">search</i></span>
+                    <span class="searchbox-icon-foot"><i class="large material-icons">search</i></span>
                 </form>
             </div>
         </nav>

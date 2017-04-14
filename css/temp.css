@@ -189,14 +189,14 @@ iframe#player {
     height: 128px;
 }
 
-.row.acaImg.valign-wrapper {
-    background-image: url('/sites/all/themes/acc2017/img/academics-hero.jpg');
-    min-height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-bottom: 0;
-}
+/*.row.acaImg.valign-wrapper {*/
+    /*background-image: url('/sites/all/themes/acc2017/img/academics-hero.jpg');*/
+    /*min-height: 500px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*position: relative;*/
+    /*margin-bottom: 0;*/
+/*}*/
 
 .topContent.grey.white-text {
     position: absolute;
@@ -241,7 +241,8 @@ h4.aos-card a {
     top: 56px;
     z-index: 1;
     right: 0;
-    width: 60%;
+    width: 72%;
+    height:96px;
 }
 
 #navAud {
@@ -274,6 +275,20 @@ h4.aos-card a {
     transition: width 0.3s;
 }
 
+.searchbox-foot {
+    position: relative;
+    min-width: 56px;
+    width: 0%;
+    height: 56px;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
 .searchbox-input {
     top: 0;
     right: 0;
@@ -288,23 +303,42 @@ h4.aos-card a {
     color: #ffffff;
 }
 
-.searchbox-input::-webkit-input-placeholder {
+.searchbox-input-foot {
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    background: #dcddd8;
+    width: 100%;
+    height: 56px;
+    margin: 0;
+    padding: 0px 55px 0px 20px;
+    font-size: 20px;
     color: #ffffff;
 }
 
-.searchbox-input:-moz-placeholder {
+input.searchbox-input-foot{
+    margin:0;
+}
+
+.searchbox-input-foot::-webkit-input-placeholder {
     color: #ffffff;
 }
 
-.searchbox-input::-moz-placeholder {
+.searchbox-input-foot:-moz-placeholder {
     color: #ffffff;
 }
 
-.searchbox-input:-ms-input-placeholder {
+.searchbox-input-foot::-moz-placeholder {
+    color: #ffffff;
+}
+
+.searchbox-input-foot:-ms-input-placeholder {
     color: #ffffff;
 }
 
 .searchbox-icon,
+.searchbox-icon-foot,
 .searchbox-submit {
     width: 56px;
     height: 56px;
@@ -325,8 +359,16 @@ h4.aos-card a {
     background: #1F618B;
 }
 
+.searchbox-icon-foot{
+    background: #1F618B;
+}
+
 .searchbox-open {
     width: 100%;
+    background-color: #1F618B;
+}
+
+.searchbox-foot.searchbox-open{
     background-color: #1F618B;
 }
 
@@ -341,6 +383,7 @@ audIDnav {
 
 #audIDnav {
     height: 56px;
+    padding-left: 56px;
 }
 
 .audID ul.LINKS a {
@@ -350,29 +393,34 @@ audIDnav {
 .primaryMenu ul.links {
     float: right;
     padding-right: 168px;
+    height: 96px;
+}
+
+.row.prim_menu {
+    height:96px;
 }
 
 .row.prim_menu a {
     font-weight: 400;
-    font-size: 1.07rem;
-}
-
-.homeSpotlight .carousel .carousel-item {
-    width: 40%;
-    height: 600px;
-}
-
-.homeSpotlight .carousel {
-    height: 700px;
+    font-size: 1.333rem;
+    height: 96px;
+    position: relative;
+    top: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .SpotlightTitle {
     text-align: center;
 }
 
-.row.aud_menu.bluegrey {
+.row.aud_menu {
     height: 56px;
     margin-bottom: 0;
+}
+
+.audIDbottom {
+    margin-left: 56px;
 }
 
 .audIDbottom ul.links li {
@@ -381,6 +429,11 @@ audIDnav {
 
 .audIDbottom ul.links li a {
     height: 56px;
+}
+
+.audID ul.links li a {
+    height: 56px;
+    letter-spacing: 1px;
 }
 
 #navFoot {
@@ -416,6 +469,20 @@ audIDnav {
 #searchFoot {
     position: absolute;
     bottom: 0;
-    right: 0;
-    z-index: 5;
+    right: 56px;
+    height:56px;
+    width: 56px;
+    background-color: #1F618B;
+}
+
+.AoSearch #autocomplete-input {
+    height: 5rem;
+}
+
+.col.m5.AoStestImg img {
+    border-radius: 50%;
+}
+
+.col.s12.fullWidthImg img.responsive-img, video.responsive-video {
+    min-width: 100%;
 }

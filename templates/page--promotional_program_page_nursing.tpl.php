@@ -2,7 +2,7 @@
 $node = menu_get_object();
 ?>
 <div id="page">
-    <div class="header transparent">
+    <div class="header">
         <div id="acc-logo">
             <?php if ($logo) { ?>
                 <a class="acc-logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -10,14 +10,14 @@ $node = menu_get_object();
                 </a>
             <?php }; ?>
         </div>
-        <nav class="transparent z-depth-0 audID" id="nav" role="navigation">
+        <nav class="transparent z-depth-0 audID blue" id="navAud" role="navigation">
             <div class="nav-wrapper">
-                <div class="hide-on-small-only">
-                    <div class="row aud_menu lightgreen">
-                        <div class="audID">
+                <div class="hide-on-med-and-down">
+                    <div class="row aud_menu blue">
+                        <div class="audID blue" id="audIDnav">
                             <?php
                             $menua = menu_navigation_links('menu-audience-identifier');
-                            print theme('links__menu-audience-identifier', array('links' => $menua)); ?>
+                            print strtoupper(theme('links__menu-audience-identifier', array('links' => $menua))); ?>
                         </div>
                         <div class="searchContainer" id="searchAdj">
                             <form class="searchbox">
@@ -31,10 +31,10 @@ $node = menu_get_object();
                 </div>
             </div>
         </nav>
-        <nav class="transparent z-depth-0 priMenu" id="nav" role="navigation">
+        <nav class="transparent z-depth-0 priMenu blue lighten-2" id="navPrim" role="navigation">
             <div class="nav-wrapper">
-                <div class="hide-on-small-only">
-                    <div class="row prim_menu lightblue">
+                <div class="hide-on-med-and-down">
+                    <div class="row prim_menu blue lighten-2">
                         <div class="primaryMenu">
                             <?php
                             $menub = menu_navigation_links('menu-primary-navigation');
@@ -48,71 +48,70 @@ $node = menu_get_object();
     <div class="main page">
         <?php
         if ($node->field_hero_image[LANGUAGE_NONE][0]['uri']) {
-            $heroImg = $node->field_hero_image[LANGUAGE_NONE][0]['uri'];
-            $heroImg = file_create_url($heroImg);
-            ?>
-            <div class="<?php print $classes; ?>">
-                <div class="content">
-                    <div class="col s12">
-                        <img class="responsive-img" src="<?php print $heroImg ?>">
-                    </div>
+        $heroImg = $node->field_hero_image[LANGUAGE_NONE][0]['uri'];
+        $heroImg = file_create_url($heroImg);
+        ?>
+        <div class="<?php print $classes; ?>">
+            <div class="content">
+                <div class="col s12 fullWidthImg">
+                    <img class="responsive-img" src="<?php print $heroImg ?>">
                 </div>
-                <?php } ?>
-                <div class="row heroInfo">
-                    <?php
-                    $AoStid = $node->field_aos[LANGUAGE_NONE][0]["tid"];
-                    $AoSsub = $node->field_sub_title[LANGUAGE_NONE][0]["value"];
-                    $qResult = db_query('SELECT name FROM taxonomy_term_data WHERE tid=:AoStid', array(':AoStid' => $AoStid));
-                    $AoSrecord = $qResult->fetchCol();
-                    $AoSpieces = explode(' ', $AoSrecord[0]);
-                    ?>
-                    <div class="col s12 AoSicon">
-                        <div class="valign-wrapper iconCircle">
-                            <div class="valign AoSinitials"><img
-                                        src="http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/<?php print $AoSpieces[0]; ?>.png">
-                            </div>
+            </div>
+            <?php } ?>
+            <div class="row heroInfo">
+                <?php
+                $AoStid = $node->field_aos[LANGUAGE_NONE][0]["tid"];
+                $AoSsub = $node->field_sub_title[LANGUAGE_NONE][0]["value"];
+                $qResult = db_query('SELECT name FROM taxonomy_term_data WHERE tid=:AoStid', array(':AoStid' => $AoStid));
+                $AoSrecord = $qResult->fetchCol();
+                $AoSpieces = explode(' ', $AoSrecord[0]);
+                ?>
+                <div class="col s12 AoSicon">
+                    <div class="valign-wrapper iconCircle">
+                        <div class="valign AoSinitials"><img
+                                    src="http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/<?php print $AoSpieces[0]; ?>.png">
                         </div>
                     </div>
-                    <div class="col s12 blockBreadcrumb">
-                        <?php
-                        Global $base_url;
-                        $base_url;
-                        $urlParts = explode('/', drupal_get_path_alias());
-                        $count = count($urlParts);
-                        $path = '';
-                        $loopNum = 1;
-                        print '<a href="' . $base_url . '">Home</a>';
-                        print '   >   ';
-                        foreach ($urlParts as $urlPart) {
-                            $path = $path . '/' . $urlPart;
-                            print '<a href="' . $base_url . $path . '">' . $urlPart . '</a>';
-                            if ($loopNum !== $count) {
-                                print '   >   ';
-                            }
-                            $loopNum++;
+                </div>
+                <div class="col s12 blockBreadcrumb">
+                    <?php
+                    Global $base_url;
+                    $base_url;
+                    $urlParts = explode('/', drupal_get_path_alias());
+                    $count = count($urlParts);
+                    $path = '';
+                    $loopNum = 1;
+                    print '<a href="' . $base_url . '">Home</a>';
+                    print '   >   ';
+                    foreach ($urlParts as $urlPart) {
+                        $path = $path . '/' . $urlPart;
+                        print '<a href="' . $base_url . $path . '">' . $urlPart . '</a>';
+                        if ($loopNum !== $count) {
+                            print '   >   ';
                         }
-                        ?>
-                    </div>
-                    <div class="col s12 AoStitle white-text">
-                        <?php print render($title_prefix); ?>
-                        <?php if ($title): ?>
-                            <h2<?php print $title_attributes; ?>><?php print $title ?></h2>
-                        <?php endif; ?>
-                        <?php print render($title_suffix); ?>
-                    </div>
-                    <div class="col s12 AoSsub white-text">
-                        <h5><?php print $AoSsub; ?></h5>
-                    </div>
+                        $loopNum++;
+                    }
+                    ?>
+                </div>
+                <div class="col s12 AoStitle white-text">
+                    <?php print render($title_prefix); ?>
+                    <?php if ($title): ?>
+                        <h2<?php print $title_attributes; ?>><?php print $title ?></h2>
+                    <?php endif; ?>
+                    <?php print render($title_suffix); ?>
+                </div>
+                <div class="col s12 AoSsub white-text">
+                    <h5><?php print $AoSsub; ?></h5>
                 </div>
             </div>
-        <div class="row valign-wrapper nextStep">
-            <div class="col m4 s12 offset-m2 nextStepPrompt purple-text">
-                <h4 class="valign right-align">TAKE THE NEXT STEP</h4>
+        </div>
+        <div class="row nextStep">
+            <div class="col m12 center-align nextStepPrompt orange-text">
+                <h4>LET US HELP YOU</h4>
             </div>
-            <div class="col m4 s12 valign nextStepButtons">
-                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">APPLY NOW</a>
-                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">REQUEST
-                    INFO</a>
+            <div class="col m12 center-align nextStepButtons">
+                <a class="waves-effect waves-light btn-large orange white-text">APPLY NOW</a>
+                <a class="waves-effect waves-light btn-large orange white-text">REQUEST INFO</a>
             </div>
         </div>
         <?php if (!empty($page['content'])) { ?>
@@ -120,7 +119,7 @@ $node = menu_get_object();
                 <?php print render($page['content']); ?>
             </div>
         <?php } ?>
-        <?php if (!empty($page['content_band'])){ ?>
+        <?php if (!empty($page['content_band'])) { ?>
             <div class="contentBand">
                 <?php print render($page['content_band']); ?>
             </div>
@@ -527,88 +526,74 @@ $node = menu_get_object();
             </div>
         </div>
         <div class="divider"></div>
-        <div class="row valign-wrapper nextStep">
-            <div class="col m4 s12 offset-m2 nextStepPrompt purple-text">
-                <h4 class="valign right-align">TAKE THE NEXT STEP</h4>
+        <div class="row nextStep">
+            <div class="col m12 center-align nextStepPrompt orange-text">
+                <h4>LET US HELP YOU</h4>
             </div>
-            <div class="col m4 s12 valign nextStepButtons">
-                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">APPLY NOW</a>
-                <a class="waves-effect waves-lightpurple btn-flat btn-large white purple-text left-align">REQUEST
-                    INFO</a>
+            <div class="col m12 center-align nextStepButtons">
+                <a class="waves-effect waves-light btn-large orange white-text">APPLY NOW</a>
+                <a class="waves-effect waves-light btn-large orange white-text">REQUEST INFO</a>
             </div>
         </div>
     </div>
     <div class="footer">
-        <div class="valign-wrapper SocialIconBand">
-            <div class="row cream social">
-                <div class="col m6 s12 bluegrey-text lighten-3">
-                    WE'RE SOCIAL!
-                </div>
-                <div class="col m5 s12 white-text">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                    <i class="fa fa-flickr" aria-hidden="true"></i>
-                    <i class="fa fa-google-plus" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
         <div class="foot blue">
             <div class="container">
                 <div class="row white-text">
-                    <div class="col m4 s12">
-                        <h5>General Information</h5>
+                    <div class="col m3 s12">
                         <div class="footMenu">
                             <?php
                             $menua = menu_navigation_links('menu-general-information');
                             print theme('links__menu-general-information', array('links' => $menua)); ?>
                         </div>
                     </div>
-                    <div class="col m4 s12">
-                        <h5>Safety</h5>
+                    <div class="col m3 s12">
                         <div class="footMenu">
                             <?php
                             $menua = menu_navigation_links('menu-safety');
                             print theme('links__menu-safety', array('links' => $menua)); ?>
                         </div>
                     </div>
-                    <div class="col m4 s12">
-                        <h5>Austin Community College</h5>
-                        <div class="row">
-                            <div class="col s3">
-                                <i class="material-icons">room</i>
-                            </div>
-                            <div class="col s9 footMenu">
-                                5930 Middle Fiskville Rd <br/> Austin, Texas 78752
-                            </div>
+                    <div class="col m3 s12">
+                        <div class="footMenu">
+                            <?php
+                            $menub = menu_navigation_links('menu-primary-navigation');
+                            print theme('links__menu-primary-navigation', array('links' => $menub)); ?>
                         </div>
-                        <br/>
-                        <div class="row">
-                            <div class="col s3">
-                                <i class="material-icons">call</i>
-                            </div>
-                            <div class="col s9 footTel">
-                                512-223-4ACC (4222)
-                            </div>
+                        <div class="divider"></div>
+                        <div class="footMenu">
+                            5930 Middle Fiskville Rd <br/> Austin, Texas 78752
                         </div>
+                        <div class="footTel">
+                            512-223-4ACC (4222)
+                        </div>
+                    </div>
+                    <div class="col m3 s12">
                         <div id="acc-logo-foot">
-                            <?php if ($logo) { ?>
-                                <a class="acc-logo-foot" href="<?php print $front_page; ?>"
-                                   title="<?php print t('Home'); ?>">
-                                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
-                                </a>
-                            <?php }; ?>
+                            <a class="acc-logo-foot" href="<?php print $front_page; ?>"
+                               title="<?php print t('Home'); ?>">
+                                <img class="responsive-img" src="/sites/all/themes/acc2017/img/logo.png"
+                                     alt="<?php print t('Home'); ?>"/>
+                            </a>
+                        </div>
+                        <div class="row social blue-text">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </div>
+                        <div class="row social blue-text">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class="transparent z-depth-0 audID2" id="nav" role="navigation">
-            <div class="nav-wrapper">
+        <nav class="transparent z-depth-0 audID2 bluegrey" id="navFoot" role="navigation">
+            <div class="nav-wrapper foot">
                 <div class="hide-on-small-only">
-                    <div class="row aud_menu bluegrey">
+                    <div class="row aud_menu foot">
                         <div class="audIDbottom">
                             <?php
                             $menua = menu_navigation_links('menu-audience-identifier');
@@ -616,6 +601,14 @@ $node = menu_get_object();
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="searchContainer" id="searchFoot">
+                <form class="searchbox-foot">
+                    <input type="search" placeholder="Search......" name="search" class="searchbox-input-foot"
+                           onkeyup="buttonUp();" required>
+                    <input type="submit" class="searchbox-submit" value="GO">
+                    <span class="searchbox-icon-foot"><i class="large material-icons">search</i></span>
+                </form>
             </div>
         </nav>
     </div>

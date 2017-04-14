@@ -102,62 +102,8 @@ if ($alerts) {
 </body>
 <script>
     jQuery(document).ready(function () {
-        jQuery('.carousel').carousel();
-        var submitIcon = jQuery('.searchbox-icon');
-        var inputBox = jQuery('.searchbox-input');
-        var searchBox = jQuery('.searchbox');
-        var isOpen = false;
-        var negative = '-';
-        var pixels = 'px';
-        submitIcon.click(function () {
-            var moveLeft = jQuery( window ).width() - jQuery('#audIDnav').width();
-            if (isOpen == false) {
-                searchBox.addClass('searchbox-open');
-                inputBox.focus();
-                isOpen = true;
-                document.getElementById('searchAdj').style.zIndex = 999;
-                document.getElementById('searchAdj').style.width = moveLeft + pixels;
-                document.getElementById('searchFoot').style.zIndex = 999;
-                document.getElementById('searchFoot').style.width = moveLeft + pixels;
-                document.getElementById('audIDnav').style.position = 'absolute';
-                document.getElementById('audIDnav').style.left = negative + moveLeft + pixels;
-            }
-            else {
-                searchBox.removeClass('searchbox-open');
-                document.getElementById('searchAdj').style.zIndex = 1;
-                document.getElementById('searchAdj').style.width = '56px';
-                document.getElementById('searchFoot').style.zIndex = 1;
-                document.getElementById('searchFoot').style.width = '56px';
-                document.getElementById('audIDnav').style.position = 'inherit';
-                inputBox.focusout();
-                isOpen = false;
-            }
-        });
-        submitIcon.mouseup(function () {
-            return false;
-        });
-        searchBox.mouseup(function () {
-            return false;
-        });
-        jQuery(document).mouseup(function () {
-            if (isOpen == true) {
-                jQuery('.searchbox-icon').css('display', 'block');
-                submitIcon.click();
-            }
-        });
-    })
-    ;
-    function buttonUp() {
-        var inputVal = jQuery('.searchbox-input').val();
-        inputVal = jQuery.trim(inputVal).length;
-        if (inputVal !== 0) {
-            jQuery('.searchbox-icon').css('display', 'none');
-        } else {
-            jQuery('.searchbox-input').val('');
-            jQuery('.searchbox-icon').css('display', 'block');
-        }
-    }
-    jQuery(document).ready(function () {
+        jQuery('.modal').modal();
+        jQuery('.carousel.carousel-slider').carousel({fullWidth: true, indicators: true});
         jQuery("#searchIconGrid").click(function () {
             jQuery("#AoSlist").hide();
             jQuery("#AoSgrid").show();
@@ -168,17 +114,17 @@ if ($alerts) {
         });
         jQuery('input.autocomplete').autocomplete({
             data: {
-                "Welding Technology": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/default/files/inez-round.png',
-                "Nursing": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/default/files/john-circle.png',
-                "Health Sciences": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/anne-circle.png',
-                "Arts, Digital Media, and Communications": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/claudia-circle.png',
-                "Public and Social Sciences": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/jai-circle.png',
-                "Business": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/ricardo-circle.png',
-                "Education": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/kelly-circle.png',
-                "Culinary, Hospitality, and Tourism": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/abimael.png',
-                "Computer Sciences and Information Technology": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/anya.png',
-                "Science, Engineering, and Math": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/sonja-circle.png',
-                "Liberal Arts": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/cassie-round.png'
+                "Welding Technology": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/DMC&AT.png',
+                "Nursing": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/HS.png',
+                "Health Sciences": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/HS.png',
+                "Arts, Digital Media, and Communications": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/ADM&C.png',
+                "Public and Social Sciences": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/P&SS.png',
+                "Business": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/B.png',
+                "Education": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/E.png',
+                "Culinary, Hospitality, and Tourism": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/CH&T.png',
+                "Computer Sciences and Information Technology": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/CS&IT.png',
+                "Science, Engineering, and Math": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/SE&M.png',
+                "Liberal Arts": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/LA.png'
             },
             limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
             onAutocomplete: function (val) {

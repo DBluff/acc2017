@@ -14,7 +14,7 @@
                         <div class="audID blue" id="audIDnav">
                             <?php
                             $menua = menu_navigation_links('menu-audience-identifier');
-                            print strtoupper(theme('links__menu-audience-identifier', array('links' => $menua))); ?>
+                            print theme('links__menu-audience-identifier', array('links' => $menua)); ?>
                         </div>
                         <div class="searchContainer" id="searchAdj">
                             <form class="searchbox">
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </nav>
-        <nav class="transparent z-depth-0 priMenu blue lighten-2" id="navPrim" role="navigation">
+        <nav class="transparent z-depth-1 priMenu blue lighten-2" id="navPrim" role="navigation">
             <div class="nav-wrapper">
                 <div class="hide-on-med-and-down">
                     <div class="row prim_menu blue lighten-2">
@@ -48,36 +48,23 @@
                 <?php print render($page['homepage_hero_band']); ?>
             </div>
         <?php } ?>
-        <div class="row valign-wrapper nextStep">
-            <div class="col m4 s12 offset-m2 nextStepPrompt orange-text">
-                <h4 class="valign right-align">LET US HELP YOU</h4>
-            </div>
-            <div class="col m4 s12 valign nextStepButtons">
-                <div class="row">
-                    <a class="waves-effect waves-light btn-large orange white-text left-align">APPLY NOW</a>
-                </div>
-                <div class="row">
-                    <a class="waves-effect waves-light btn-large orange white-text left-align">REQUEST INFO</a>
-                </div>
-            </div>
-        </div>
         <?php if (!empty($page['content_band'])) { ?>
             <div class="contentBand">
                 <?php print render($page['content_band']); ?>
             </div>
         <?php } ?>
     </div>
-    <div class="row valign-wrapper nextStep">
-        <div class="col m4 s12 offset-m2 nextStepPrompt purple-text">
-            <h4 class="valign right-align">TAKE THE NEXT STEP</h4>
+    <div class="row nextStep">
+        <div class="col m12 center-align nextStepPrompt orange-text">
+            <h4>GET STARTED</h4>
         </div>
-        <div class="col m4 s12 valign nextStepButtons">
-            <a class="waves-effect waves-light btn-large orange white-text left-align">APPLY NOW</a>
-            <a class="waves-effect waves-light btn-large orange white-text left-align">REQUEST INFO</a>
+        <div class="col m12 center-align nextStepButtons">
+            <a class="waves-effect waves-light btn-large orange white-text">APPLY NOW</a>
+            <a class="waves-effect waves-light btn-large orange white-text">REQUEST INFO</a>
         </div>
     </div>
     <div class="footer">
-        <div class="foot blue">
+        <div class="foot blue darken-1">
             <div class="container">
                 <div class="row white-text">
                     <div class="col m3 s12">
@@ -130,27 +117,25 @@
                 </div>
             </div>
         </div>
-        <nav class="transparent z-depth-0 audID2 bluegrey" id="navFoot" role="navigation">
-            <div class="container">
-                <div class="nav-wrapper foot">
-                    <div class="hide-on-small-only">
-                        <div class="row aud_menu">
-                            <div class="audIDbottom">
-                                <?php
-                                $menua = menu_navigation_links('menu-audience-identifier');
-                                print theme('links__menu-audience-identifier', array('links' => $menua)); ?>
-                            </div>
+        <nav class="transparent z-depth-0 audID2 blue" id="navFoot" role="navigation">
+            <div class="nav-wrapper foot">
+                <div class="hide-on-small-only">
+                    <div class="row aud_menu foot">
+                        <div class="audIDbottom">
+                            <?php
+                            $menua = menu_navigation_links('menu-audience-identifier');
+                            print theme('links__menu-audience-identifier', array('links' => $menua)); ?>
                         </div>
                     </div>
                 </div>
-                <div class="searchContainer" id="searchFoot">
-                    <form class="searchbox">
-                        <input type="search" placeholder="Search......" name="search" class="searchbox-input"
-                               onkeyup="buttonUp();" required>
-                        <input type="submit" class="searchbox-submit" value="GO">
-                        <span class="searchbox-icon"><i class="large material-icons">search</i></span>
-                    </form>
-                </div>
+            </div>
+            <div class="searchContainer" id="searchFoot">
+                <form class="searchbox-foot">
+                    <input type="search" placeholder="Search......" name="search" class="searchbox-input-foot"
+                           onkeyup="buttonUp();" required>
+                    <input type="submit" class="searchbox-submit" value="GO">
+                    <span class="searchbox-icon-foot"><i class="large material-icons">search</i></span>
+                </form>
             </div>
         </nav>
     </div>

@@ -19,7 +19,7 @@ stylesheets[all][] = fonts/gotham/gotham.css
 ;-------------------------------------------------------------------------------
 scripts[] = js/materialize.min.js
 scripts[] = js/custom.js
-;scripts[] = js/searchBar.js
+scripts[] = js/searchBars.js
 scripts[] = temp/careerCoach/dynamicChart.js
 
 
