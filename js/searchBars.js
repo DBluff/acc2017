@@ -6,8 +6,8 @@ jQuery(document).ready(function () {
     var negative = '-';
     var pixels = 'px';
     submitIcon.click(function () {
-        var moveLeft = jQuery(window).width() - jQuery('#audIDnav').width();
-        var newSize = jQuery(window).width() + 112 - jQuery('#audIDnav').width();
+        var moveLeft = jQuery('#navPrim').width() - jQuery('#audIDnav').width() - 56;
+        var newSize = jQuery('#navPrim').width() - jQuery('#audIDnav').width() + 24;
         if (isOpen == false) {
             searchBox.addClass('searchbox-open');
             inputBox.focus();
@@ -22,7 +22,7 @@ jQuery(document).ready(function () {
                 if (pos <= negative + moveLeft) {
                     clearInterval(id);
                 } else {
-                    pos = pos - 15;
+                    pos = pos - 10;
                     if (pos < negative + moveLeft) {
                         pos = negative + moveLeft;
                     }

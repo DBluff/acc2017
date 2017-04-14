@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1253e96-7a14-49ea-b37c-5fa03c3375ba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acc2017.info" afterPath="$PROJECT_DIR$/acc2017.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/temp.css" afterPath="$PROJECT_DIR$/css/temp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete.php" afterPath="$PROJECT_DIR$/delete.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/searchBars.js" afterPath="$PROJECT_DIR$/js/searchBars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php" afterPath="$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/html--front.tpl.php" afterPath="$PROJECT_DIR$/templates/html--front.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--front.tpl.php" afterPath="$PROJECT_DIR$/templates/page--front.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--node--49.tpl.php" afterPath="$PROJECT_DIR$/templates/page--node--49.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--promotional_program.tpl.php" afterPath="$PROJECT_DIR$/templates/page--promotional_program.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--promotional_program_page_nursing.tpl.php" afterPath="$PROJECT_DIR$/templates/page--promotional_program_page_nursing.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitdel.php" afterPath="$PROJECT_DIR$/twitdel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unusedCode.php" afterPath="$PROJECT_DIR$/unusedCode.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,7 +44,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unusedCode.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="unusedCode.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unusedCode.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1038">
@@ -72,6 +61,36 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="block--homepage_hero_band.tpl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temp.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/temp.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="581">
+              <caret line="409" column="14" lean-forward="false" selection-start-line="409" selection-start-column="14" selection-end-line="409" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchBars.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/searchBars.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -84,8 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/2017</find>
-      <find>.audIDbottom</find>
       <find>searchbox</find>
       <find>footer-fourth</find>
       <find>col m4</find>
@@ -112,8 +129,10 @@
       <find>input.searchbox-input-foot</find>
       <find>row.Title</find>
       <find>recta</find>
-      <find>var_dum</find>
       <find>var</find>
+      <find>var_dum</find>
+      <find>navPrim</find>
+      <find>96</find>
     </findStrings>
     <replaceStrings>
       <replace>m2</replace>
@@ -159,14 +178,14 @@
         <option value="$PROJECT_DIR$/templates/page--promotional_program_page_nursing.tpl.php" />
         <option value="$PROJECT_DIR$/templates/page--promotional_program.tpl.php" />
         <option value="$PROJECT_DIR$/twitdel.php" />
-        <option value="$PROJECT_DIR$/js/searchBars.js" />
         <option value="$PROJECT_DIR$/templates/html--front.tpl.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/css/temp.css" />
-        <option value="$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php" />
         <option value="$PROJECT_DIR$/templates/page--front.tpl.php" />
         <option value="$PROJECT_DIR$/delete.php" />
         <option value="$PROJECT_DIR$/unusedCode.php" />
+        <option value="$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php" />
+        <option value="$PROJECT_DIR$/js/searchBars.js" />
+        <option value="$PROJECT_DIR$/css/temp.css" />
       </list>
     </option>
   </component>
@@ -381,18 +400,19 @@
       <workItem from="1491402173852" duration="69393000" />
       <workItem from="1491835139820" duration="125000" />
       <workItem from="1491835299421" duration="71210000" />
-      <workItem from="1492102683518" duration="24939000" />
+      <workItem from="1492102683518" duration="27657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266833000" />
+    <option name="totallyTimeSpent" value="269551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="1040" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3106796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3106796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -657,14 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/searchBars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="89" column="7" lean-forward="true" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/page--front.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -673,30 +685,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-          <folding>
-            <element signature="e#6155#6396#2" expanded="false" />
-            <element signature="e#6507#6748#2" expanded="false" />
-            <element signature="e#6859#7103#2" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/temp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -736,6 +728,30 @@
             <marker date="1492189634135" expanded="true" signature="138:173" ph="SELECT name taxonomy_term_data" />
             <marker date="1492189634135" expanded="true" signature="17363:17410" ph="SELECT name taxonomy_term_data" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/block--homepage_hero_band.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/searchBars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/temp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="409" column="14" lean-forward="false" selection-start-line="409" selection-start-column="14" selection-end-line="409" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

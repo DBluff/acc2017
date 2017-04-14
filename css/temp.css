@@ -215,6 +215,10 @@ h4.aos-card a {
     background-color: transparent;
 }
 
+#toast-container {
+    top: 192px;
+}
+
 .row.alertToast {
     min-height: 100px;
     width: 500px;
@@ -241,8 +245,8 @@ h4.aos-card a {
     top: 56px;
     z-index: 1;
     right: 0;
-    width: 72%;
-    height:96px;
+    width: 66%;
+    height:80px;
 }
 
 #navAud {
@@ -392,18 +396,18 @@ audIDnav {
 
 .primaryMenu ul.links {
     float: right;
-    padding-right: 168px;
-    height: 96px;
+    padding-right: 56px;
+    height: 80px;
 }
 
 .row.prim_menu {
-    height:96px;
+    height:80px;
 }
 
 .row.prim_menu a {
     font-weight: 400;
     font-size: 1.333rem;
-    height: 96px;
+    height: 80px;
     position: relative;
     top: 1rem;
     font-weight: 300;
@@ -458,7 +462,7 @@ audIDnav {
 }
 
 .col.m4.s12.eventRightBorder {
-    border-right: solid 1px #efefef;
+    border-right: dotted 1px #29b6f6;
     padding: 4% 4% 2% 4%;
 }
 

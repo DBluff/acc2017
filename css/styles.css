@@ -192,36 +192,18 @@ div#acc-logo img {
 }
 
 /*Homepage Spotlight*/
-.row.blue.homeSpotlight {
-    height: 450px;
-    margin-bottom: 0;
+.row.row-band.homeSpotlight {
+    background-image:url("/sites/default/files/banner-rb-bw.jpg");
+    /*background-image:url("/sites/all/themes/acc2017/img/aca-white.png");*/
+    /*height:500px;*/
+    /*display:block;*/
+
+    background-size: cover;
+    background-position: top center;
+    background-color: #1A5276 !important;
+    background-blend-mode: screen;
 }
 
-.row.blue.homeSpotlight .tabs .tab a.active,
-.tabs .tab a {
-    color: #ffffff;
-}
-
-.row.blue.homeSpotlight .tabs {
-    overflow-x: hidden;
-}
-
-.row.blue.homeSpotlight .tabs .indicator {
-    background-color: #17A589;
-}
-
-.row.blue.homeSpotlight .col.s12.tabField {
-    padding: 0;
-}
-
-.row.blue.homeSpotlight .tabs .tab a:hover {
-    color: #1A5276;
-}
-
-.row.blue.homeSpotlight li.tab.col.s6:hover {
-    background-color: #17A589;
-
-}
 
 /*Homepage Fast Facts*/
 .row.BChead.lightbluegrey.white-text {
@@ -245,6 +227,7 @@ div#acc-logo img {
     font-weight: 700;
     letter-spacing: 3px;
     text-shadow: 4px 4px 0 #5B2C6F;
+    text-align:left!important;
 }
 
 /*home page hero cta text background opacity*/
@@ -397,3 +380,6 @@ a.collection-item.active {
     background-color: #148E77 !important;
     background-blend-mode: multiply;
 }
+
+.col.m4.s12.eventRightBorder {
+    border-right: dotted 1px #29b6f6!important;}
