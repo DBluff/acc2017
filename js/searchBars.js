@@ -6,8 +6,9 @@ jQuery(document).ready(function () {
     var negative = '-';
     var pixels = 'px';
     submitIcon.click(function () {
-        var moveLeft = jQuery('#navPrim').width() - jQuery('#audIDnav').width() - 56;
-        var newSize = jQuery('#navPrim').width() - jQuery('#audIDnav').width() + 24;
+        var moveLeft = jQuery('#navPrim').width() - jQuery('#navAud').width();
+        var modifier = jQuery('#navPrim').width() - jQuery('#navAud').width()
+        var newSize = modifier + 144;
         if (isOpen == false) {
             searchBox.addClass('searchbox-open');
             inputBox.focus();
@@ -15,6 +16,7 @@ jQuery(document).ready(function () {
             document.getElementById('searchAdj').style.zIndex = 999;
             document.getElementById('searchAdj').style.width = newSize + pixels;
             document.getElementById('audIDnav').style.position = 'absolute';
+            document.getElementById('searchAdj').style.right = '0';
             var pos = 0;
             var id = setInterval(frame, 4);
 
@@ -35,6 +37,7 @@ jQuery(document).ready(function () {
             document.getElementById('searchAdj').style.width = '56px';
             document.getElementById('audIDnav').style.position = 'inherit';
             document.getElementById('audIDnav').style.left = '0px';
+            document.getElementById('searchAdj').style.right = '56px';
             inputBox.focusout();
             isOpen = false;
         }
@@ -69,13 +72,16 @@ jQuery(document).ready(function () {
     var isFootOpen = false;
     var pixel = 'px';
     submitButton.click(function () {
-        var searchSize = jQuery(window).width() / 2;
         if (isFootOpen == false) {
             searchBox.addClass('searchbox-open');
             inputBox.focus();
             isFootOpen = true;
             document.getElementById('searchFoot').style.zIndex = 999;
-            document.getElementById('searchFoot').style.width = searchSize + pixel;
+            if (jQuery(window).width() < 600) {
+                document.getElementById('searchFoot').style.width = '100%';
+            } else {
+                document.getElementById('searchFoot').style.width = 'calc(50% - 56px)';
+            }
         }
         else {
             searchBox.removeClass('searchbox-open');

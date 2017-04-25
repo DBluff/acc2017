@@ -7,7 +7,8 @@
         </div>
     </div>
     <div class="row Title">
-        <div class="col m7 s12 offset-m1 title lightpurple">
+        <div class="col m4 s12 offset-m1 title">
+<!--            <div class="col m5 s12 offset-m1 title lightpurple">-->
             <?php print render($title_prefix); ?>
             <?php if ($block->subject): ?>
                 <?php $titlePieces = explode(' ', $block->subject);
@@ -18,12 +19,19 @@
                 <?php } ?>
             <?php endif; ?>
             <?php print render($title_suffix); ?>
-            <div class="row nextStep">
-                <div class="col m12 center-align nextStepButtons">
-                    <a class="waves-effect waves-light btn-large orange white-text">APPLY NOW</a>
-                    <a class="waves-effect waves-light btn-large orange white-text">REQUEST INFO</a>
+            <div class="row nextStep heroNextStep">
+                <div class="col s12 left-align nextStepButtons fixedWidth">
+                    <a class="waves-effect waves-light btn-large btn-flat">APPLY NOW</a>
+                    <a class="waves-effect waves-light btn-large btn-flat right">REQUEST INFO</a>
                 </div>
             </div>
+<!--          original for mess-ups :)  -->
+<!--            <div class="row nextStep heroNextStep">-->
+<!--                <div class="col s12 left-align nextStepButtons fixedWidth">-->
+<!--                    <a class="waves-effect waves-light btn-large btn-reverse">APPLY NOW</a>-->
+<!--                    <a class="waves-effect waves-light btn-large btn-reverse right">REQUEST INFO</a>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </div>

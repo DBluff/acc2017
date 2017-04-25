@@ -98,9 +98,6 @@ if ($alerts) {
         }
     }
 }
-//Youtube Video ID Query
-$vidID = db_query("SELECT field_video_id_value FROM field_data_field_video_id where bundle='youtube_video'");
-$videoID = $vidID->fetchCol();
 ?>
 </body>
 <script>
@@ -114,10 +111,27 @@ $videoID = $vidID->fetchCol();
         );
         jQuery('.modal').modal();
         jQuery('.carousel.carousel-slider').carousel({fullWidth: true, indicators: true, noWrap: false});
+        jQuery("#searchIconGrid").click(function () {
+            jQuery("#AoSlist").hide();
+            jQuery("#AoSgrid").show();
+        });
+        jQuery("#searchIconList").click(function () {
+            jQuery("#AoSgrid").hide();
+            jQuery("#AoSlist").show();
+        });
         jQuery('input.autocomplete').autocomplete({
             data: {
                 "Welding Technology": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/DMC&AT.png',
-                "Nursing": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/HS.png'
+                "Nursing": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/HS.png',
+                "Health Sciences": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/HS.png',
+                "Arts, Digital Media, and Communications": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/ADM&C.png',
+                "Public and Social Sciences": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/P&SS.png',
+                "Business": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/B.png',
+                "Education": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/E.png',
+                "Culinary, Hospitality, and Tourism": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/CH&T.png',
+                "Computer Sciences and Information Technology": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/CS&IT.png',
+                "Science, Engineering, and Math": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/SE&M.png',
+                "Liberal Arts": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/LA.png'
             },
             limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
             onAutocomplete: function (val) {
@@ -134,7 +148,7 @@ $videoID = $vidID->fetchCol();
         var $toastContent = jQuery('<div class="row alertToast <?php print $alertColor; ?>" style="border-left:solid 30px <?php print $alertBar; ?>"><div class="alertTitle"><p class="flow-text"><?php print $alertDisplay->title; ?></p></div><div class="alertBody"><p><?php print $alertDisplay->field_alert_message[LANGUAGE_NONE][0]['value']; ?></p></div></div></div>');
         Materialize.toast($toastContent, 999999);
         <?php } ?>
-        jQuery("ul.indicators","#spotlightCont").insertAfter("#placeIndicators");
+        jQuery("ul.indicators").insertAfter("#spotlightCont");
     });
     window.onload = function () {
         var options = [
@@ -159,38 +173,16 @@ $videoID = $vidID->fetchCol();
             }
             }
         ];
-        jQuery('.row.aud_menu a').each(function () {
-            var $this = jQuery(this),
-                href = $this.attr('href');
-            $this.attr('href', '#');
-        })
-        jQuery('.primaryMenu a').each(function () {
-            var $this = jQuery(this),
-                href = $this.attr('href');
-            $this.attr('href', '#');
-        })
-        jQuery('.footMenu a').each(function () {
-            var $this = jQuery(this),
-                href = $this.attr('href');
-            $this.attr('href', '#');
-        })
-        jQuery('.sideNav a').each(function () {
-            var $this = jQuery(this),
-                href = $this.attr('href');
-            $this.attr('href', '#');
-        })
         Materialize.scrollFire(options);
     }
     jQuery(window).resize(function () {
-        if (jQuery(window).width() > 600) {
-            jQuery('#fullHeight1').height(jQuery('#fullHeight1').width());
-            jQuery('#fullHeight2').height(jQuery('#fullHeight2').width());
-            jQuery('#fullHeight3').height(jQuery('#fullHeight3').width());
-            jQuery('#fullHeight4').height(jQuery('#fullHeight4').width());
-            jQuery('#fullHeight5').height(jQuery('#fullHeight5').width());
-            jQuery('#halfHeight1').height(jQuery('#halfHeight1').width() / 2);
-            jQuery('#halfHeight2').height(jQuery('#halfHeight2').width() / 2);
-        }
+        jQuery('#fullHeight1').height(jQuery('#fullHeight1').width());
+        jQuery('#fullHeight2').height(jQuery('#fullHeight2').width());
+        jQuery('#fullHeight3').height(jQuery('#fullHeight3').width());
+        jQuery('#fullHeight4').height(jQuery('#fullHeight4').width());
+        jQuery('#fullHeight5').height(jQuery('#fullHeight5').width());
+        jQuery('#halfHeight1').height(jQuery('#halfHeight1').width() / 2);
+        jQuery('#halfHeight2').height(jQuery('#halfHeight2').width() / 2);
     }).resize();
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
@@ -203,6 +195,7 @@ $videoID = $vidID->fetchCol();
             width: '100%',
             videoId: '<?php print $videoID[0] ?>',
             events: {
+                'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
             },
             playerVars: {
@@ -223,11 +216,5 @@ $videoID = $vidID->fetchCol();
     function stopVideo() {
         player.stopVideo();
     }
-    document.getElementById('leftArrow').addEventListener('click', function() {
-        jQuery('.carousel').carousel('prev');
-    }, false);
-    document.getElementById('rightArrow').addEventListener('click', function() {
-        jQuery('.carousel').carousel('next');
-    }, false);
 </script>
 </html>

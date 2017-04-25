@@ -1,0 +1,39 @@
+@media screen and (max-width : 600px) {
+    ul.indicators{
+        display: none;
+    }
+    .carousel-item {
+        overflow: hidden;
+    }
+    #dirArrows {
+        bottom: 55vw;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .row.nextStep.heroNextStep {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 1400px) {
+    #searchFoot {
+        right: 0px;
+    }
+    .page {
+        padding-top: 56px;
+    }
+    .noSideMargin {
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+    .row.Title{
+        top:20%;
+    }
+}
+
+@media screen and (max-width : 1600px) {
+    .row.AoShome.noSideMargin {
+        margin-top: -20px;
+    }
+}

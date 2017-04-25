@@ -1,0 +1,60 @@
+@media screen and (max-width : 1400px) {
+    #acc-logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width : 1151px) and (max-width : 1350px) {
+    .col.m4.s12.offset-m1.title{
+        width: 40%;
+    }
+}
+@media screen and (min-width : 1109px) and (max-width : 1150px) {
+    .col.m4.s12.offset-m1.title{
+        width: 40%;
+    }
+}
+@media screen and (min-width : 983px) and (max-width : 1108px){
+    .col.m4.s12.offset-m1.title{
+        width: 45%;
+    }
+}
+@media screen and (min-width : 884px) and (max-width : 982px){
+    .col.m4.s12.offset-m1.title{
+        width: 50%;
+    }
+}
+@media screen and (min-width : 805px) and (max-width : 883px){
+    .col.m4.s12.offset-m1.title{
+        width: 55%;
+    }
+}
+@media screen and (min-width : 680px) and (max-width : 805px){
+    .col.m4.s12.offset-m1.title{
+        width: 65%;
+    }
+}
+@media screen and (min-width : 603px) and (max-width : 679px) {
+    .col.m4.s12.offset-m1.title{
+        width: 75%;
+    }
+}
+@media screen and (min-width : 1px) and (max-width : 602px) {
+    .btn, .btn-large, .btn-flat {
+        padding: 0 0 0 0;
+    }
+
+    .btn, .btn-flat {
+        min-width: 128px;
+    }
+}
+@media screen and (max-width : 600px) {
+    img.masonImg {
+        width: 100%;
+        overflow: hidden;
+    }
+    .twitterHome {
+        margin: 2%;
+        border-bottom: 1px solid white;
+    }
+}

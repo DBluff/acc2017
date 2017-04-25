@@ -14,6 +14,9 @@ foreach ($socResults as $soc) {
     $imgurl[] = $soc->imgurl;
     $twittext[] = $soc->twittext;
 }
+//Youtube Video ID Query
+$vidID = db_query("SELECT field_video_id_value FROM field_data_field_video_id where bundle='youtube_video'");
+$videoID = $vidID->fetchCol();
 //Areas of Study Query
 $qResult = db_query('SELECT name FROM taxonomy_term_data WHERE vid=2');
 $AoSrecord = $qResult->fetchCol();
@@ -99,12 +102,8 @@ foreach ($lightnodes as $lightScrape) {
             </div>
         </nav>
         <nav class="mobileNav z-depth-0 hide-on-mid-and-up blueT" id="mobNav" role="navigation">
-            <div class="mobileLogo">
-                <a class="acc-logo-mobile" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img
-                            src="/sites/default/files/logo-mobile-2x.png" alt="<?php print t('Home'); ?>">
-            </div>
-            <a href="#" data-activates="slide-out-prim" class="button-collapse"><i
-                        class="fa fa-bars" aria-hidden="true"></i></a>
+            <a href="#" data-activates="slide-out-prim" class="button-collapse btn-large transparent"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <a href="#" data-activates="slide-out-aud" class="button-collapse btn-large transparent"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
         </nav>
     </div>
     <div class="main">
@@ -112,15 +111,15 @@ foreach ($lightnodes as $lightScrape) {
             <div class="content"<?php print $content_attributes; ?>>
                 <div class="col s12">
                     <img class="responsive-img"
-                         src="<?php print '/sites/default/files/' . ltrim($homepageContent[115]['field_homepage_hero_image'][LANGUAGE_NONE][0]['uri'], 'public://') . '">'; ?>
+                         src="<?php print '/sites/default/files/' . ltrim($homepageContent[115]['field_homepage_hero_image'][LANGUAGE_NONE][0]['uri'], 'public://') . '">'; ?>">
                 </div>
-                <div class=" row Title">
+                <div class="row Title">
                     <div class="col m4 s12 offset-m1 title">
                         <?php print render($title_prefix); ?>
                         <?php if ($homepageContent[115]['title']): ?>
                             <?php $titlePieces = explode(' ', $homepageContent[115]['title']);
                             foreach ($titlePieces as $piece) { ?>
-                                <div class="col s12">
+                                <div class="col m12">
                                     <h1<?php print $title_attributes; ?>><?php print $piece ?></h1>
                                 </div>
                             <?php } ?>
@@ -139,7 +138,7 @@ foreach ($lightnodes as $lightScrape) {
                         <div class="container">
                             <div class="row">
                                 <div class="col s12">
-                                    <h4 class="band-title blue-text">start here. get there.</h4>
+                                    <h4 class="band-title-alt blue-text">start here. get there.</h4>
                                     <div class="dividerDiagBlue"></div>
                                 </div>
                                 <div class="row">
@@ -168,7 +167,7 @@ foreach ($lightnodes as $lightScrape) {
                         </div>
                     </div>
                 </div>
-                <div class="rowhomeAoS grey lighten-3 z-depth-4">
+                <div class="rowhomeAoS grey lighten-3 noSideMargin z-depth-4">
                     <div class="section row-band">
                         <div class="container">
                             <div class="row">
@@ -195,16 +194,15 @@ foreach ($lightnodes as $lightScrape) {
                             <div class="container">
                                 <div class="row noSideMargin" id="AoSgrid">
                                     <div class="row AoShome noSideMargin">
-                                        <div class="col s12 m12 l6 AoScards">
+                                        <div class="col s12 m6 AoScards">
                                             <div class="valign-wrapper rectangle">
                                                 <div class="valign left-align row">
-                                                    <p class="flow-text">Explore the possibilities of an ACC education
-                                                        with
+                                                    <p class="flow-text">Explore the possibilities of an ACC education with
                                                         100+
                                                         programs in 10
                                                         areas of study and more, geared for transfer and career
                                                         training.</p>
-                                                    <p><a href="#">Explore All Academics ></a></p>
+                                                    <p><a href="/academics">Explore All Academics ></a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -219,18 +217,15 @@ foreach ($lightnodes as $lightScrape) {
                                         $AoSparse = explode(' ', $AoS);
                                         $AoSback = (list($r, $g, $b) = array_map('hexdec', str_split(ltrim($AoSparse[1], 'Primary#'), 2)));
                                         preg_match($strain, $AoS, $AoSHead, PREG_OFFSET_CAPTURE, 0); ?>
-                                        <div class="col s12 m6 l3 AoScards">
-                                            <div class="z-depth-2 card-panel square hide-on-small-only"
+                                        <div class="col s12 m3 AoScards">
+                                            <div class="z-depth-2 card-panel square"
                                                  style="background-image:url('/sites/default/files/<?php print $AoSparse[0] ?>.jpg');">
                                             </div>
-                                            <div class="AoSoverlay valign-wrapper hide-on-small-only"
+                                            <div class="AoSoverlay valign-wrapper"
                                                  style="background-color: rgba(<?php print $AoSback[0] ?>,<?php print $AoSback[1] ?>,<?php print $AoSback[2] ?>,0.7)">
                                                 <div class="valign AoSinitialsHome">
                                                     <h6 class="aos-card white-text"><?php print $AoSHead[0][0]; ?></h6>
                                                 </div>
-                                            </div>
-                                            <div class="AoSmob valign-wrapper col s12 hide-on-med-and-up" style="background-color:rgb(<?php print $AoSback[0] ?>,<?php print $AoSback[1] ?>,<?php print $AoSback[2] ?>)">
-                                                <h6 class="valign white-text center-align"><?php print $AoSHead[0][0]; ?></h6>
                                             </div>
                                         </div>
                                         <?php
@@ -259,16 +254,14 @@ foreach ($lightnodes as $lightScrape) {
                     <div class="section">
                         <div class="container" id="spotlightCont">
                             <div class="row valign-wrapper">
-                                <div class="col s2 m6">
-                                    <h4 class="band-title white-text">in the spotlight</h4>
+                                <div class="col s6">
+                                    <h4 class="band-title-alt white-text">in the spotlight</h4>
                                 </div>
-                                <div class="col s12 m6 valign">
-                                    <a href="#"><p class="right-align grey-text text-lighten-2">Visit the ACC Newsroom
-                                            ></p></a>
+                                <div class="col s6 valign">
+                                    <a href="#"><h6 class="right-align">Visit the ACC Newsroom ></h6></a>
                                 </div>
                             </div>
                             <div class="dividerDiagGrey"></div>
-                            <br/>
                             <div class="row row-content">
                                 <div class="carousel carousel-slider">
                                     <div class="carousel-item">
@@ -286,11 +279,12 @@ foreach ($lightnodes as $lightScrape) {
                                                 <div class="card">
                                                     <div class="card-image waves-effect waves-block waves-light">
                                                         <img class="activator"
-                                                             src="<?php print '/sites/default/files/' . ltrim($lightImage[$spotCounter], 'public://'); ?>">
+                                                             src="<?php print '/sites/default/files/' . ltrim($lightImage[$spotCounter], 'public://') . '">'; ?>">
                                                     </div>
                                                     <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4"><?php print $spots ?>
-                                        <i class="material-icons right">more_vert</i></span>
+                                        <i
+                                                class="material-icons right">more_vert</i></span>
                                                     </div>
                                                     <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4"><?php print $lightTitle[$spotCounter] ?>
@@ -311,23 +305,14 @@ foreach ($lightnodes as $lightScrape) {
                                 </div>
                             </div>
                         </div>
-                        <div id="dirArrows">
-                            <div id="leftArrow">
-                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                            </div>
-                            <div id="rightArrow">
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                            </div>
-                        </div>
                     </div>
-                    <div id="placeIndicators"></div>
                 </div>
                 <div id="fast-stats" class="row row-band grey lighten-3 z-depth-3">
                     <div class="section">
                         <div class="container">
                             <div class="row">
                                 <div class="col s12">
-                                    <h4 class="band-title">best choice for central texans</h4>
+                                    <h4 class="band-title-alt">best choice for central texans</h4>
                                     <div class="dividerDiagGrey"></div>
                                 </div>
                             </div>
@@ -348,19 +333,12 @@ foreach ($lightnodes as $lightScrape) {
                 <div class="row events gradientRadBlue white-text z-depth-3">
                     <div class="section">
                         <div class="container">
-                            <div class="row valign-wrapper">
-                                <div class="col s12 m6">
-                                    <h4 class="band-title white-text">Happening at ACC</h4>
-
+                            <div class="row">
+                                <div class="col s12">
+                                    <h4 class="band-title-alt white-text">Happening at ACC</h4>
+                                    <div class="dividerDiagGrey"></div>
                                 </div>
-                                <div class="col s12 m6 valign">
-                                    <a href="#"><p class="right-align grey-text text-lighten-2">View all calendars ></p>
-                                    </a>
-                                </div>
-
                             </div>
-                            <div class="dividerDiagGrey"></div>
-                            <br>
                             <div class="row row-content">
                                 <div class="carousel carousel-slider">
                                     <div class="carousel-item">
@@ -409,22 +387,21 @@ foreach ($lightnodes as $lightScrape) {
                 <div class="row row-band homeStay noSideMargin z-depth-2 grey lighten-3">
                     <div class="section">
                         <div class="container">
-                            <div class="row valign-wrapper noBottomMargin noSideMargin">
+                            <div class="row valign-wrapper">
                                 <div class="col s12 m6">
-                                    <h4 class="band-title">stay connected</h4>
+                                    <h4 class="band-title-alt">stay connected</h4>
                                 </div>
                                 <div class="col s12 m6 smicons right-align valign">
-                                    <a href="#"> <i class="fa fa-facebook grey-text"></i></a>
-                                    <a href="#"> <i class="fa fa-twitter grey-text"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin grey-text"></i></a>
-                                    <a href="#"><i class="fa fa-flickr grey-text"></i></a>
-
-                                    <a href="#"> <i class="fa fa-instagram grey-text"></i></a>
-                                    <a href="#"><i class="fa fa-youtube-play grey-text"></i></a>
+                                    <i class="fa fa-facebook blue white-text"></i>
+                                    <i class="fa fa-twitter blue white-text"></i>
+                                    <i class="fa fa-linkedin blue white-text"></i>
+                                    <i class="fa fa-flickr blue white-text"></i>
+                                    <i class="fa fa-instagram blue white-text"></i>
+                                    <i class="fa fa-youtube-play blue white-text"></i>
+                                    <i class="fa fa-google-plus blue white-text"></i>
                                 </div>
-                            </div>
+                            </div><!--/.row-->
                             <div class="dividerDiagGrey"></div>
-                            <br>
                             <div class="row noBottomMargin">
                                 <div class="row noBottomMargin socialMasonry">
                                     <div class="col m4 s12 mason" id="fullHeight1">
@@ -432,7 +409,7 @@ foreach ($lightnodes as $lightScrape) {
                                         <div class="smIconsAbs"><i class="fa fa-youtube"></i></div>
                                     </div>
                                     <div class="col m4 s12 mason">
-                                        <div class="col s12 mason">
+                                        <div class="col m12 mason">
                                             <a href="#modal0">
                                                 <div class="col m6 mason" id="fullHeight2">
                                                     <img class="masonImg" src="<?php print $imgurl[0] ?>">
@@ -448,7 +425,7 @@ foreach ($lightnodes as $lightScrape) {
                                                 </div>
                                             </a>
                                             <a href="#modal2">
-                                                <div class="col s12 valign-wrapper blue mason" id="halfHeight1">
+                                                <div class="col m12 valign-wrapper blue mason" id="halfHeight1">
                                                     <?php print '<div class="valign twitterHome white-text">' . $twittext[4] . '</div>'; ?>
                                                     <div class="smIconsAbs"><i class="fa fa-twitter"></i></div>
                                                 </div>
@@ -457,7 +434,7 @@ foreach ($lightnodes as $lightScrape) {
                                     </div>
                                     <div class="col m4 s12 mason">
                                         <a href="#modal3">
-                                            <div class="col s12 valign-wrapper blue mason" id="halfHeight2">
+                                            <div class="col m12 valign-wrapper blue mason" id="halfHeight2">
                                                 <?php print '<div class="valign twitterHome white-text">' . $twittext[5] . '</div>'; ?>
                                                 <div class="smIconsAbs"><i class="fa fa-twitter"></i></div>
                                             </div>
@@ -516,11 +493,11 @@ foreach ($lightnodes as $lightScrape) {
                 <div class="section">
                     <div class="container">
                         <div class="row nextStep">
-                            <div class="col s12 center-align nextStepPrompt white-text">
+                            <div class="col m12 center-align nextStepPrompt white-text">
                                 <div class="row"><h4>GET STARTED</h4>
                                 </div>
                             </div>
-                            <div class="col s12 center-align nextStepButtons">
+                            <div class="col m12 center-align nextStepButtons">
                                 <div class="row">
                                     <a class="waves-effect waves-light btn-large btn-reverse">APPLY NOW</a>
                                     <a class="waves-effect waves-light btn-large btn-reverse">REQUEST INFO</a>
@@ -532,26 +509,16 @@ foreach ($lightnodes as $lightScrape) {
             </div>
             <div class="sideNav">
                 <ul id="slide-out-prim" class="side-nav">
-                    <div class="mobPrimNav">
-                        <?php
-                        $menub = menu_navigation_links('menu-primary-navigation');
-                        print theme('links__menu-primary-navigation', array('links' => $menub));
-                        ?>
-                    </div>
-                    <div class="mobAudNav">
-                        <?php
-                        $menua = menu_navigation_links('menu-audience-identifier');
-                        print theme('links__menu-audience-identifier', array('links' => $menua)); ?>
-                    </div>
+                    <?php
+                    $menub = menu_navigation_links('menu-primary-navigation');
+                    print theme('links__menu-primary-navigation', array('links' => $menub)); ?>
                 </ul>
             </div>
-            <div class="footAudNav">
-                <ul id="slide-out-footAud" class="side-nav">
-                    <div class="mobAudNav">
-                        <?php
-                        $menua = menu_navigation_links('menu-audience-identifier');
-                        print theme('links__menu-audience-identifier', array('links' => $menua)); ?>
-                    </div>
+            <div class="sideNav">
+                <ul id="slide-out-aud" class="side-nav">
+                    <?php
+                    $menua = menu_navigation_links('menu-audience-identifier');
+                    print theme('links__menu-audience-identifier', array('links' => $menua)); ?>
                 </ul>
             </div>
             <?php if (!empty($page['content_band'])) { ?>
@@ -573,19 +540,14 @@ foreach ($lightnodes as $lightScrape) {
                                      alt="<?php print t('Home'); ?>"/>
                             </a>
                         </div>
-                        <div class="footMenuAddress center-align">
-                            5930 Middle Fiskville Rd <br/> Austin, Texas 78752
-                            <br/>512-223-4ACC (4222)
-                        </div>
-                        <br><br>
-                        <div class="col s12 center-align smiconsInv">
+                        <div class="col m12 center-align smiconsInv">
                             <a href="#"><i class="fa fa-facebook fa-2x white-text"></i></a>
                             <a href="#"> <i class="fa fa-twitter fa-2x white-text"></i></a>
                             <a href="#"><i class="fa fa-linkedin fa-2x white-text"></i></a>
                             <a href="#"><i class="fa fa-flickr fa-2x white-text"></i></a>
                             <a href="#"><i class="fa fa-instagram fa-2x white-text"></i></a>
                             <a href="#"><i class="fa fa-youtube-play fa-2x white-text"></i></a>
-
+                            <a href="#"> <i class="fa fa-google-plus fa-2x white-text"></i></a>
                         </div>
                     </div>
                     <div class="col m3 s12">
@@ -603,26 +565,31 @@ foreach ($lightnodes as $lightScrape) {
                         </div>
                     </div>
                     <div class="col m3 s12">
-                        <div class="hide-on-large-only"><div class="dividerDiagGrey opacityHalf"></div></div>
                         <div class="footMenu">
                             <?php
                             $menub = menu_navigation_links('menu-primary-navigation');
                             print theme('links__menu-primary-navigation', array('links' => $menub)); ?>
                         </div>
                         <br><br><br>
+                        <div class="footMenu">
+                            5930 Middle Fiskville Rd <br/> Austin, Texas 78752
+                            <br/>512-223-4ACC (4222)
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
-        <br><br>
     </div>
     <nav class="z-depth-0 audID2 blue" id="navFoot" role="navigation">
-        <div class="nav-wrapper foot hide-on-mid-and-down">
-            <div class="row aud_menu foot">
-                <div class="audIDbottom">
-                    <?php
-                    $menua = menu_navigation_links('menu-audience-identifier');
-                    print theme('links__menu-audience-identifier', array('links' => $menua)); ?>
+        <div class="nav-wrapper foot">
+            <div class="hide-on-small-only">
+                <div class="row aud_menu foot">
+                    <div class="audIDbottom">
+                        <?php
+                        $menua = menu_navigation_links('menu-audience-identifier');
+                        print theme('links__menu-audience-identifier', array('links' => $menua)); ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -631,22 +598,14 @@ foreach ($lightnodes as $lightScrape) {
                 <a class="btn-floating btn-large waves-effect waves-light transparent z-depth-2"
                    onclick="topFunction()"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></div>
         </div>
-        <div class="hide-on-mid-and-up mobAudIcon"><a href="#" data-activates="slide-out-footAud" class="button-collapse"><i class="material-icons large">person</i></a></div>
-        <div class="hide-on-mid-and-up footButL">
-            <a class="waves-effect waves-light">APPLY NOW</a>
-        </div>
-        <div class="hide-on-mid-and-up footButR">
-            <a class="waves-effect waves-light">REQUEST INFO</a>
-        </div>
         <div class="searchContainer" id="searchFoot">
             <form class="searchbox-foot">
-                <input type="search" placeholder="Search ACC" name="search" class="searchbox-input-foot"
+                <input type="search" placeholder="Search......" name="search" class="searchbox-input-foot"
                        onkeyup="buttonUp();" required>
                 <input type="submit" class="searchbox-submit" value="GO">
                 <span class="searchbox-icon-foot"><i class="large material-icons">search</i></span>
             </form>
         </div>
+        <div class="dividerDiagBlue"></div>
     </nav>
 </div>
-
-<div class="dividerDiagBlue"></div>

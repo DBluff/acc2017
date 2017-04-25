@@ -8,20 +8,22 @@ dependencies[] = jquery_update
 ; STYLESHEETS
 ;-------------------------------------------------------------------------------
 stylesheets[all][] = fonts/font-awesome-4.7.0/css/font-awesome.min.css
-stylesheets[all][] = css/materialize.min.css
-stylesheets[all][] = css/temp.css
-stylesheets[all][] = css/styles.css
-stylesheets[all][] = css/colors.css
-stylesheets[all][] = css/responsive.css
 stylesheets[all][] = fonts/gotham/gotham.css
+stylesheets[all][] = css/materialize.min.css
+stylesheets[all][] = css/colors.css
+stylesheets[all][] = project/stylesheets/doug.css
+stylesheets[all][] = untitled/stylesheets/jamie.css
+stylesheets[all][] = css/responsiveD.css
+stylesheets[all][] = css/responsive.css
 
 ; SCRIPTS
 ;-------------------------------------------------------------------------------
 scripts[] = js/materialize.min.js
 scripts[] = js/custom.js
 scripts[] = js/searchBars.js
+scripts[] = js/stickyNav.js
+scripts[] = js/topPage.js
 scripts[] = temp/careerCoach/dynamicChart.js
-
 
 ; REGIONS
 ;-------------------------------------------------------------------------------
