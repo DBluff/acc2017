@@ -113,7 +113,7 @@ $videoID = $vidID->fetchCol();
             }
         );
         jQuery('.modal').modal();
-        jQuery('.carousel.carousel-slider').carousel({fullWidth: true, indicators: true, noWrap: false});
+        jQuery('.carousel.carousel-slider').carousel({fullWidth: true, indicators: false, noWrap: false});
         jQuery('input.autocomplete').autocomplete({
             data: {
                 "Welding Technology": 'http://ec2-52-34-230-137.us-west-2.compute.amazonaws.com/sites/all/themes/acc2017/img/AoSicons/DMC&AT.png',
@@ -134,7 +134,6 @@ $videoID = $vidID->fetchCol();
         var $toastContent = jQuery('<div class="row alertToast <?php print $alertColor; ?>" style="border-left:solid 30px <?php print $alertBar; ?>"><div class="alertTitle"><p class="flow-text"><?php print $alertDisplay->title; ?></p></div><div class="alertBody"><p><?php print $alertDisplay->field_alert_message[LANGUAGE_NONE][0]['value']; ?></p></div></div></div>');
         Materialize.toast($toastContent, 999999);
         <?php } ?>
-        jQuery("ul.indicators","#spotlightCont").insertAfter("#placeIndicators");
     });
     window.onload = function () {
         var options = [
@@ -191,6 +190,13 @@ $videoID = $vidID->fetchCol();
             jQuery('#halfHeight1').height(jQuery('#halfHeight1').width() / 2);
             jQuery('#halfHeight2').height(jQuery('#halfHeight2').width() / 2);
         }
+        var elementHeights = jQuery('.card').map(function() {
+            return jQuery(this).height();
+        }).get();
+        var minHeight = Math.max.apply(null, elementHeights);
+        var height = minHeight + 'px';
+        var targetDiv = jQuery('.carousel','#spotCar');
+        jQuery(targetDiv).css('height', height);
     }).resize();
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";

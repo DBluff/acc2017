@@ -1,60 +1,176 @@
-@media screen and (max-width : 1400px) {
+@media screen and (max-width: 1400px) {
     #acc-logo {
         display: none;
+        }
     }
-}
 
-@media screen and (min-width : 1151px) and (max-width : 1350px) {
-    .col.m4.s12.offset-m1.title{
+@media screen and (min-width: 1151px) and (max-width: 1350px) {
+    .col.m4.s12.offset-m1.title {
         width: 40%;
+        }
     }
-}
-@media screen and (min-width : 1109px) and (max-width : 1150px) {
-    .col.m4.s12.offset-m1.title{
+
+@media screen and (min-width: 1109px) and (max-width: 1150px) {
+    .col.m4.s12.offset-m1.title {
         width: 40%;
+        }
     }
-}
-@media screen and (min-width : 983px) and (max-width : 1108px){
-    .col.m4.s12.offset-m1.title{
+
+@media screen and (min-width: 983px) and (max-width: 1108px) {
+    .col.m4.s12.offset-m1.title {
         width: 45%;
-    }
-}
-@media screen and (min-width : 884px) and (max-width : 982px){
-    .col.m4.s12.offset-m1.title{
-        width: 50%;
-    }
-}
-@media screen and (min-width : 805px) and (max-width : 883px){
-    .col.m4.s12.offset-m1.title{
-        width: 55%;
-    }
-}
-@media screen and (min-width : 680px) and (max-width : 805px){
-    .col.m4.s12.offset-m1.title{
-        width: 65%;
-    }
-}
-@media screen and (min-width : 603px) and (max-width : 679px) {
-    .col.m4.s12.offset-m1.title{
-        width: 75%;
-    }
-}
-@media screen and (min-width : 1px) and (max-width : 602px) {
-    .btn, .btn-large, .btn-flat {
-        padding: 0 0 0 0;
+        }
+
+    .eventUnit .m8 {
+        padding-left: 2%;
+        }
     }
 
+@media screen and (min-width: 884px) and (max-width: 982px) {
+    .col.m4.s12.offset-m1.title {
+        width: 50%;
+        }
+
+    .row.Title h1 {
+        text-shadow: 2px 2px 0 #616161;
+        letter-spacing: 2px;
+        }
+    .spotlight .cardHeight .card .card-content .card-title{
+        font-size: medium!important;
+        }
+    }
+
+@media screen and (min-width: 805px) and (max-width: 883px) {
+    .col.m4.s12.offset-m1.title {
+        width: 55%;
+        }
+    .spotlight .cardHeight .card .card-content .card-title{
+    font-size: medium;
+        }
+    }
+
+@media screen and (min-width: 680px) and (max-width: 805px) {
+    .col.m4.s12.offset-m1.title {
+        width: 65%;
+        }
+    .spotlight .cardHeight .card .card-content .card-title{
+        font-size: medium;
+        }
+    }
+
+@media screen and (min-width: 603px) and (max-width: 679px) {
+    .col.m4.s12.offset-m1.title {
+        width: 75%;
+        }
+    .spotlight .cardHeight .card .card-content .card-title{
+        font-size: medium;
+        }
+    .nextStepPrompt h4 {
+        font-size: 8vw !important;
+        }
+    .footerNextStep a.btn-reverse, a.btn-reverse{
+        font-size: 1.4rem;
+        }
+    }
+
+@media screen and (min-width: 1px) and (max-width: 602px) {
+    /*.btn, .btn-large, .btn-flat {*/
+    /*padding: 0 0 0 0;*/
+    /*}*/
     .btn, .btn-flat {
         min-width: 128px;
+        }
+
+    .smiconsInv i {
+        font-size: 1.5rem
+        }
+
+    .smiconsInv {
+        margin-bottom: 5vh;
+        }
+
+    .nextStepPrompt h4 {
+        font-size: 8vw !important;
+        }
+    .footerNextStep a.btn-reverse, a.btn-reverse{
+        font-size: 1.4rem;
+        }
+    .nextStepButtons a {
+        margin-bottom: 2vh;
+        }
+
+    .band-title {
+        letter-spacing: 1px;
+        }
+
+    .acc-logo-mobile img {
+        max-height: 24px;
+        }
+
+    .mobileLogo img {
+        left: 16px;
+        top: 16px;
+        }
+
+    h6.valign.white-text.center-align {
+        padding: 2vw;
+        font-weight: 300;
+        -webkit-margin-before: 2.33em;
+        -webkit-margin-after: 2.33em;
+        line-height
+        }
+    .fixed-action-btn{
+        right: 2vw;
+        }
+    .spotlight .cardHeight .card .card-content .card-title{
+        font-size: large;
+        }
     }
-}
-@media screen and (max-width : 600px) {
+
+@media screen and (max-width: 600px) {
     img.masonImg {
         width: 100%;
         overflow: hidden;
-    }
+        }
+
     .twitterHome {
         margin: 2%;
         border-bottom: 1px solid white;
+        }
+
+    #acc-logo-foot {
+        max-width: 80%;
+        margin: 0 auto;
+        }
+
+    .smicons {
+        text-align: center;
+        }
+
+    .row.Title h1 {
+        text-shadow: 1px 1px 0 #616161;
+        letter-spacing: 1px;
+        font-size: xx-large;
+        }
+    .row-band {
+        margin: 0 auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        }
+    #dirArrows{
+        bottom: 2vw;
+        }
+    .BCcard{
+        margin-bottom:2rem;
+        border-bottom: dashed 1px #cccccc;
+        padding: 3%;
+        }
+    #autocomplete-input {
+        font-size: 4vw;
+        box-shadow: 0 1px 0 rgba(99, 44, 111, 0.6)
+        }
+    p a{
+        font-size: medium;
+        }
+
     }
-}

@@ -19,10 +19,16 @@ p
     color: #1A5276
     font-weight: 400
     letter-spacing: 1px
+    &.white-link
+      color: #ffffff
+      &:hover
+        text-decoration: underline
     &:hover
-      color: #0E6251
+      color: #6A3381
+      text-decoration: underline
     &:visited
       color: #4C255D
+      text-decoration: none
 
 .row.prim_menu
   &.nav-transparent
@@ -36,17 +42,19 @@ p
     /*Fx 3.6-15
     background: radial-gradient(ellipse at center, rgba(26, 82, 118, 0.9), rgba(0, 46, 109, 0.9)) !important
   /*Standard
-  ul li a
+  div ul li
     &:hover
-      //background: rgb(91, 44, 111)
-      /* Old Browsers
-      background-color: rgba(0,0,0, 0.1) !important
+      background-color: rgba(0, 0, 0, 0.1) !important
       top: .5rem
-      border-bottom: #777 16px solid
+      height: 80px
+      border-bottom: rgba(255, 255, 255, .9) 4px solid
     &.active
-      border-bottom: #777 16px solid
+      background-color: transparent
+      border-bottom: rgba(255, 255, 255, .9) 4px solid
       top: 0.5rem !important
+      height: 80px
       color: #ffffff !important
+
   a
     font-size: 1.05vw
     height: 80px
@@ -54,6 +62,16 @@ p
     top: .5rem
     font-weight: 300
     letter-spacing: 1px
+
+.mobPrimNav
+  border-bottom: 1px dashed #757575 !important
+
+/*Fix Materialize Carousel Issue
+
+.carousel.carousel-slider
+  height: 400px
+  .card-title
+    font-size: large
 
 /*Pull logo out of grid
 
@@ -136,6 +154,11 @@ div#acc-logo img
   padding-left: 5%
 //ul.links li
 
+.footMenuAddress
+  line-height: 1.4rem
+  margin-top: 1rem
+  font-size: small
+
 /*Push the Footer Down
 
 .main.page
@@ -217,11 +240,24 @@ div#acc-logo img
   background-image: url("/sites/default/files/homeSpotlight.jpg")
   background-size: cover
   background-position: top center
-  background-color: #37474F !important
+  background-color: #607D8B !important
   background-blend-mode: multiply
 
+#spotlightCont #dirArrows #leftArrow
+  font-size: 4vw
+  font-weight: lighter
+  color: rgba(46, 134, 193, .8) !important
 
-.bandTitleAction
+//#spotlightCont
+//  &:before
+    //font-family: 'Material Icons'
+    //content: "chevron_left"
+    //color: white
+    //display: inline-block
+    //position: relative
+
+
+a.bandTitleActionLight
   color: #fff !important
 
 .indicator-item
@@ -245,7 +281,7 @@ div#acc-logo img
 .homeHeroBand
   img
     visibility: hidden
-  background-image: url("/sites/default/files/homeHero.jpg")
+  background-image: url("/sites/default/files/heroRTF.jpg")
   background-color: rgba(99, 44, 111, 0.4)
   background-blend-mode: multiply
   background-repeat: no-repeat
@@ -282,6 +318,9 @@ div#acc-logo img
   background-color: #e0e0e0
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239e9e9e' fill-opacity='0.28' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")
 
+.opacityHalf
+  opacity: .5
+
 /*create color gradients
 /*Purple colors are 'base' and 'darken-2'
 
@@ -299,20 +338,15 @@ div#acc-logo img
 
 .gradientRadBlue
   background: rgb(26, 82, 118) !important
-  /* Old Browsers
   background: -webkit-radial-gradient(center, rgb(26, 82, 118), rgb(17, 53, 76)) !important
-  /*Safari 5.1-6
   background: -o-radial-gradient(center, rgb(26, 82, 118), rgb(17, 53, 76)) !important
-  /*Opera 11.1-12
   background: -moz-radial-gradient(center, rgb(26, 82, 118), rgb(17, 53, 76)) !important
-  /*Fx 3.6-15
   background: radial-gradient(ellipse at center, rgb(26, 82, 118), rgb(17, 53, 76)) !important
-/*Standard
 
-.col.m4.s12.eventLeftBorder
-  border-left: dashed 1px #1F618B !important
-  padding-left: 3%
-  padding-right: 5%
+//.eventLeftBorder
+//  border-left: dashed 1px rgba(200, 200, 200, 0.5)
+//  padding-left: 3%
+//  padding-right: 3%
 
 /*toast opacity
 
@@ -325,15 +359,9 @@ div#acc-logo img
   margin-left: 1%
   transition: all 0.3s ease
   padding: 2%
-  border: 2px solid #1A5276
+  max-width: 56px
   &:hover
-    margin-left: 1%
-    background: rgba(21, 67, 97, 0.9)
-    /* Old Browsers
-    padding: 2%
-    border: 2px solid #154361
-    color: #fefefe
-    border-radius: 20%
+    color: #757575 !important
 
 /*add padding to row-band
 
@@ -344,16 +372,18 @@ div#acc-logo img
 
 /*style band titles
 
-.band-title-alt
+.band-title
   font-family: 'Gotham Condensed Book' !important
   padding-top: 1%
-  font-size: 2.34vw
   letter-spacing: 2px
   text-transform: uppercase
 
-/*.band-title-alt, .band-alt-title h4{
-/*margin-bottom:0!important;
-/*}
+.bTCol
+  padding-left: 0 !important
+  padding-right: 0 !important
+
+
+
 
 /*==============Academics page============
 /*style page title area
@@ -423,22 +453,21 @@ div#acc-logo img
 .heroNextStep .nextStepButtons
   padding-top: 3rem
 
+/*=========.btn-reverse===========
 .footerNextStep a.btn-reverse, a.btn-reverse
   color: white !important
   background-color: rgba(91, 44, 111, 0.25) !important
-  border: 3px solid #fff
+  border: 2px solid #fff
   border-radius: 3px
   font-size: 1.0vw
   font-weight: 300
   letter-spacing: 1px
   min-width: 16rem
 
-/*=========.btn-reverse===========
-
 .footerNextStep a.btn-reverse:hover, a.btn-reverse:hover
   background-color: rgba(255, 255, 255, 0.9) !important
   color: #5B2C6F !important
-  font-weight: 400
+  font-weight: 300
 
 /*footer background style - gradient radial blue
 
@@ -497,36 +526,121 @@ div#acc-logo img
 
 //======event band
 .eventUnit
-  padding-top: 2%
+  padding: 2%
+  border-left: 1px dashed rgba(255, 255, 255, .4)
 
-.eventUnit .s8
-  padding-left: 1%
+  .m8
+    padding-left: 1%
+    padding-right: 2%
+  .m3
+    padding: 0
+    margin: 0
 
-.eventUnit .s3
-  padding: 0
-
-.eventUnit .s8 p, .eventUnit .s12 p
-  color: #FFFFFF
-
-.eventUnit .s3
-  border: 2px solid rgba(255, 255, 255, .8)
-  text-align: center
-  border-radius: 3px
-  margin-top: 20px
-
+  .s9 p, .s12 p
+    color: #FFFFFF
+    font-size: .8vw
+  a
+    color: #FFFFFF !important
+    font-weight: 400
+    padding-bottom: 10px
+    &:hover
+      color: #757575
   .eventMonth
     background: #ffffff
     color: #1A5276 !important
     margin-top: 0
-
-  .eventDay
+  .eventDate
     background: transparent
     color: #ffffff
+    font-size: 1.2vw
+    padding-bottom: 2vh
+    padding-top: 1vh
 
   p.eventTitle
-    margin-top: 0 !important
+    margin-top: 20px !important
+    line-height: 1.5rem
+
+  p.eventDetail
+    line-height: 1.4rem
+
+.calendarIcon.blue.card.xsCard
+  border: 2px solid rgba(255, 255, 255, .9)
+  text-align: center
+  border-radius: 3px
+  margin-top: 20px
+  margin-left: 3%
+  max-width: 64px
+  max-height: 96px
+
+
+  .card-content
+    padding: 0!important
+    .card-title
+      margin-bottom: 0
+      text-transform: uppercase
 
 //===========audIDbottom
 .audIDbottom a
   &:hover, &:active
     color: #FFFFFF
+
+.input.searchbox-input-foot
+  padding-left: 20px !important
+
+//============input placeholder text style
+#autocomplete-input
+  font-size: 1.6vw
+  letter-spacing: 1px
+  font-family: "Gotham Condensed Book"
+  height: 3rem !important
+  margin-top: 30px
+  box-shadow: 0 1px 0 rgba(99, 44, 111, 0.6)
+
+.input-field
+  margin-top: 0
+//box-shadow: 0 1px 0 rgba(99, 44, 111, 0.6)
+
+.btnSearch
+  border-radius: 3px
+  color: #fcfcfc !important
+  background-color: rgba(91, 44, 111, 0.75)
+  border: none
+  margin-bottom: 24px
+  &:hover, &:active
+    background-color: rgb(91, 44, 111)
+
+.col.m1.fullHeight
+  top: 20px !important
+
+.blueT
+  background: rgb(26, 82, 118)
+  /* Old Browsers
+  background: -webkit-radial-gradient(center, rgba(26, 82, 118, 0.9), rgba(0, 46, 109, 0.9)) !important
+  /*Safari 5.1-6
+  background: -o-radial-gradient(center, rgba(26, 82, 118, 0.9), rgba(0, 46, 109, 0.9)) !important
+  /*Opera 11.1-12
+  background: -moz-radial-gradient(center, rgba(26, 82, 118, 0.9), rgba(0, 46, 109, 0.9)) !important
+  /*Fx 3.6-15
+  background: radial-gradient(ellipse at center, rgba(26, 82, 118, 0.9), rgba(0, 46, 109, 0.9)) !important
+
+.acc-logo-mobile img
+  opacity: .9
+  max-height: 40px
+
+//style spotlight arrows
+#dirArrows
+  bottom: 2vw
+  #leftArrow, #rightArrow
+    -webkit-border-radius: 16px
+    -moz-border-radius: 16px
+    border-radius: 16px
+    background-color: white
+    text-align: center
+    height: 5vw
+    width: 5vw
+    background-color: rgba(0, 46, 109, 0.8)
+    i
+      color: #fff!important
+  &:hover, &:active, &:focus
+    background-color: rgba(0, 46, 109, 1)
+

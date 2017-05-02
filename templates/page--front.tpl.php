@@ -98,13 +98,15 @@ foreach ($lightnodes as $lightScrape) {
                 </div>
             </div>
         </nav>
-        <nav class="mobileNav z-depth-0 hide-on-mid-and-up blueT" id="mobNav" role="navigation">
+        <nav class="mobileNav z-depth-0 hide-on-mid-and-up blue" id="mobNav" role="navigation">
             <div class="mobileLogo">
                 <a class="acc-logo-mobile" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img
                             src="/sites/default/files/logo-mobile-2x.png" alt="<?php print t('Home'); ?>">
             </div>
-            <a href="#" data-activates="slide-out-prim" class="button-collapse"><i
-                        class="fa fa-bars" aria-hidden="true"></i></a>
+            <div class="hamburger">
+                <a href="#" data-activates="slide-out-prim" class="button-collapse"><i
+                            class="material-icons large" aria-hidden="true">menu</i></a>
+            </div>
         </nav>
     </div>
     <div class="main">
@@ -112,9 +114,9 @@ foreach ($lightnodes as $lightScrape) {
             <div class="content"<?php print $content_attributes; ?>>
                 <div class="col s12">
                     <img class="responsive-img"
-                         src="<?php print '/sites/default/files/' . ltrim($homepageContent[115]['field_homepage_hero_image'][LANGUAGE_NONE][0]['uri'], 'public://') . '">'; ?>
+                         src="<?php print '/sites/default/files/' . ltrim($homepageContent[115]['field_homepage_hero_image'][LANGUAGE_NONE][0]['uri'], 'public://'); ?> ">
                 </div>
-                <div class=" row Title">
+                <div class="row Title">
                     <div class="col m4 s12 offset-m1 title">
                         <?php print render($title_prefix); ?>
                         <?php if ($homepageContent[115]['title']): ?>
@@ -138,7 +140,7 @@ foreach ($lightnodes as $lightScrape) {
                     <div class="section">
                         <div class="container">
                             <div class="row">
-                                <div class="col s12">
+                                <div class="col s12 bTCol">
                                     <h4 class="band-title blue-text">start here. get there.</h4>
                                     <div class="dividerDiagBlue"></div>
                                 </div>
@@ -172,7 +174,7 @@ foreach ($lightnodes as $lightScrape) {
                     <div class="section row-band">
                         <div class="container">
                             <div class="row">
-                                <div class="col m6 s12">
+                                <div class="col m6 s12 bTCol">
                                     <h4 class="band-title">Areas of Study & Programs</h4>
                                 </div>
                                 <div class="col m5 s9 fullHeight">
@@ -183,12 +185,14 @@ foreach ($lightnodes as $lightScrape) {
                                     </div>
                                 </div>
                                 <div class="col m1 s3 fullHeight">
-                                    <a class="waves-effect waves-light btn-large btnSearch">
-                                        <i class="material-icons large">search</i>
+                                    <a class="waves-effect waves-light btnSearch">
+                                        <i class="material-icons">search</i>
                                     </a>
                                 </div>
                             </div>
-                            <div class="dividerDiagGrey"></div>
+                            <div class="row">
+                                <div class="dividerDiagGrey"></div>
+                            </div>
                         </div>
                         <br>
                         <div class="row">
@@ -219,21 +223,57 @@ foreach ($lightnodes as $lightScrape) {
                                         $AoSparse = explode(' ', $AoS);
                                         $AoSback = (list($r, $g, $b) = array_map('hexdec', str_split(ltrim($AoSparse[1], 'Primary#'), 2)));
                                         preg_match($strain, $AoS, $AoSHead, PREG_OFFSET_CAPTURE, 0); ?>
-                                        <div class="col s12 m6 l3 AoScards">
-                                            <div class="z-depth-2 card-panel square hide-on-small-only"
-                                                 style="background-image:url('/sites/default/files/<?php print $AoSparse[0] ?>.jpg');">
-                                            </div>
-                                            <div class="AoSoverlay valign-wrapper hide-on-small-only"
-                                                 style="background-color: rgba(<?php print $AoSback[0] ?>,<?php print $AoSback[1] ?>,<?php print $AoSback[2] ?>,0.7)">
-                                                <div class="valign AoSinitialsHome">
-                                                    <h6 class="aos-card white-text"><?php print $AoSHead[0][0]; ?></h6>
+                                        <?php
+                                        if ($AoSCount === 3 || $AoSCount === 7) { ?>
+                                            <div class="col s12 m6 l3 AoScards cardLeft">
+                                                <div class="z-depth-2 card-panel square hide-on-small-only"
+                                                     style="background-image:url('/sites/default/files/<?php print $AoSparse[0] ?>.jpg');">
+                                                </div>
+                                                <div class="AoSoverlay valign-wrapper hide-on-small-only"
+                                                     style="background-color: rgba(<?php print $AoSback[0] ?>,<?php print $AoSback[1] ?>,<?php print $AoSback[2] ?>,0.7)">
+                                                    <div class="valign AoSinitialsHome">
+                                                        <h6 class="aos-card white-text"><?php print $AoSHead[0][0]; ?></h6>
+                                                    </div>
+                                                </div>
+                                                <div class="AoSmob valign-wrapper col s12 hide-on-med-and-up"
+                                                     style="background-color:rgb(<?php print $AoSback[0] ?>,<?php print $AoSback[1] ?>,<?php print $AoSback[2] ?>)">
+                                                    <h6 class="valign white-text center-align"><?php print $AoSHead[0][0]; ?></h6>
                                                 </div>
                                             </div>
-                                            <div class="AoSmob valign-wrapper col s12 hide-on-med-and-up" style="background-color:rgb(<?php print $AoSback[0] ?>,<?php print $AoSback[1] ?>,<?php print $AoSback[2] ?>)">
-                                                <h6 class="valign white-text center-align"><?php print $AoSHead[0][0]; ?></h6>
+                                        <?php } elseif ($AoSCount === 2 || $AoSCount === 6 || $AoSCount === 10) { ?>
+                                            <div class="col s12 m6 l3 AoScards cardRight">
+                                                <div class="z-depth-2 card-panel square hide-on-small-only"
+                                                     style="background-image:url('/sites/default/files/<?php print $AoSparse[0] ?>.jpg');">
+                                                </div>
+                                                <div class="AoSoverlay valign-wrapper hide-on-small-only"
+                                                     style="background-color: rgba(<?php print $AoSback[0] ?>,<?php print $AoSback[1] ?>,<?php print $AoSback[2] ?>,0.7)">
+                                                    <div class="valign AoSinitialsHome">
+                                                        <h6 class="aos-card white-text"><?php print $AoSHead[0][0]; ?></h6>
+                                                    </div>
+                                                </div>
+                                                <div class="AoSmob valign-wrapper col s12 hide-on-med-and-up"
+                                                     style="background-color:rgb(<?php print $AoSback[0] ?>,<?php print $AoSback[1] ?>,<?php print $AoSback[2] ?>)">
+                                                    <h6 class="valign white-text center-align"><?php print $AoSHead[0][0]; ?></h6>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <?php
+                                        <?php } else {
+                                            ?>
+                                            <div class="col s12 m6 l3 AoScards">
+                                                <div class="z-depth-2 card-panel square hide-on-small-only"
+                                                     style="background-image:url('/sites/default/files/<?php print $AoSparse[0] ?>.jpg');">
+                                                </div>
+                                                <div class="AoSoverlay valign-wrapper hide-on-small-only"
+                                                     style="background-color: rgba(<?php print $AoSback[0] ?>,<?php print $AoSback[1] ?>,<?php print $AoSback[2] ?>,0.7)">
+                                                    <div class="valign AoSinitialsHome">
+                                                        <h6 class="aos-card white-text"><?php print $AoSHead[0][0]; ?></h6>
+                                                    </div>
+                                                </div>
+                                                <div class="AoSmob valign-wrapper col s12 hide-on-med-and-up"
+                                                     style="background-color:rgb(<?php print $AoSback[0] ?>,<?php print $AoSback[1] ?>,<?php print $AoSback[2] ?>)">
+                                                    <h6 class="valign white-text center-align"><?php print $AoSHead[0][0]; ?></h6>
+                                                </div>
+                                            </div>
+                                        <?php }
                                         $AoSCount++;
                                         } ?>
                                     </div>
@@ -258,19 +298,18 @@ foreach ($lightnodes as $lightScrape) {
                 <div class="row row-band homeSpotlight">
                     <div class="section">
                         <div class="container" id="spotlightCont">
-                            <div class="row valign-wrapper">
-                                <div class="col s2 m6">
+                            <div class="row noBottomMargin">
+                                <div class="bTCol col s12">
                                     <h4 class="band-title white-text">in the spotlight</h4>
-                                </div>
-                                <div class="col s12 m6 valign">
-                                    <a href="#"><p class="right-align grey-text text-lighten-2">Visit the ACC Newsroom
-                                            ></p></a>
+                                    <a href="#"><span class="valign right grey-text text-lighten-2 bTAction">Visit the ACC Newsroom ></span></a>
                                 </div>
                             </div>
-                            <div class="dividerDiagGrey"></div>
+                            <div class="row">
+                                <div class="dividerDiagGrey"></div>
+                            </div>
                             <br/>
-                            <div class="row row-content">
-                                <div class="carousel carousel-slider">
+                            <div class="row row-content" id="spotCar">
+                                <div class="carousel carousel-slider hide-on-small-only">
                                     <div class="carousel-item">
                                         <div class="row spotlight">
                                             <?php
@@ -283,7 +322,7 @@ foreach ($lightnodes as $lightScrape) {
                                         <div class="row spotlight">
                                             <?php } ?>
                                             <div class="col m3 cardHeight">
-                                                <div class="card">
+                                                <div class="card hoverable">
                                                     <div class="card-image waves-effect waves-block waves-light">
                                                         <img class="activator"
                                                              src="<?php print '/sites/default/files/' . ltrim($lightImage[$spotCounter], 'public://'); ?>">
@@ -294,11 +333,10 @@ foreach ($lightnodes as $lightScrape) {
                                                     </div>
                                                     <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4"><?php print $lightTitle[$spotCounter] ?>
-                                        <i
-                                                class="material-icons right">close</i></span>
+                                        <i class="material-icons right">close</i></span>
                                                         <p><?php print $lightBody[$spotCounter] ?></p>
                                                         <p><a href="<?php print $lightLink[$spotCounter] ?>">Full
-                                                                Story</a></p>
+                                                                Story ></a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -309,29 +347,62 @@ foreach ($lightnodes as $lightScrape) {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div id="dirArrows">
-                            <div id="leftArrow">
-                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                            </div>
-                            <div id="rightArrow">
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                <div class="carousel carousel-slider hide-on-med-and-up">
+                                    <?php
+                                    $spotCounter = 0;
+                                    foreach ($lightTitle as $spots) { ?>
+                                        <div class="carousel-item">
+                                            <div class="row spotlight">
+                                                <div class="cardHeight">
+                                                    <div class="card">
+                                                        <div class="card-image">
+                                                            <img class="activator"
+                                                                 src="<?php print '/sites/default/files/' . ltrim($lightImage[$spotCounter], 'public://'); ?>">
+                                                        </div>
+                                                        <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4"><?php print $spots ?>
+                                        <i class="material-icons right">more_vert</i></span>
+                                                        </div>
+                                                        <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4"><?php print $lightTitle[$spotCounter] ?>
+                                        <i class="material-icons right">close</i></span>
+                                                            <p><?php print $lightBody[$spotCounter] ?></p>
+                                                            <p><a href="<?php print $lightLink[$spotCounter] ?>">Full
+                                                                    Story ></a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <?php
+                                        $spotCounter++;
+                                    }
+                                    ?>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div id="placeIndicators"></div>
+                    <div class="row Arrows">
+                        <div id="dirArrows">
+                            <div class="col s2 offset-s4" id="leftArrow">
+                                <i class="fa fa-angle-left white-text" aria-hidden="true"></i>
+                            </div>
+                            <div class="col s2" id="rightArrow">
+                                <i class="fa fa-angle-right white-text" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="fast-stats" class="row row-band grey lighten-3 z-depth-3">
                     <div class="section">
                         <div class="container">
                             <div class="row">
-                                <div class="col s12">
+                                <div class="col s12 bTCol">
                                     <h4 class="band-title">best choice for central texans</h4>
                                     <div class="dividerDiagGrey"></div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row bTCol">
                                 <div class="col m4 BCcard">
                                     <img class="responsive-img" src="/sites/default/files/fstats-affordable.png">
                                 </div>
@@ -348,50 +419,50 @@ foreach ($lightnodes as $lightScrape) {
                 <div class="row events gradientRadBlue white-text z-depth-3">
                     <div class="section">
                         <div class="container">
-                            <div class="row valign-wrapper">
-                                <div class="col s12 m6">
+                            <div class="row">
+                                <div class="col s12 bTCol">
                                     <h4 class="band-title white-text">Happening at ACC</h4>
-
-                                </div>
-                                <div class="col s12 m6 valign">
-                                    <a href="#"><p class="right-align grey-text text-lighten-2">View all calendars ></p>
+                                    <!--                                </div>-->
+                                    <!--                                <div class="col s12 m6">-->
+                                    <a href="#"><span class="valign right grey-text text-lighten-2 bTAction">View all
+                                            calendars ></span>
                                     </a>
                                 </div>
-
                             </div>
-                            <div class="dividerDiagGrey"></div>
-                            <br>
+                            <div class="row">
+                                <div class="dividerDiagGrey"></div>
+                            </div>
                             <div class="row row-content">
-                                <div class="carousel carousel-slider">
+                                <div class="carousel carousel-slider hide-on-small-only">
                                     <div class="carousel-item">
                                         <div class="row white-text">
                                             <?php
                                             $eventCounter = 0;
                                             foreach ($hapTitle as $happenings){
-                                            $month = date('F', strtotime($hapDate[$eventCounter]));
+                                            $month = date('M', strtotime($hapDate[$eventCounter]));
                                             $date = date('j', strtotime($hapDate[$eventCounter]));
                                             if ($eventCounter % 3 === 0 && $eventCounter !== 0){ ?>
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <div class="carousel-item"><br><br>
                                         <div class="row white-text">
                                             <?php } ?>
-                                            <div class="col m4 s12 eventLeftBorder">
+                                            <div class="col s12 m6 l4 eventLeftBorder">
                                                 <div class="row eventUnit">
-                                                    <div class="col s3 center-align">
-                                                        <p class="eventMonth"><?php print $month ?></p>
-                                                        <h4 class="eventDate"><?php print $date ?></h4>
+                                                    <div class="col s12 m3">
+                                                        <div class="calendarIcon blue card xsCard">
+                                                            <div class="card-content white blue-text">
+                                                                <span class="card-title eMonth"><?php print strtoupper($month) ?></span>
+                                                                <p class="blue white-text"><?php print $date ?></p>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="col s8 offset-s1">
-                                                        <p class="eventTitle"><?php print $happenings ?></p>
-                                                    </div>
-                                                    <div class="col s12 noSideMargin">
+                                                    <div class="col s12 m8">
+                                                        <p class="eventTitle">
+                                                            <strong><?php print $happenings ?></strong></p>
                                                         <p class="eventDetail"><?php print $hapBody[$eventCounter] ?></p>
-                                                    </div>
-                                                    <div class="col s12 noSideMargin">
-                                                        <a class="eventDetail"><a
-                                                                    href="<?php print $hapLink[$eventCounter] ?>">Event
-                                                                Link</a></a></p>
+                                                        <a href="<?php print $hapLink[$eventCounter] ?>"
+                                                           class="eventDetailLink white-link">View Event ></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -402,6 +473,39 @@ foreach ($lightnodes as $lightScrape) {
                                         </div>
                                     </div>
                                 </div>
+                                <div class="hide-on-med-and-up">
+                                    <ul class="collection">
+                                        <?php
+                                        $eventCounter = 0;
+                                        foreach ($hapTitle as $happenings) {
+                                            $month = date('M', strtotime($hapDate[$eventCounter]));
+                                            $date = date('j', strtotime($hapDate[$eventCounter]));
+                                            ?>
+                                            <li class="collection-item gradientRadBlue white-text">
+                                                <div class="row eventUnit">
+                                                    <div class="col s3">
+                                                        <div class="calendarIcon blue card xsCard">
+                                                            <div class="card-content white blue-text">
+                                                                <span class="card-title eMonth"><?php print strtoupper($month) ?></span>
+                                                                <p class="blue white-text"><?php print $date ?></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col s8 offset-s1">
+                                                        <p class="eventTitle">
+                                                            <strong><?php print $happenings ?></strong></p>
+                                                        <p class="eventDetail hide-on-med-and-down"><?php print $hapBody[$eventCounter] ?></p>
+                                                        <a href="<?php print $hapLink[$eventCounter] ?>"
+                                                           class="eventDetailLink white-link">View Event ></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <?php
+                                            $eventCounter++;
+                                        }
+                                        ?>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -409,18 +513,18 @@ foreach ($lightnodes as $lightScrape) {
                 <div class="row row-band homeStay noSideMargin z-depth-2 grey lighten-3">
                     <div class="section">
                         <div class="container">
-                            <div class="row valign-wrapper noBottomMargin noSideMargin">
+                            <div class="row noBottomMargin noSideMargin">
                                 <div class="col s12 m6">
                                     <h4 class="band-title">stay connected</h4>
                                 </div>
-                                <div class="col s12 m6 smicons right-align valign">
-                                    <a href="#"> <i class="fa fa-facebook grey-text"></i></a>
-                                    <a href="#"> <i class="fa fa-twitter grey-text"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin grey-text"></i></a>
-                                    <a href="#"><i class="fa fa-flickr grey-text"></i></a>
+                                <div class="col s12 m6 smicons right-align">
+                                    <a href="#"> <i class="fa fa-facebook fa-2x grey-text valign"></i></a>
+                                    <a href="#"> <i class="fa fa-twitter fa-2x grey-text valign"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin fa-2x grey-text valign"></i></a>
+                                    <a href="#"><i class="fa fa-flickr fa-2x grey-text valign"></i></a>
 
-                                    <a href="#"> <i class="fa fa-instagram grey-text"></i></a>
-                                    <a href="#"><i class="fa fa-youtube-play grey-text"></i></a>
+                                    <a href="#"> <i class="fa fa-instagram fa-2x grey-text valign"></i></a>
+                                    <a href="#"><i class="fa fa-youtube-play fa-2x grey-text valign"></i></a>
                                 </div>
                             </div>
                             <div class="dividerDiagGrey"></div>
@@ -573,11 +677,7 @@ foreach ($lightnodes as $lightScrape) {
                                      alt="<?php print t('Home'); ?>"/>
                             </a>
                         </div>
-                        <div class="footMenuAddress center-align">
-                            5930 Middle Fiskville Rd <br/> Austin, Texas 78752
-                            <br/>512-223-4ACC (4222)
-                        </div>
-                        <br><br>
+
                         <div class="col s12 center-align smiconsInv">
                             <a href="#"><i class="fa fa-facebook fa-2x white-text"></i></a>
                             <a href="#"> <i class="fa fa-twitter fa-2x white-text"></i></a>
@@ -585,9 +685,9 @@ foreach ($lightnodes as $lightScrape) {
                             <a href="#"><i class="fa fa-flickr fa-2x white-text"></i></a>
                             <a href="#"><i class="fa fa-instagram fa-2x white-text"></i></a>
                             <a href="#"><i class="fa fa-youtube-play fa-2x white-text"></i></a>
-
                         </div>
                     </div>
+                    <br><br>
                     <div class="col m3 s12">
                         <div class="footMenu">
                             <?php
@@ -603,13 +703,18 @@ foreach ($lightnodes as $lightScrape) {
                         </div>
                     </div>
                     <div class="col m3 s12">
-                        <div class="hide-on-large-only"><div class="dividerDiagGrey opacityHalf"></div></div>
+                        <div class="hide-on-med-and-up">
+                            <div class="dividerDiagGrey opacityHalf"></div>
+                        </div>
                         <div class="footMenu">
                             <?php
                             $menub = menu_navigation_links('menu-primary-navigation');
                             print theme('links__menu-primary-navigation', array('links' => $menub)); ?>
                         </div>
-                        <br><br><br>
+                        <div class="footMenuAddress footMenu">
+                            Austin Community College District<br> 5930 Middle Fiskville Rd <br/> Austin, Texas 78752
+                            <br/>512-223-4ACC (4222)
+                        </div>
                     </div>
                 </div>
             </div>
@@ -628,10 +733,13 @@ foreach ($lightnodes as $lightScrape) {
         </div>
         <div id="topPage">
             <div class="fixed-action-btn">
-                <a class="btn-floating btn-large waves-effect waves-light transparent z-depth-2"
+                <a class="btn-floating btn-large waves-effect waves-light z-depth-2"
                    onclick="topFunction()"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></div>
         </div>
-        <div class="hide-on-mid-and-up mobAudIcon"><a href="#" data-activates="slide-out-footAud" class="button-collapse"><i class="material-icons large">person</i></a></div>
+        <div class="hide-on-mid-and-up mobAudIcon"><a href="#" data-activates="slide-out-footAud"
+                                                      class="button-collapse"><i
+                        class="material-icons large">person</i></a>
+        </div>
         <div class="hide-on-mid-and-up footButL">
             <a class="waves-effect waves-light">APPLY NOW</a>
         </div>
@@ -648,5 +756,3 @@ foreach ($lightnodes as $lightScrape) {
         </div>
     </nav>
 </div>
-
-<div class="dividerDiagBlue"></div>
