@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1253e96-7a14-49ea-b37c-5fa03c3375ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/page--promotional_page.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/.sass-cache/509697d423ada9412f176a42aed789834c111c43/doug.sassc" afterPath="$PROJECT_DIR$/project/.sass-cache/509697d423ada9412f176a42aed789834c111c43/doug.sassc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/materialize.min.css" afterPath="$PROJECT_DIR$/css/materialize.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete.php" afterPath="$PROJECT_DIR$/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/materialize.min.js" afterPath="$PROJECT_DIR$/js/materialize.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/sass/doug.sass" afterPath="$PROJECT_DIR$/project/sass/doug.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/stylesheets/doug.css" afterPath="$PROJECT_DIR$/project/stylesheets/doug.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/html--front.tpl.php" afterPath="$PROJECT_DIR$/templates/html--front.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--front.tpl.php" afterPath="$PROJECT_DIR$/templates/page--front.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--promotional_program.tpl.php" afterPath="$PROJECT_DIR$/templates/page--promotional_program.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/untitled/sass/jamie.sass" afterPath="$PROJECT_DIR$/untitled/sass/jamie.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/untitled/stylesheets/jamie.css" afterPath="$PROJECT_DIR$/untitled/stylesheets/jamie.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page--promotional_page.tpl.php" afterPath="$PROJECT_DIR$/templates/page--promotional_page.tpl.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,46 +31,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="page--promotional_page.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/page--promotional_page.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="104" column="22" lean-forward="true" selection-start-line="82" selection-start-column="16" selection-end-line="104" selection-end-column="22" />
-              <folding>
-                <marker date="1493759870471" expanded="true" signature="4435:4518" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1512">
-              <caret line="48" column="52" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="doug.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/sass/doug.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="601" column="14" lean-forward="true" selection-start-line="601" selection-start-column="14" selection-end-line="601" selection-end-column="14" />
+            <state relative-caret-position="327">
+              <caret line="75" column="10" lean-forward="true" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page--promotional_program.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/page--promotional_program.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="324" selection-end-column="14" />
-              <folding>
-                <marker date="1493761442601" expanded="true" signature="3160:3213" ph="SELECT name taxonomy_term_data" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -95,11 +53,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>side</find>
-      <find>if</find>
-      <find>display:none!important</find>
-      <find>sidebar</find>
-      <find>text-tran</find>
       <find>style</find>
       <find>cardheight</find>
       <find>1098</find>
@@ -116,15 +69,20 @@
       <find>search</find>
       <find>carouse</find>
       <find>btn-search</find>
-      <find>arrow</find>
       <find>Arrow</find>
       <find>125</find>
       <find>h4</find>
       <find>title</find>
       <find>h1</find>
-      <find>testim</find>
       <find>carous</find>
       <find>testimg</find>
+      <find>testim</find>
+      <find>spotlight</find>
+      <find>m3</find>
+      <find>.carousel-item.active</find>
+      <find>arrow</find>
+      <find>&lt;?php print $lightLink[$spotCounter] ?&gt;</find>
+      <find>transform</find>
     </findStrings>
     <replaceStrings>
       <replace>m2</replace>
@@ -138,6 +96,8 @@
       <replace>band-title</replace>
       <replace>115</replace>
       <replace>h2</replace>
+      <replace>#</replace>
+      <replace>m4</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -193,8 +153,8 @@
         <option value="$PROJECT_DIR$/js/delete.js" />
         <option value="$PROJECT_DIR$/templates/html--front.tpl.php" />
         <option value="$PROJECT_DIR$/templates/page--front.tpl.php" />
-        <option value="$PROJECT_DIR$/templates/page--promotional_page.tpl.php" />
         <option value="$PROJECT_DIR$/templates/page--promotional_program.tpl.php" />
+        <option value="$PROJECT_DIR$/templates/page--promotional_page.tpl.php" />
         <option value="$PROJECT_DIR$/delete.php" />
         <option value="$PROJECT_DIR$/project/sass/doug.sass" />
       </list>
@@ -229,6 +189,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -371,8 +333,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -509,23 +469,27 @@
       <workItem from="1493326797216" duration="514000" />
       <workItem from="1493329148435" duration="218000" />
       <workItem from="1493383912981" duration="1879000" />
-      <workItem from="1493756722682" duration="6842000" />
+      <workItem from="1493756722682" duration="7028000" />
+      <workItem from="1493815805467" duration="63000" />
+      <workItem from="1493815877899" duration="280000" />
+      <workItem from="1493828325402" duration="2857000" />
+      <workItem from="1493832891658" duration="71000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="435914000" />
+    <option name="totallyTimeSpent" value="439371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3511327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36812297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.50323623" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.49676377" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -767,17 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/html--front.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-500">
-          <caret line="196" column="38" lean-forward="true" selection-start-line="196" selection-start-column="38" selection-end-line="196" selection-end-column="38" />
-          <folding>
-            <marker date="1493324538000" expanded="true" signature="2861:2998" ph="SELECT entit... field_data_field_alert_active_" />
-            <marker date="1493324538000" expanded="true" signature="4225:4312" ph="SELECT field... field_data_field_video_id" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/stylesheets/doug.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="878">
@@ -785,14 +738,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/555ac8a9-5b59-4517-8fed-e9dc8e277af0/var/www/html/sites/all/themes/acc2017/templates/page--front.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="793" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/555ac8a9-5b59-4517-8fed-e9dc8e277af0/var/www/html/sites/all/themes/acc2017/templates/page--front.tpl.php" />
     <entry file="file://$PROJECT_DIR$/templates/page--promotional_program.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -803,20 +749,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page--promotional_page.tpl.php">
+    <entry file="file://$PROJECT_DIR$/templates/html--front.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="104" column="22" lean-forward="true" selection-start-line="82" selection-start-column="16" selection-end-line="104" selection-end-column="22" />
+        <state relative-caret-position="340">
+          <caret line="137" column="33" lean-forward="true" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="33" />
           <folding>
-            <marker date="1493759870471" expanded="true" signature="4435:4518" ph="..." />
+            <marker date="1493324538000" expanded="true" signature="2861:2998" ph="SELECT entit... field_data_field_alert_active_" />
+            <marker date="1493324538000" expanded="true" signature="4225:4312" ph="SELECT field... field_data_field_video_id" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/page--front.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="314" column="33" lean-forward="false" selection-start-line="314" selection-start-column="33" selection-end-line="314" selection-end-column="33" />
+        <state relative-caret-position="271">
+          <caret line="384" column="0" lean-forward="false" selection-start-line="384" selection-start-column="0" selection-end-line="393" selection-end-column="26" />
           <folding>
             <element signature="e#0#5#0#PHP" expanded="false" />
             <element signature="e#441#566#0#PHP" expanded="false" />
@@ -920,16 +867,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="48" column="52" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="6" />
+        <state relative-caret-position="533">
+          <caret line="61" column="30" lean-forward="true" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page--promotional_page.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1698">
+          <caret line="273" column="18" lean-forward="false" selection-start-line="273" selection-start-column="18" selection-end-line="273" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/sass/doug.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="601" column="14" lean-forward="true" selection-start-line="601" selection-start-column="14" selection-end-line="601" selection-end-column="14" />
+        <state relative-caret-position="327">
+          <caret line="75" column="10" lean-forward="true" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
           <folding />
         </state>
       </provider>

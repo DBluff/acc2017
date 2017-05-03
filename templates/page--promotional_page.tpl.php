@@ -85,17 +85,25 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col s12 bTCol">
-                                    <h2 class="band-title blue-text">Campus Life</h2>
+                                    <h2 class="band-title blue-text">Campus
+                                        Life</h2>
                                     <div class="dividerDiagBlue"></div>
                                 </div>
                                 <div class="row">
                                     <div class="col s12">
                                         <p class="flow-text">
-                                            <strong> A Community Where You Belong
+                                            <strong> A Community Where You
+                                                Belong
                                             </strong>
                                         </p>
                                         <p class="flow-text">
-                                            There is a special energy in the air here, a buzz of excitement that never quite disappears, and a sense that big things are happening. This is Riverbat Country, and there is always something to see, do, or experience.
+                                            There is a special energy in the air
+                                            here, a buzz of excitement that
+                                            never quite disappears, and a sense
+                                            that big things are happening. This
+                                            is Riverbat Country, and there is
+                                            always something to see, do, or
+                                            experience.
                                         </p>
                                     </div>
                                 </div>
@@ -261,3 +269,9 @@
             </div>
         </nav>
     </div>
+    <script>
+        window.onload = function () {
+            jQuery('.carousel.carousel-slider').carousel({fullWidth: true});
+        };
+    </script>
+</div>
